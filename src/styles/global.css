@@ -3373,13 +3373,11 @@ figcaption {
 }
 
 .contact-section-access {
-  border-top-color: rgba(241, 235, 225, 0.14);
-  background: var(--petrol-deep);
-  color: var(--linen);
+  background: var(--paper);
 }
 
 .contact-section-hours {
-  background: var(--paper);
+  background: var(--bone);
 }
 
 .contact-section-form {
@@ -3404,38 +3402,6 @@ figcaption {
   font-variation-settings: "opsz" 144;
   letter-spacing: -0.02em;
   line-height: 1.03;
-}
-
-.contact-section-access .sec-num,
-.contact-section-access .coord-row .lab {
-  color: var(--clay-light);
-}
-
-.contact-section-access .contact-title,
-.contact-section-access .contact-title em {
-  color: var(--linen);
-}
-
-.contact-section-access .coord-list {
-  border-top-color: rgba(241, 235, 225, 0.22);
-}
-
-.contact-section-access .coord-row {
-  border-bottom-color: rgba(241, 235, 225, 0.18);
-}
-
-.contact-section-access .coord-row .val {
-  color: rgba(241, 235, 225, 0.88);
-}
-
-.contact-section-access .coord-row .val a {
-  border-bottom-color: rgba(241, 235, 225, 0.28);
-}
-
-.contact-section-access .coord-row .val a:hover,
-.contact-section-access .coord-row .val a:focus-visible {
-  border-color: var(--clay-light);
-  color: var(--linen);
 }
 
 .contact-grid {
@@ -3490,23 +3456,18 @@ figcaption {
 .contact-map-frame {
   padding: 24px;
   border: 1px solid rgba(241, 235, 225, 0.72);
-  background: var(--paper);
+  background: var(--petrol-deep);
   transition: border-color 320ms ease, transform 420ms var(--ease-out), box-shadow 420ms var(--ease-out);
 }
 
 .contact-section-access .contact-map-frame {
-  border-color: rgba(241, 235, 225, 0.82);
-  background: transparent;
+  border-color: rgba(241, 235, 225, 0.78);
 }
 
 .contact-map-frame:hover {
   border-color: var(--linen);
-  box-shadow: 0 24px 52px rgba(31, 38, 34, 0.09);
+  box-shadow: 0 24px 52px rgba(14, 42, 44, 0.18);
   transform: translateY(-4px);
-}
-
-.contact-section-access .contact-map-frame:hover {
-  box-shadow: 0 24px 52px rgba(0, 0, 0, 0.22);
 }
 
 .contact-map-card {
@@ -3575,13 +3536,13 @@ figcaption {
   font-size: 13px;
 }
 
-.contact-section-access .contact-map-frame footer > span,
-.contact-section-access .contact-map-frame .btn-line {
+.contact-map-frame footer > span,
+.contact-map-frame .btn-line {
   color: rgba(241, 235, 225, 0.82);
 }
 
-.contact-section-access .contact-map-frame .btn-line:hover,
-.contact-section-access .contact-map-frame .btn-line:focus-visible {
+.contact-map-frame .btn-line:hover,
+.contact-map-frame .btn-line:focus-visible {
   color: var(--clay-light);
 }
 
