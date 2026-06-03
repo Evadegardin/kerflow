@@ -1,0 +1,60 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import SiteHeader from "../../components/SiteHeader.astro";
+import SiteFooter from "../../components/SiteFooter.astro";
+---
+
+<BaseLayout
+  title="Le Cocon - KerFlow Rituel"
+  description="Le Cocon, espace KerFlow Rituel pour les massages, soins corporels, reflexologie, relaxation et recuperation a Clamart."
+>
+  <SiteHeader />
+  <main>
+    <section class="page-hero section-pad accent-rituel">
+      <div>
+        <p class="eyebrow">KerFlow Rituel</p>
+        <h1>Le Cocon,<br />pour les <em>soins du corps</em>.</h1>
+      </div>
+      <div>
+        <div class="service-mark" aria-hidden="true">Rituel<br /><span>soin</span></div>
+        <p>Un espace calme et enveloppant pour les massages, la reflexologie, le drainage lymphatique, l'acupuncture et les soins corporels.</p>
+        <div class="actions">
+          <a class="btn btn-primary" href="/contact/">Choisir un soin <span aria-hidden="true">→</span></a>
+        </div>
+      </div>
+    </section>
+
+    <section class="page-section section-pad soft-band">
+      <div class="section-head two">
+        <div>
+          <p class="eyebrow">Soin</p>
+          <h2>Ralentir,<br />récupérer,<br /><em>relâcher</em>.</h2>
+        </div>
+        <p>Le Cocon regroupe les pratiques corporelles et les soins qui aident a deposer les tensions, recuperer et retrouver un rapport plus apaise au corps.</p>
+      </div>
+      <div class="page-card-grid">
+        <article class="page-card accent-rituel"><h3>Massages</h3><p>Relaxation, detente musculaire et temps de pause.</p></article>
+        <article class="page-card accent-rituel"><h3>Drainage</h3><p>Accompagnement du corps, legerete et recuperation.</p></article>
+        <article class="page-card accent-rituel"><h3>Réflexologie</h3><p>Soins corporels pratiques par des praticiens qualifies.</p></article>
+      </div>
+    </section>
+
+    <section class="section-pad">
+      <div class="content-split">
+        <div>
+          <p class="eyebrow">KerFlow Rituel</p>
+          <h2>Un espace<br /><em>dédié au soin</em>.</h2>
+        </div>
+        <div class="body-copy">
+          <p>Le Cocon est pense pour les rendez-vous individuels qui demandent du calme, de la confidentialite et une ambiance feutree.</p>
+          <p>Chaque soin doit permettre de choisir un praticien, comprendre son approche et acceder facilement a la prise de rendez-vous.</p>
+          <div class="actions">
+            <a class="btn-line" href="/prevention-sante/la-bulle/">Voir La Bulle →</a>
+            <a class="btn-line" href="/contact/">Contacter KerFlow</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <SiteFooter />
+</BaseLayout>

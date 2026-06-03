@@ -5,65 +5,116 @@ import SiteFooter from "../components/SiteFooter.astro";
 ---
 
 <BaseLayout
-  title="Cours et planning - KerFlow Studio"
-  description="Cours de yoga, Pilates, mobilite, renforcement doux et respiration en petits groupes a Clamart."
+  title="Cours & planning - KerFlow - Clamart"
+  description="Yoga, Pilates, mobilite, renforcement doux et respiration en petits groupes a Clamart. Planning, tarifs et informations pour reserver un cours KerFlow."
 >
   <SiteHeader />
-  <main>
-    <section class="page-hero section-pad accent-studio">
-      <div>
-        <p class="eyebrow">Cours & planning</p>
-        <h1>Bouger en douceur,<br />progresser <em>sans pression</em>.</h1>
-      </div>
-      <div>
-        <div class="service-mark" aria-hidden="true">Studio<br /><span>mouvement</span></div>
-        <p>Des cours en petits groupes pour retrouver de l'amplitude, du souffle et de la confiance dans le corps.</p>
-        <div class="actions">
-          <a class="btn btn-primary" href="/contact/">Reserver un cours <span aria-hidden="true">→</span></a>
+  <main class="cours-page">
+    <section class="cours-hero">
+      <div class="cours-wrap">
+        <div class="cours-hero-grid">
+          <div>
+            <p class="cours-kicker">KerFlow Studio - cours collectifs</p>
+            <h1>
+              Petits groupes,<br />
+              <em>grand soin.</em><br />
+              Bouger sans<br />
+              pression.
+            </h1>
+            <div class="cours-actions">
+              <a href="/contact/" class="btn btn-primary">Reserver un cours <span aria-hidden="true">→</span></a>
+              <a href="#planning" class="btn-line">Voir le planning</a>
+            </div>
+          </div>
+          <aside class="cours-hero-aside">
+            <img class="cours-hero-logo" src="/assets/logos/kerflow-studio.png" alt="KerFlow Studio" loading="eager" decoding="async" />
+            <p>
+              Yoga, Pilates, mobilite, respiration - en <em>petits groupes de 8 a 12</em>,
+              tous les jours, dans la grande salle. Progresser, se renforcer, se poser.
+            </p>
+            <div class="cours-tags">
+              <span>Yoga</span><span>Pilates</span><span>Mobilite</span><span>Renforcement doux</span><span>Respiration</span>
+            </div>
+          </aside>
         </div>
       </div>
     </section>
 
-    <section class="page-section section-pad soft-band">
-      <div class="section-head two">
-        <div>
-          <p class="eyebrow">Activites</p>
-          <h2>Des pratiques pour <em>mieux bouger</em>.</h2>
+    <section class="cours-section">
+      <div class="cours-wrap">
+        <div class="cours-head">
+          <span class="cours-num">01 - Les pratiques</span>
+          <h2>Cinq facons de bouger<br /><em>en douceur.</em></h2>
+          <p>Toutes adaptables, toutes encadrees de pres. On commence ou l'on en est, on avance a son rythme.</p>
         </div>
-        <p>Chaque cours est pense pour une progression accessible, avec une attention particuliere portee aux personnes en reprise ou en recherche de securite.</p>
-      </div>
-      <div class="page-card-grid">
-        <article class="page-card accent-studio"><h3>Yoga</h3><p>Hatha, yin, vinyasa doux, respiration et relaxation.</p></article>
-        <article class="page-card accent-studio"><h3>Pilates</h3><p>Posture, centre, stabilite, renforcement profond et adaptation.</p></article>
-        <article class="page-card accent-studio"><h3>Mobilite</h3><p>Amplitude, articulations, equilibre et gestes du quotidien.</p></article>
+        <div class="cours-bordered cols-3">
+          <div>
+            <span>i - Yoga</span>
+            <h3>Hatha, Yin, Vinyasa</h3>
+            <p>Du plus pose au plus dynamique. Respiration, postures, ancrage - pour relacher et se recentrer.</p>
+          </div>
+          <div>
+            <span>ii - Pilates</span>
+            <h3>Pilates postural</h3>
+            <p>Le centre du corps, en finesse. Gainage doux, alignement, conscience du geste.</p>
+          </div>
+          <div>
+            <span>iii - Mobilite</span>
+            <h3>Mobilite & articulations</h3>
+            <p>Retrouver de l'amplitude, denouer les raideurs. Ideal pour les reprises et les douleurs.</p>
+          </div>
+          <div>
+            <span>iv - Force</span>
+            <h3>Renforcement doux</h3>
+            <p>Construire de la solidite sans brusquer. Elastiques, poids legers, poids du corps.</p>
+          </div>
+          <div>
+            <span>v - Souffle</span>
+            <h3>Respiration & relaxation</h3>
+            <p>Apprendre a se relacher, vraiment. Coherence cardiaque, relaxation guidee, sommeil.</p>
+          </div>
+          <div class="highlight">
+            <span>→</span>
+            <h3>Un doute sur le cours ?</h3>
+            <p>On vous oriente avant la premiere seance. Ecrivez-nous, on choisit ensemble.</p>
+          </div>
+        </div>
       </div>
     </section>
 
-    <section class="section-pad">
-      <div class="content-split">
-        <div>
-          <p class="eyebrow">Pour qui ?</p>
-          <h2>Pour reprendre,<br />se renforcer,<br /><em>se rassurer</em>.</h2>
+    <section class="cours-section paper">
+      <div class="cours-wrap">
+        <div class="cours-head">
+          <span class="cours-num">02 - Pour qui ?</span>
+          <h2>Pense pour celles et ceux<br />qui veulent <em>reprendre en douceur.</em></h2>
         </div>
-        <div class="page-card-grid two">
-          <article class="page-card">
-            <h3>Profils</h3>
-            <ul>
-              <li>Reprise en douceur apres une pause</li>
-              <li>Stress, fatigue ou charge mentale</li>
-              <li>Douleurs, raideurs ou perte de mobilite</li>
-              <li>Seniors actifs</li>
-            </ul>
-          </article>
-          <article class="page-card">
-            <h3>Petits groupes</h3>
-            <ul>
-              <li>Encadrement plus attentif</li>
-              <li>Progression adaptee</li>
-              <li>Ambiance bienveillante</li>
-              <li>Moins de monde, plus de confort</li>
-            </ul>
-          </article>
+        <ul class="cours-check-list">
+          <li><span>↘</span><p><strong>Une reprise en douceur</strong> apres une pause, une grossesse, un arret.</p></li>
+          <li><span>↘</span><p><strong>Stress & fatigue</strong> - deposer la charge mentale, retrouver du souffle.</p></li>
+          <li><span>↘</span><p><strong>Douleurs & mobilite</strong> - denouer, assouplir, soulager sans forcer.</p></li>
+          <li><span>↘</span><p><strong>Seniors actifs</strong> - des cours adaptes, attentifs, sans esprit de competition.</p></li>
+          <li><span>↘</span><p><strong>Femmes en transition</strong> physique ou emotionnelle, a chaque saison de la vie.</p></li>
+          <li><span>↘</span><p><strong>Reprendre confiance</strong> dans son corps, a son propre rythme.</p></li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="cours-section">
+      <div class="cours-wrap">
+        <div class="cours-split-head">
+          <div class="cours-head">
+            <span class="cours-num">03 - Pourquoi en petits groupes</span>
+            <h2>Huit a douze,<br /><em>jamais plus.</em></h2>
+          </div>
+          <p>
+            Moins de monde, plus de confort. Le professeur vous voit, vous corrige,
+            vous adapte le cours. C'est le coeur de la maison.
+          </p>
+        </div>
+        <div class="cours-steps">
+          <div><span>i</span><h3>Encadrement attentif</h3><p>Le professeur peut suivre chaque personne, corriger une posture, proposer une variante.</p></div>
+          <div><span>ii</span><h3>Progression adaptee</h3><p>On ajuste l'intensite au groupe et a chacun - jamais l'inverse.</p></div>
+          <div><span>iii</span><h3>Un cadre rassurant</h3><p>Pas de regard, pas de performance. On respire, on se sent en securite.</p></div>
         </div>
       </div>
     </section>
@@ -71,32 +122,157 @@ import SiteFooter from "../components/SiteFooter.astro";
     <section id="planning" class="planning planning-cards section-pad">
       <div class="planning-cards-head">
         <div>
-          <p class="eyebrow">Planning</p>
-          <h2>Vue claire,<br /><em>mobile first</em>.</h2>
+          <p class="eyebrow">04 - Le planning de la semaine</p>
+          <h2>Une semaine type<br /><em>a la maison.</em></h2>
         </div>
         <div>
-          <p>Le planning final sera branche sur l'outil de reservation. Cette premiere version prepare les jours, horaires et formats attendus.</p>
-          <a class="btn-line light" href="/contact/">Demander une place →</a>
+          <p>Mardi au samedi. Le planning definitif et la reservation se font sur HelloResa - annulation jusqu'a 4h avant, sans frais.</p>
+          <a class="btn-line light" href="/contact/">Reserver via HelloResa →</a>
         </div>
       </div>
-      <div class="course-mini-grid">
-        <article><p>Mardi · 09h30</p><h4>Hatha doux</h4><a href="/contact/">Reserver →</a></article>
-        <article><p>Mercredi · 07h15</p><h4>Vinyasa matin</h4><a href="/contact/">Reserver →</a></article>
-        <article><p>Mercredi · 12h30</p><h4>Pilates postural</h4><a href="/contact/">Reserver →</a></article>
-        <article><p>Jeudi · 18h00</p><h4>Mobilite & renfo</h4><a href="/contact/">Reserver →</a></article>
-        <article><p>Vendredi · 19h00</p><h4>Yin profond</h4><a href="/contact/">Reserver →</a></article>
-        <article><p>Samedi · 10h00</p><h4>Hatha long</h4><a href="/contact/">Reserver →</a></article>
+
+      <div class="course-feature-grid">
+        <article class="course-card course-card-feature">
+          <div class="course-card-copy">
+            <p class="course-kicker">↘ A la une cette semaine</p>
+            <h3>Yin & souffle<br /><em>mardi 18h30</em></h3>
+            <p>75 minutes pour ralentir, ecouter la respiration, deposer la semaine. Format silencieux. Solene M.</p>
+            <footer>
+              <span>1h15</span>
+            </footer>
+          </div>
+          <div class="photo photo-clay"><span>[ photo - cours du soir, lumiere chaude ]</span></div>
+        </article>
+
+        <article class="course-card course-card-photo">
+          <div class="photo photo-petrol"><span>[ photo - tapis et bolster ]</span></div>
+          <div class="course-card-copy">
+            <p class="course-kicker">Mardi - 09h30</p>
+            <h4>Hatha doux</h4>
+            <p>Solene M. - 1h00</p>
+            <footer><a href="/contact/">Reserver →</a></footer>
+          </div>
+        </article>
+
+        <article class="course-card course-card-photo">
+          <div class="photo photo-foam"><span>[ photo - lumiere du matin ]</span></div>
+          <div class="course-card-copy">
+            <p class="course-kicker">Mercredi - 07h15</p>
+            <h4>Vinyasa matin</h4>
+            <p>Lea V. - 1h00</p>
+            <footer><a href="/contact/">Reserver →</a></footer>
+          </div>
+        </article>
+      </div>
+
+      <div class="course-mini-grid" aria-label="Autres cours de la semaine">
+        <article><p>Mer - 12h30</p><h4>Pilates Postural</h4><a href="/contact/">Reserver →</a></article>
+        <article><p>Jeu - 18h00</p><h4>Mobilite & renfo</h4><a href="/contact/">Reserver →</a></article>
+        <article><p>Jeu - 20h00</p><h4>Yoga restoratif</h4><a href="/contact/">Reserver →</a></article>
+        <article><p>Ven - 12h30</p><h4>Mouvement libre</h4><a href="/contact/">Reserver →</a></article>
+        <article><p>Ven - 19h00</p><h4>Yin profond</h4><a href="/contact/">Reserver →</a></article>
+        <article><p>Sam - 10h00</p><h4>Hatha long</h4><a href="/contact/">Reserver →</a></article>
+        <article><p>Sam - 11h45</p><h4>Pilates seniors</h4><a href="/contact/">Reserver →</a></article>
+        <article><p>Sam - 16h00</p><h4>Atelier souffle</h4><a href="/contact/">Reserver →</a></article>
       </div>
     </section>
 
-    <section id="tarifs" class="page-section section-pad">
-      <div class="section-head narrow">
-        <p class="eyebrow">Tarifs</p>
-        <h2>Des prix simples,<br /><em>a completer</em>.</h2>
+    <section id="tarifs" class="cours-section">
+      <div class="cours-wrap">
+        <div class="cours-head">
+          <span class="cours-num">05 - Tarifs & carnets</span>
+          <h2>Clair, simple,<br />sans <em>engagement cache.</em></h2>
+          <p>Le premier cours est offert sur inscription. Ensuite, a vous de voir - a l'unite, en carnet, ou en abonnement.</p>
+        </div>
+        <div class="cours-pricing">
+          <div>
+            <span>A l'unite</span>
+            <strong>18<sup>€</sup></strong>
+            <p>le cours - sans abonnement</p>
+            <ul>
+              <li>Tous les cours collectifs</li>
+              <li>Tapis & materiel fournis</li>
+              <li>Annulation jusqu'a 4h avant</li>
+            </ul>
+            <a href="/contact/" class="btn-line">Reserver un cours →</a>
+          </div>
+          <div class="feature">
+            <span>Carnet - 10 cours</span>
+            <strong>150<sup>€</sup></strong>
+            <p>soit 15 € le cours - valable 4 mois</p>
+            <ul>
+              <li>10 cours au choix dans la semaine</li>
+              <li>Le plus souple - pas de date imposee</li>
+              <li>Transmissible a un proche</li>
+            </ul>
+            <a href="/contact/" class="btn btn-primary">Prendre un carnet</a>
+          </div>
+          <div>
+            <span>Abonnement</span>
+            <strong>79<sup>€</sup></strong>
+            <p>par mois - cours illimites</p>
+            <ul>
+              <li>Acces illimite aux cours collectifs</li>
+              <li>Tarif reduit sur les ateliers</li>
+              <li>Sans engagement de duree</li>
+            </ul>
+            <a href="/contact/" class="btn-line">S'abonner →</a>
+          </div>
+        </div>
+        <p class="cours-note">Creneaux a tarif reduit - cours adaptes seniors & post-therapie - le mieux-etre ne doit pas etre un privilege</p>
       </div>
-      <div class="pricing-grid">
-        <article class="pricing-card accent-studio"><p class="mini">Unite</p><h3>Cours a l'unite</h3><p>Prix final a renseigner avant mise en ligne.</p></article>
-        <article class="pricing-card accent-studio"><p class="mini">Carnet</p><h3>Carnets & abonnements</h3><p>Validite, conditions et annulation a clarifier dans la FAQ.</p></article>
+    </section>
+
+    <section class="cours-section paper">
+      <div class="cours-wrap">
+        <div class="cours-head">
+          <span class="cours-num">06 - Celles qui enseignent</span>
+          <h2>Des professeures<br /><em>attentives.</em></h2>
+        </div>
+        <div class="cours-team">
+          <article>
+            <div class="cours-portrait fern"><span>[ portrait - Solene ]</span></div>
+            <div><h3>Solene Mercier</h3><span>Yoga - Yin - restoratif</span><p>Une pedagogie lente et precise, attentive au souffle. Specialiste du Yin et des pratiques de recuperation.</p><a href="#">Instagram</a></div>
+          </article>
+          <article>
+            <div class="cours-portrait storm"><span>[ portrait - Lea ]</span></div>
+            <div><h3>Lea Vasseur</h3><span>Pilates - Vinyasa</span><p>Le centre du corps et l'alignement, sans rigidite. Vinyasa dynamique le matin, Pilates postural le midi.</p><a href="#">Instagram</a></div>
+          </article>
+          <article>
+            <div class="cours-portrait foam"><span>[ portrait - Anais ]</span></div>
+            <div><h3>Anais Pichard</h3><span>Mobilite - renforcement</span><p>Le mouvement fonctionnel et la mobilite articulaire. Ideale pour les reprises et le travail des douleurs.</p><a href="#">Instagram</a></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="cours-section">
+      <div class="cours-wrap">
+        <div class="cours-head">
+          <span class="cours-num">07 - Avant de venir</span>
+          <h2>Quelques questions<br /><em>que l'on nous pose.</em></h2>
+        </div>
+        <div class="cours-faq">
+          <details><summary>Faut-il etre souple ou sportive ?<span></span></summary><p>Non, surtout pas. On vient justement pour gagner en souplesse et en aisance. Les cours s'adaptent a chaque corps - on commence ou l'on en est.</p></details>
+          <details><summary>Quel materiel apporter ?<span></span></summary><p>Une tenue confortable et votre serviette pour les pratiques au sol. Tapis, bolsters, briques et materiel sont fournis sur place.</p></details>
+          <details><summary>C'est adapte si je reprends apres une longue pause ?<span></span></summary><p>Tout a fait. Les cours de mobilite, Hatha doux et renforcement doux sont penses pour les reprises. Dites-le nous, on vous oriente vers le bon creneau.</p></details>
+          <details><summary>Et si j'ai des douleurs ?<span></span></summary><p>Signalez-les a l'arrivee : le professeur adapte les postures. Nos cours de mobilite sont particulierement indiques pour travailler en douceur autour d'une douleur.</p></details>
+          <details><summary>Comment reserver et annuler ?<span></span></summary><p>La reservation se fait sur HelloResa. L'annulation est possible jusqu'a 4 heures avant le cours, sans frais - la place est rendue a la liste d'attente.</p></details>
+        </div>
+        <a href="/faq/" class="btn-line">Toutes les questions →</a>
+      </div>
+    </section>
+
+    <section class="cours-cta">
+      <div class="cours-wrap">
+        <h2>Votre premier cours<br />est <em>pour nous.</em></h2>
+        <div>
+          <p>On vous accueille avec un the chaud, on fait le tour de la salle, on commence en douceur. Pas d'engagement, pas de pression.</p>
+          <div class="cours-actions">
+            <a href="/contact/" class="btn btn-light">Reserver mon 1er cours</a>
+            <a href="#planning" class="btn-line on-dark">Voir le planning →</a>
+          </div>
+        </div>
       </div>
     </section>
   </main>

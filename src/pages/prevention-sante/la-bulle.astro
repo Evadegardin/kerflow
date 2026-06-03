@@ -1,0 +1,60 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import SiteHeader from "../../components/SiteHeader.astro";
+import SiteFooter from "../../components/SiteFooter.astro";
+---
+
+<BaseLayout
+  title="La Bulle - KerFlow Consult"
+  description="La Bulle, espace KerFlow Consult pour les consultations en prevention sante, sommeil, alimentation, stress et comportements de sante a Clamart."
+>
+  <SiteHeader />
+  <main>
+    <section class="page-hero section-pad accent-consult">
+      <div>
+        <p class="eyebrow">KerFlow Consult</p>
+        <h1>La Bulle,<br />pour la <em>prévention santé</em>.</h1>
+      </div>
+      <div>
+        <div class="service-mark" aria-hidden="true">Consult<br /><span>sante</span></div>
+        <p>Un espace de consultation pour avancer sur le sommeil, l'alimentation, le stress, l'activite physique et les comportements de sante.</p>
+        <div class="actions">
+          <a class="btn btn-primary" href="/contact/">Prendre rendez-vous <span aria-hidden="true">→</span></a>
+        </div>
+      </div>
+    </section>
+
+    <section class="page-section section-pad soft-band">
+      <div class="section-head two">
+        <div>
+          <p class="eyebrow">Accompagnement</p>
+          <h2>Comprendre,<br />ajuster,<br /><em>tenir dans la durée</em>.</h2>
+        </div>
+        <p>La Bulle regroupe les consultations individuelles et les accompagnements en prevention sante, dans une approche douce, serieuse et non culpabilisante.</p>
+      </div>
+      <div class="page-card-grid">
+        <article class="page-card accent-consult"><h3>Sommeil</h3><p>Rythmes, recuperation, fatigue et routines realistes.</p></article>
+        <article class="page-card accent-consult"><h3>Alimentation</h3><p>Reperes concrets, sans regime ni injonction.</p></article>
+        <article class="page-card accent-consult"><h3>Stress</h3><p>Charge mentale, respiration, regulation et equilibre quotidien.</p></article>
+      </div>
+    </section>
+
+    <section class="section-pad">
+      <div class="content-split">
+        <div>
+          <p class="eyebrow">KerFlow Consult</p>
+          <h2>Une consultation<br /><em>personnalisée</em>.</h2>
+        </div>
+        <div class="body-copy">
+          <p>Les rendez-vous peuvent intégrer la NAPSOthérapie, l'activite physique adaptee, les habitudes de vie et le bien-etre mental.</p>
+          <p>L'objectif est d'aider chaque personne a identifier les leviers utiles, puis a les installer progressivement dans son quotidien.</p>
+          <div class="actions">
+            <a class="btn-line" href="/prevention-sante/le-cocon/">Voir Le Cocon →</a>
+            <a class="btn-line" href="/contact/">Contacter KerFlow</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <SiteFooter />
+</BaseLayout>

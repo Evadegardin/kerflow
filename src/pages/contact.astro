@@ -5,67 +5,151 @@ import SiteFooter from "../components/SiteFooter.astro";
 ---
 
 <BaseLayout
-  title="Contact - KerFlow Clamart"
-  description="Adresse, acces, horaires et contact KerFlow a Clamart."
+  title="Contact · KerFlow · Clamart"
+  description="Coordonnées, accès, horaires et formulaire de contact KerFlow à Clamart."
 >
   <SiteHeader />
-  <main>
-    <section class="page-hero section-pad accent-location">
-      <div>
-        <p class="eyebrow">Contact</p>
-        <h1>Venir chez <em>KerFlow</em>.</h1>
+  <main class="contact-page">
+    <section class="contact-hero section-pad" data-screen-label="Contact · Hero">
+      <div class="contact-hero-grid">
+        <div>
+          <p class="eyebrow">On vous attend</p>
+          <h1>
+            Venir chez<br />
+            <em>KerFlow.</em>
+          </h1>
+        </div>
+        <aside class="contact-hero-aside">
+          <p>
+            Une maison à deux pas de la gare de Clamart. Poussez la porte, écrivez-nous, ou
+            appelez : <em>on prend le temps de répondre</em>.
+          </p>
+        </aside>
       </div>
-      <p>Une page simple pour trouver l'adresse, poser une question, reserver, demander un rendez-vous ou proposer une demande professionnelle.</p>
     </section>
 
-    <section class="visit section-pad">
-      <div class="visit-grid">
+    <section class="contact-section contact-section-access section-pad" data-screen-label="Coordonnées">
+      <div class="contact-grid">
         <div>
-          <p class="eyebrow">Infos pratiques</p>
-          <h2>A deux pas<br />de la gare<br /><em>de Clamart.</em></h2>
-          <div class="info-list">
-            <div><span>Adresse</span><p>12 rue de la Roche<br />92140 Clamart</p></div>
-            <div><span>Acces</span><p>Transilien N - Clamart (5 min a pied)<br />Tramway T6 - Mairie de Clamart<br />Parking rue Pierre Brossolette</p></div>
-            <div><span>Horaires</span><p>Mardi → samedi - 9h00 - 20h00<br />Lundi & dimanche - ferme</p></div>
-            <div><span>Contact</span><p>bonjour@kerflow.fr<br />01 46 38 12 34</p></div>
+          <span class="sec-num">01 · Coordonnées & accès</span>
+          <h2 class="contact-title">À deux pas de la<br /><em>gare.</em></h2>
+          <div class="coord-list">
+            <div class="coord-row"><span class="lab">Adresse</span><span class="val">12 rue de la Roche<br />92140 Clamart</span></div>
+            <div class="coord-row"><span class="lab">Téléphone</span><span class="val"><a href="tel:+33146381234">01 46 38 12 34</a></span></div>
+            <div class="coord-row"><span class="lab">E-mail</span><span class="val"><a href="mailto:bonjour@kerflow.fr">bonjour@kerflow.fr</a></span></div>
+            <div class="coord-row"><span class="lab">Train</span><span class="val">Transilien N · gare de Clamart · 5 min à pied</span></div>
+            <div class="coord-row"><span class="lab">Tram</span><span class="val">T6 · Mairie de Clamart</span></div>
+            <div class="coord-row"><span class="lab">Parking</span><span class="val">Stationnement de surface rue de la Roche · parking public à 3 min</span></div>
+            <div class="coord-row"><span class="lab">Repères</span><span class="val">Face au square · à côté de la pharmacie de la gare</span></div>
           </div>
         </div>
-        <div class="map-card">
-          <div class="map-illustration">
-            <svg viewBox="0 0 400 280" aria-label="Carte illustree entre la gare de Clamart et KerFlow">
-              <path d="M-20 80C80 60 160 100 220 80C300 60 380 100 420 80"></path>
-              <path d="M-20 160C60 180 140 140 220 170C300 195 360 170 420 180"></path>
-              <path d="M80-10C100 60 90 140 130 220C140 250 130 280 140 300"></path>
-              <path d="M240-10C260 80 230 160 270 240C280 270 285 290 280 310"></path>
-              <path class="rail" d="M0 230C80 240 200 220 400 250"></path>
-              <rect x="158" y="210" width="44" height="20"></rect>
-              <text x="180" y="262">GARE DE CLAMART</text>
-              <circle class="pin" cx="260" cy="100" r="6"></circle>
-              <circle class="pin-ring" cx="260" cy="100" r="14"></circle>
-              <text class="label" x="280" y="104">KerFlow</text>
-              <text x="280" y="122">12 RUE DE LA ROCHE</text>
-              <path class="walk" d="M180 215C200 180 230 140 256 105"></path>
-            </svg>
-            <div class="map-caption mono"><span>Clamart - 92140</span><span>5 min a pied de la gare</span></div>
+
+        <div class="contact-map-frame">
+          <div class="contact-map-card" aria-label="Plan d'accès KerFlow">
+            <div class="contact-map-illustration">
+              <svg viewBox="0 0 600 400" role="img" aria-label="Plan stylisé du quartier">
+                <g fill="none" stroke="rgba(241,235,225,0.12)" stroke-width="1">
+                  <path d="M-20 80 C140 64 260 110 400 86 C520 66 560 100 620 84"></path>
+                  <path d="M-20 150 C140 134 260 180 400 156 C520 136 560 170 620 154"></path>
+                  <path d="M-20 230 C140 214 260 260 400 236 C520 216 560 250 620 234"></path>
+                  <path d="M-20 310 C140 294 260 340 400 316 C520 296 560 330 620 314"></path>
+                </g>
+                <g fill="none" stroke="rgba(241,235,225,0.42)" stroke-width="2.5" stroke-linecap="round">
+                  <path d="M0 280 C140 266 260 300 400 286 C520 274 560 300 600 288"></path>
+                  <path d="M200 0 C212 100 224 220 240 340 C246 380 242 396 246 400"></path>
+                  <path d="M430 0 C442 110 452 220 458 330 C460 380 458 396 460 400"></path>
+                </g>
+                <g transform="translate(210 286)">
+                  <rect x="-28" y="-12" width="56" height="24" fill="#f1ebe1"></rect>
+                  <text x="0" y="4" font-family="DM Mono, monospace" font-size="10" letter-spacing="1" text-anchor="middle" fill="#0e2a2c">GARE</text>
+                  <text x="0" y="38" font-family="DM Mono, monospace" font-size="9.5" letter-spacing="2" text-anchor="middle" fill="rgba(241,235,225,0.7)">CLAMART · TRANSILIEN N</text>
+                </g>
+                <g transform="translate(360 168)">
+                  <circle class="pin-ring" cx="0" cy="0" r="46" fill="none" stroke="#d99a78" stroke-width="0.8" opacity="0.35"></circle>
+                  <circle cx="0" cy="0" r="26" fill="none" stroke="#d99a78" stroke-width="1.2" opacity="0.6"></circle>
+                  <circle class="pin" cx="0" cy="0" r="9" fill="#a05a3a"></circle>
+                  <text x="22" y="-4" font-family="Fraunces, serif" font-size="22" font-style="italic" fill="#f1ebe1">KerFlow</text>
+                  <text x="22" y="17" font-family="DM Mono, monospace" font-size="9.5" letter-spacing="2" fill="rgba(241,235,225,0.72)">12 RUE DE LA ROCHE</text>
+                </g>
+                <path class="walk" d="M212 278 C238 244 296 206 350 176" fill="none" stroke="#d99a78" stroke-width="2.5" stroke-dasharray="3 6"></path>
+              </svg>
+              <span class="map-coord top">N · 48.802 / E · 2.252</span>
+              <span class="map-coord bottom">5 min à pied · gare de Clamart</span>
+            </div>
           </div>
           <footer>
-            <span>Voir l'itineraire</span>
+            <span>Voir l'itinéraire</span>
             <a class="btn-line" href="https://www.google.com/maps" target="_blank" rel="noreferrer">Ouvrir Google Maps</a>
           </footer>
         </div>
       </div>
     </section>
 
-    <section id="newsletter" class="final-cta section-pad">
-      <div>
-        <h2>Une question,<br />une premiere visite,<br /><em>une demande pro</em> ?</h2>
-        <form class="final-newsletter">
-          <p>Le formulaire final pourra router les demandes : question generale, premiere visite, rendez-vous sante ou soin, demande de location.</p>
-          <label><span class="sr-only">Votre adresse e-mail</span><input type="email" placeholder="votre adresse e-mail" /></label>
-          <div class="actions final-newsletter-actions">
-            <button class="btn btn-accent" type="submit">Etre recontacte <span aria-hidden="true">→</span></button>
+    <section class="contact-section contact-section-hours section-pad" data-screen-label="Horaires">
+      <div class="sec-head">
+        <span class="sec-num">02 · Horaires</span>
+        <h2 class="contact-title">Ouvert du mardi<br />au <em>samedi.</em></h2>
+      </div>
+      <div class="contact-steps">
+        <div class="contact-step"><span class="st-num">i</span><h3>Accueil & visites</h3><p>Mardi au samedi · 9h00 - 20h00. Poussez la porte : on vous fait le tour avec plaisir.</p></div>
+        <div class="contact-step"><span class="st-num">ii</span><h3>Cours collectifs</h3><p>Premiers cours dès 7h15, derniers en soirée jusqu'à 21h15. Voir le planning détaillé.</p></div>
+        <div class="contact-step"><span class="st-num">iii</span><h3>Rendez-vous & soins</h3><p>Sur rendez-vous à La Bulle et au Cocon, selon les disponibilités des intervenant·es.</p></div>
+      </div>
+      <p class="contact-note">Fermé le lundi & le dimanche · horaires aménagés pendant les vacances scolaires</p>
+    </section>
+
+    <section class="contact-section contact-section-form section-pad" data-screen-label="Formulaire">
+      <div class="contact-grid contact-form-grid">
+        <div>
+          <span class="sec-num">03 · Nous écrire</span>
+          <h2 class="contact-title">Une question ?<br /><em>On répond vite.</em></h2>
+          <p class="contact-copy">
+            Première visite, cours, soin, ou demande professionnelle : dites-nous l'essentiel,
+            on revient vers vous sous 48 h ouvrées.
+          </p>
+          <div class="mood-words">
+            <span class="fill"><em>À l'écoute</em></span>
+            <span>Sans pression</span>
+            <span>Humain</span>
+          </div>
+        </div>
+
+        <form class="contact-form-card" onsubmit="return false;" aria-label="Formulaire de contact">
+          <div class="form-grid">
+            <div class="field"><label for="nom">Prénom & nom</label><input id="nom" type="text" placeholder="Votre nom" /></div>
+            <div class="field"><label for="mail">E-mail</label><input id="mail" type="email" placeholder="vous@exemple.fr" /></div>
+            <div class="field full"><label>Votre demande concerne</label>
+              <div class="radio-row">
+                <label class="radio-chip"><input type="radio" name="sujet" checked /><span>Question générale</span></label>
+                <label class="radio-chip"><input type="radio" name="sujet" /><span>Première visite</span></label>
+                <label class="radio-chip"><input type="radio" name="sujet" /><span>Prévention santé</span></label>
+                <label class="radio-chip"><input type="radio" name="sujet" /><span>Demande pro</span></label>
+                <label class="radio-chip"><input type="radio" name="sujet" /><span>Suggestion</span></label>
+              </div>
+            </div>
+            <div class="field full"><label for="message">Votre message</label><textarea id="message" placeholder="Dites-nous comment on peut vous aider..."></textarea></div>
+          </div>
+          <div class="form-foot">
+            <p class="fine">En envoyant ce formulaire, vous acceptez d'être recontacté·e. Vos données ne sont jamais partagées ni revendues.</p>
+            <button type="submit" class="btn contact-submit"><span>Envoyer</span><span aria-hidden="true">→</span></button>
           </div>
         </form>
+      </div>
+    </section>
+
+    <section class="contact-cta" data-screen-label="CTA">
+      <div>
+        <h2>Suivez la vie<br />de la <em>maison.</em></h2>
+      </div>
+      <div>
+        <p>
+          Les coulisses, les rendez-vous, un conseil de temps en temps. On partage doucement,
+          sans inonder votre fil.
+        </p>
+        <div class="cta-actions">
+          <a href="#" class="btn btn-light"><span>Instagram</span></a>
+          <a href="/ateliers-ressources/#newsletter" class="btn-line light">Recevoir le journal</a>
+        </div>
       </div>
     </section>
   </main>

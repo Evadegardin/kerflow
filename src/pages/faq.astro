@@ -5,27 +5,172 @@ import SiteFooter from "../components/SiteFooter.astro";
 ---
 
 <BaseLayout
-  title="FAQ - KerFlow"
-  description="Questions frequentes KerFlow : premiere visite, reservation, tarifs, cours, soins, accompagnements et location professionnelle."
+  title="FAQ · KerFlow · Clamart"
+  description="Questions fréquentes KerFlow : première visite, réservation, tarifs, cours, prévention santé et location professionnelle."
 >
   <SiteHeader />
   <main>
-    <section class="page-hero section-pad accent-location">
+    <section class="page-hero faq-hero section-pad accent-location">
       <div>
-        <p class="eyebrow">FAQ</p>
-        <h1>Les questions qui <em>rassurent</em> avant de venir.</h1>
+        <p class="eyebrow">Vos questions, nos réponses</p>
+        <h1>
+          Tout ce qu'on<br />
+          nous demande<br />
+          <em>avant de venir.</em>
+        </h1>
       </div>
-      <p>La FAQ n'est pas dans le menu principal, mais elle reste accessible depuis le footer et les pages importantes.</p>
+      <aside class="faq-hero-aside">
+        <p>
+          Première visite, réservation, tarifs, prévention santé, location. Si votre question n'y est pas,
+          <em>écrivez-nous</em> - on répond vite.
+        </p>
+        <div class="actions">
+          <a class="btn-line" href="/contact/">Poser une question</a>
+        </div>
+      </aside>
     </section>
 
-    <section class="section-pad">
-      <div class="faq-grid">
-        <article id="premiere-visite" class="faq-item"><h3>Premiere visite</h3><ul><li>Comment se deroule un premier cours ?</li><li>Faut-il etre souple ou sportive ?</li><li>Quel materiel apporter ?</li><li>Est-ce adapte si je reprends apres une longue pause ?</li><li>Est-ce adapte si j'ai des douleurs ?</li></ul></article>
-        <article class="faq-item"><h3>Reservation</h3><ul><li>Comment reserver ?</li><li>Comment annuler ?</li><li>Que se passe-t-il en cas de retard ?</li><li>Comment fonctionne la liste d'attente ?</li><li>Reservation via HelloResa.</li></ul></article>
-        <article class="faq-item"><h3>Tarifs</h3><ul><li>Cours a l'unite</li><li>Carnets</li><li>Validite</li><li>Remboursement</li><li>Moyens de paiement</li></ul></article>
-        <article class="faq-item"><h3>Cours</h3><ul><li>Quel cours choisir ?</li><li>Yoga ou Pilates ?</li><li>Cours adaptes aux douleurs ?</li><li>Cours adaptes aux seniors ?</li><li>Cours pour reprendre en douceur ?</li></ul></article>
-        <article class="faq-item"><h3>Soins & accompagnements</h3><ul><li>Comment choisir un praticien ?</li><li>Quelle difference entre La Bulle et Le Cocon ?</li><li>Comment se deroule une consultation ?</li><li>Comment reserver un massage ou un soin ?</li></ul></article>
-        <article class="faq-item"><h3>Location pro</h3><ul><li>Comment louer un espace ?</li><li>Tarifs</li><li>Materiel</li><li>Disponibilites</li><li>Conditions</li></ul></article>
+    <section class="section-pad faq-section">
+      <div class="faq-layout">
+        <nav class="faq-toc" aria-label="Sommaire des questions">
+          <a href="#premiere">Première visite</a>
+          <a href="#reservation">Réservation</a>
+          <a href="#tarifs">Tarifs</a>
+          <a href="#cours">Cours</a>
+          <a href="#prevention-sante">Prévention santé</a>
+          <a href="#location">Location pro</a>
+        </nav>
+
+        <div class="faq-content">
+          <div class="faq-group" id="premiere">
+            <div class="faq-group-head"><span>01</span><h2>Première visite</h2></div>
+            <details class="qa" open>
+              <summary>Comment se déroule un premier cours ?<span aria-hidden="true"></span></summary>
+              <div class="qa-body"><p>Venez 10 minutes avant : on vous accueille, on vous fait le tour de la salle et de la tisanerie, et le professeur fait connaissance avec vous avant de commencer. Le premier cours est offert sur inscription - sans engagement.</p></div>
+            </details>
+            <details class="qa">
+              <summary>Faut-il être souple ou sportive ?<span aria-hidden="true"></span></summary>
+              <div class="qa-body"><p>Non, surtout pas. On vient justement pour gagner en souplesse et en aisance. Tous les cours s'adaptent à chaque corps - on commence où l'on en est, sans esprit de compétition.</p></div>
+            </details>
+            <details class="qa">
+              <summary>Quel matériel apporter ?<span aria-hidden="true"></span></summary>
+              <div class="qa-body"><p>Une tenue confortable et votre serviette pour les pratiques au sol. Tapis, bolsters, briques, sangles et tout le matériel sont fournis sur place.</p></div>
+            </details>
+            <details class="qa">
+              <summary>Est-ce adapté si je reprends après une longue pause ?<span aria-hidden="true"></span></summary>
+              <div class="qa-body"><p>Tout à fait. Les cours de mobilité, Hatha doux et renforcement doux sont pensés pour les reprises. Dites-le nous à l'inscription, on vous oriente vers le bon créneau.</p></div>
+            </details>
+            <details class="qa">
+              <summary>Est-ce adapté si j'ai des douleurs ?<span aria-hidden="true"></span></summary>
+              <div class="qa-body"><p>Signalez-les à l'arrivée : le professeur adapte les postures. Nos cours de mobilité sont particulièrement indiqués pour travailler en douceur autour d'une douleur. En cas de doute, un avis médical reste recommandé.</p></div>
+            </details>
+          </div>
+
+          <div class="faq-group" id="reservation">
+            <div class="faq-group-head"><span>02</span><h2>Réservation</h2></div>
+            <details class="qa">
+              <summary>Comment réserver un cours ?<span aria-hidden="true"></span></summary>
+              <div class="qa-body"><p>La réservation se fait en ligne sur HelloResa, accessible depuis chaque cours du planning. Vous choisissez le créneau, vous réservez votre place - c'est immédiat.</p></div>
+            </details>
+            <details class="qa">
+              <summary>Comment annuler ?<span aria-hidden="true"></span></summary>
+              <div class="qa-body"><p>L'annulation est possible jusqu'à 4 heures avant le cours, sans frais. La place est alors rendue à la liste d'attente. Passé ce délai, le cours est décompté.</p></div>
+            </details>
+            <details class="qa">
+              <summary>Et si j'arrive en retard ?<span aria-hidden="true"></span></summary>
+              <div class="qa-body"><p>Pour le confort du groupe et la sécurité de la pratique, l'accès n'est plus garanti après le début du cours. Prévoyez d'arriver quelques minutes en avance.</p></div>
+            </details>
+            <details class="qa">
+              <summary>Comment fonctionne la liste d'attente ?<span aria-hidden="true"></span></summary>
+              <div class="qa-body"><p>Si un cours est complet, inscrivez-vous sur la liste d'attente : vous êtes prévenu·e automatiquement dès qu'une place se libère, dans l'ordre d'inscription.</p></div>
+            </details>
+          </div>
+
+          <div class="faq-group" id="tarifs">
+            <div class="faq-group-head"><span>03</span><h2>Tarifs</h2></div>
+            <details class="qa">
+              <summary>Quels sont les tarifs des cours ?<span aria-hidden="true"></span></summary>
+              <div class="qa-body"><p>18 € le cours à l'unité, 150 € le carnet de 10 cours (soit 15 € le cours), ou 79 €/mois en abonnement illimité sans engagement. Le premier cours est offert sur inscription.</p></div>
+            </details>
+            <details class="qa">
+              <summary>Quelle est la validité des carnets ?<span aria-hidden="true"></span></summary>
+              <div class="qa-body"><p>Le carnet de 10 cours est valable 4 mois à compter du premier cours. Il est transmissible à un·e proche.</p></div>
+            </details>
+            <details class="qa">
+              <summary>Les cours sont-ils remboursables ?<span aria-hidden="true"></span></summary>
+              <div class="qa-body"><p>Les cours non consommés ne sont pas remboursés, mais le carnet reste valable 4 mois et l'abonnement est sans engagement - résiliable à tout moment.</p></div>
+            </details>
+            <details class="qa">
+              <summary>Quels moyens de paiement acceptez-vous ?<span aria-hidden="true"></span></summary>
+              <div class="qa-body"><p>Carte bancaire en ligne et sur place, ainsi que les espèces. Des créneaux à tarif réduit existent - le mieux-être ne doit pas être un privilège : parlez-nous-en.</p></div>
+            </details>
+          </div>
+
+          <div class="faq-group" id="cours">
+            <div class="faq-group-head"><span>04</span><h2>Choisir son cours</h2></div>
+            <details class="qa">
+              <summary>Quel cours choisir pour commencer ?<span aria-hidden="true"></span></summary>
+              <div class="qa-body"><p>Pour une première fois, on conseille un Hatha doux, un cours de mobilité ou un Pilates postural. En cas de doute, écrivez-nous : on choisit ensemble selon vos envies et votre état du moment.</p></div>
+            </details>
+            <details class="qa">
+              <summary>Yoga ou Pilates ?<span aria-hidden="true"></span></summary>
+              <div class="qa-body"><p>Le yoga travaille le souffle, la souplesse et l'ancrage ; le Pilates renforce le centre du corps et la posture. Beaucoup alternent les deux - rien n'oblige à choisir.</p></div>
+            </details>
+            <details class="qa">
+              <summary>Y a-t-il des cours adaptés aux douleurs ?<span aria-hidden="true"></span></summary>
+              <div class="qa-body"><p>Oui : nos cours de mobilité et de renforcement doux sont pensés pour travailler en douceur autour des douleurs articulaires et de dos.</p></div>
+            </details>
+            <details class="qa">
+              <summary>Et pour les seniors ?<span aria-hidden="true"></span></summary>
+              <div class="qa-body"><p>Plusieurs cours sont adaptés aux seniors actifs : mobilité, Hatha doux, renforcement doux - attentifs, sans compétition, et en petits groupes.</p></div>
+            </details>
+          </div>
+
+          <div class="faq-group" id="prevention-sante">
+            <div class="faq-group-head"><span>05</span><h2>Prévention santé</h2></div>
+            <details class="qa">
+              <summary>Quelle différence entre La Bulle et Le Cocon ?<span aria-hidden="true"></span></summary>
+              <div class="qa-body"><p><strong>La Bulle</strong> est le cabinet d'accompagnement : consultations en prévention santé - alimentation, sommeil, stress, NAPSOthérapie. <strong>Le Cocon</strong> est le box de soin du corps : massages, drainage, réflexologie, relaxation.</p></div>
+            </details>
+            <details class="qa">
+              <summary>Comment choisir un·e praticien·ne ?<span aria-hidden="true"></span></summary>
+              <div class="qa-body"><p>Chaque intervenant·e a une fiche avec sa spécialité et son approche. Si vous hésitez, écrivez-nous votre besoin : on vous oriente vers la bonne personne.</p></div>
+            </details>
+            <details class="qa">
+              <summary>Comment se déroule une consultation ?<span aria-hidden="true"></span></summary>
+              <div class="qa-body"><p>Le premier rendez-vous fait le point : votre situation, vos objectifs, des pistes concrètes. On avance ensuite à votre rythme - sans injonction, sans engagement de durée.</p></div>
+            </details>
+            <details class="qa">
+              <summary>Comment réserver un massage ou un soin ?<span aria-hidden="true"></span></summary>
+              <div class="qa-body"><p>Directement avec le praticien ou la praticienne, via le formulaire de contact ou son lien dédié sur sa fiche. On vous accompagne pour fixer le bon créneau.</p></div>
+            </details>
+          </div>
+
+          <div class="faq-group" id="location">
+            <div class="faq-group-head"><span>06</span><h2>Location professionnelle</h2></div>
+            <details class="qa">
+              <summary>Comment louer un espace ?<span aria-hidden="true"></span></summary>
+              <div class="qa-body"><p>Remplissez le formulaire de la page « Louer un espace » en précisant l'espace souhaité et votre rythme. On revient vers vous sous 48 h pour une visite et vérifier les disponibilités.</p></div>
+            </details>
+            <details class="qa">
+              <summary>Quels sont les tarifs de location ?<span aria-hidden="true"></span></summary>
+              <div class="qa-body"><p>À partir de 10 €/h pour Le Cocon, 12 €/h pour La Bulle et 15 €/h pour La Salle, avec des forfaits demi-journée et journée. Les tarifs dégressifs s'appliquent aux créneaux réguliers.</p></div>
+            </details>
+            <details class="qa">
+              <summary>Quel matériel est disponible ?<span aria-hidden="true"></span></summary>
+              <div class="qa-body"><p>La Salle est équipée (tapis, bolsters, briques, élastiques, tables, chaises, miroir, enceinte). Le Cocon dispose d'une table de massage, d'un lavabo et d'une enceinte. Tisanerie et vestiaires sont partagés.</p></div>
+            </details>
+            <details class="qa">
+              <summary>Quelles sont les conditions ?<span aria-hidden="true"></span></summary>
+              <div class="qa-body"><p>On privilégie les partenariats réguliers, alignés avec l'univers prévention-santé de la maison. Les modalités précises (assurance, créneaux, durée) se définissent ensemble lors de la visite.</p></div>
+            </details>
+          </div>
+
+          <div class="faq-final">
+            <p>Une question qui n'est pas ici ?</p>
+            <a class="btn" href="/contact/">Nous écrire <span aria-hidden="true">→</span></a>
+          </div>
+        </div>
       </div>
     </section>
   </main>
