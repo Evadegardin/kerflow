@@ -1,0 +1,108 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import SiteHeader from "../components/SiteHeader.astro";
+import SiteFooter from "../components/SiteFooter.astro";
+---
+
+<BaseLayout
+  title="Le lieu - KerFlow Studio à Clamart"
+  description="Decouvrir KerFlow, maison de prevention-sante et de mieux-etre a Clamart : espaces, ambiance, histoire et approche."
+>
+  <SiteHeader />
+  <main>
+    <section class="page-hero section-pad accent-location">
+      <div>
+        <p class="eyebrow">Le lieu</p>
+        <h1>Une maison pour <em>bouger</em>, respirer, comprendre et prendre soin de soi.</h1>
+      </div>
+      <div>
+        <div class="service-mark" aria-hidden="true">Ker<br /><span>maison</span></div>
+        <p>KerFlow n'est ni un studio de performance, ni un centre bien-etre generaliste. C'est un lieu local, calme et humain, pense pour reprendre soin de soi sans pression.</p>
+      </div>
+    </section>
+
+    <section class="section-pad soft-band">
+      <div class="content-split">
+        <div>
+          <p class="eyebrow">Pourquoi KerFlow</p>
+          <h2>Un lieu hybride,<br /><em>simple</em> et serieux.</h2>
+        </div>
+        <div class="body-copy">
+          <p>KerFlow part d'un constat tres concret : fatigue, stress, douleurs, charge mentale, besoin de retrouver du souffle et de la confiance dans son corps. Le lieu rassemble mouvement, prevention sante, soins corporels et lien humain dans une meme maison.</p>
+          <p>Ici, on ne promet pas de transformation spectaculaire. On propose un cadre clair, doux et exigeant, ou les personnes peuvent avancer a leur rythme.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="page-section section-pad">
+      <div class="section-head two">
+        <div>
+          <p class="eyebrow">Le nom</p>
+          <h2><em>Ker</em> pour la maison,<br /><em>Flow</em> pour le mouvement.</h2>
+        </div>
+        <p>Le nom dit l'essentiel : un ancrage, un cadre accueillant, et une maniere de remettre de la fluidite dans le quotidien.</p>
+      </div>
+      <div class="page-card-grid">
+        <article class="page-card accent-location">
+          <p class="mini">Ker</p>
+          <h3>Maison</h3>
+          <p>Un lieu ou l'on arrive, ou l'on depose, ou l'on retrouve des reperes.</p>
+        </article>
+        <article class="page-card accent-studio">
+          <p class="mini">Flow</p>
+          <h3>Mouvement</h3>
+          <p>Une pratique adaptee, progressive, qui redonne de l'aisance sans forcer.</p>
+        </article>
+        <article class="page-card accent-consult">
+          <p class="mini">Care</p>
+          <h3>Prevention</h3>
+          <p>Une approche qui regarde le corps, le sommeil, l'alimentation et le stress comme un tout.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="page-section section-pad deep">
+      <div class="section-head two">
+        <div>
+          <p class="eyebrow">Les espaces</p>
+          <h2>Trois pieces,<br /><em>trois usages</em>.</h2>
+        </div>
+        <p>Chaque espace porte une fonction claire, avec la meme exigence de calme, de proprete et d'accueil.</p>
+      </div>
+      <div class="page-card-grid">
+        <article class="page-card accent-studio">
+          <p class="mini">01 - Pratique</p>
+          <h3>La salle de pratique</h3>
+          <p>Yoga, Pilates, mobilite, renforcement doux et respiration en petits groupes.</p>
+        </article>
+        <article id="la-bulle" class="page-card accent-consult">
+          <p class="mini">02 - Consultation</p>
+          <h3>La Bulle</h3>
+          <p>Un espace lumineux pour les accompagnements en prevention sante.</p>
+        </article>
+        <article id="le-cocon" class="page-card accent-rituel">
+          <p class="mini">03 - Soin</p>
+          <h3>Le Cocon</h3>
+          <p>Une piece feutree pour massages, reflexologie, drainage et soins corporels.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="charte" class="charter section-pad">
+      <div class="charter-grid">
+        <div>
+          <p class="eyebrow">Charte de la maison</p>
+          <h2>Un cadre calme,<br />propre, <em>respectueux</em>.</h2>
+          <p>La qualite du lieu tient a peu de choses : arriver un peu avant, ralentir, respecter le silence des autres et laisser la maison dans l'etat ou on aimerait la trouver.</p>
+        </div>
+        <ol>
+          <li><span>01</span>On arrive cinq a dix minutes avant le cours.</li>
+          <li><span>02</span>On eteint le telephone dans les espaces de pratique et de soin.</li>
+          <li><span>03</span>On respecte les temps calmes avant et apres les seances.</li>
+          <li><span>04</span>On avance a son rythme, sans comparaison.</li>
+        </ol>
+      </div>
+    </section>
+  </main>
+  <SiteFooter />
+</BaseLayout>

@@ -1,0 +1,69 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import SiteHeader from "../components/SiteHeader.astro";
+import SiteFooter from "../components/SiteFooter.astro";
+---
+
+<BaseLayout
+  title="Ateliers et ressources - KerFlow"
+  description="Ateliers, evenements, conferences et ressources KerFlow autour du sommeil, stress, alimentation, mobilite et prevention sante."
+>
+  <SiteHeader />
+  <main>
+    <section class="page-hero section-pad accent-atelier">
+      <div>
+        <p class="eyebrow">Ateliers & ressources</p>
+        <h1>Approfondir,<br />experimenter,<br /><em>repartir avec des outils</em>.</h1>
+      </div>
+      <div>
+        <div class="service-mark" aria-hidden="true">Ateliers<br /><span>ressources</span></div>
+        <p>La page rassemble les rendez-vous du lieu et des contenus utiles pour prolonger la prevention sante au quotidien.</p>
+      </div>
+    </section>
+
+    <section class="page-section section-pad soft-band">
+      <div class="section-head split">
+        <div>
+          <p class="eyebrow">Evenements a venir</p>
+          <h2>Des formats courts,<br /><em>concrets</em>.</h2>
+        </div>
+        <a class="btn-line" href="/contact/">Proposer un atelier</a>
+      </div>
+      <div class="workshop-grid">
+        <article class="workshop-card"><div class="photo photo-petrol"><span>[ photo - sommeil ]</span></div><div><p class="mini clay">Sommeil</p><h3>Sommeil & charge mentale</h3><p>Comprendre les rythmes et construire une routine realiste.</p><footer><span>3h</span><a href="/contact/">Reserver →</a></footer></div></article>
+        <article class="workshop-card"><div class="photo photo-foam"><span>[ photo - souffle ]</span></div><div><p class="mini clay">Stress</p><h3>Respiration & relachement</h3><p>Tester des outils simples pour revenir au calme.</p><footer><span>2h</span><a href="/contact/">Reserver →</a></footer></div></article>
+        <article class="workshop-card"><div class="photo photo-clay"><span>[ photo - nutrition ]</span></div><div><p class="mini clay">Alimentation</p><h3>Nutrition douce</h3><p>Mieux manger sans regime ni culpabilite.</p><footer><span>1h30</span><a href="/contact/">Reserver →</a></footer></div></article>
+        <article class="workshop-card"><div class="photo photo-stone"><span>[ photo - mobilite ]</span></div><div><p class="mini clay">Mobilite</p><h3>Reprise apres 50 ans</h3><p>Retrouver amplitude, stabilite et confiance.</p><footer><span>2h</span><a href="/contact/">Reserver →</a></footer></div></article>
+      </div>
+    </section>
+
+    <section class="page-section section-pad">
+      <div class="section-head two">
+        <div>
+          <p class="eyebrow">Articles & conseils</p>
+          <h2>Une base pour le <em>SEO</em> et la vie du lieu.</h2>
+        </div>
+        <p>Les contenus pourront devenir de vraies pages articles plus tard. Pour l'instant, les thematiques sont posees.</p>
+      </div>
+      <div class="page-card-grid">
+        <article class="page-card accent-consult"><h3>Sommeil</h3><p>Rythmes, recuperation, routines, relaxation.</p></article>
+        <article class="page-card accent-studio"><h3>Mouvement</h3><p>Reprise d'activite, mobilite, douleurs, bien vieillir.</p></article>
+        <article class="page-card accent-rituel"><h3>Soin de soi</h3><p>Stress, menopause, post-partum, fatigue et charge mentale.</p></article>
+      </div>
+    </section>
+
+    <section id="newsletter" class="final-cta section-pad">
+      <div>
+        <h2>Recevoir les prochains <em>ateliers</em>.</h2>
+        <form class="final-newsletter">
+          <p>Newsletter KerFlow : actualites du lieu, conseils prevention-sante et prochains evenements.</p>
+          <label><span class="sr-only">Votre adresse e-mail</span><input type="email" placeholder="votre adresse e-mail" /></label>
+          <div class="actions final-newsletter-actions">
+            <button class="btn btn-accent" type="submit">S'inscrire <span aria-hidden="true">→</span></button>
+          </div>
+        </form>
+      </div>
+    </section>
+  </main>
+  <SiteFooter />
+</BaseLayout>

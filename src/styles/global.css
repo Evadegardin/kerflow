@@ -2101,12 +2101,220 @@ figcaption {
   position: relative;
 }
 
+.page-hero {
+  display: grid;
+  grid-template-columns: minmax(0, 1.1fr) minmax(280px, 0.62fr);
+  gap: clamp(40px, 7vw, 104px);
+  align-items: end;
+  min-height: 58vh;
+  padding-top: clamp(88px, 10vw, 156px);
+  border-bottom: 1px solid var(--rule);
+}
+
+.page-hero h1 {
+  margin: 0;
+  max-width: 920px;
+  font-size: clamp(54px, 8vw, 118px);
+  line-height: 0.95;
+}
+
+.page-hero p {
+  margin: 0;
+  color: var(--granite-500);
+  font-size: clamp(18px, 2vw, 24px);
+  line-height: 1.45;
+}
+
+.page-intro-grid,
+.content-split,
+.page-card-grid,
+.faq-grid,
+.pricing-grid {
+  display: grid;
+  gap: 1px;
+}
+
+.page-intro-grid {
+  grid-template-columns: minmax(220px, 0.42fr) 1fr;
+  background: var(--rule);
+}
+
+.page-intro-grid > * {
+  background: var(--paper);
+  padding: clamp(28px, 4vw, 56px);
+}
+
+.content-split {
+  grid-template-columns: minmax(220px, 0.4fr) 1fr;
+  gap: clamp(32px, 6vw, 96px);
+  align-items: start;
+}
+
+.content-split h2,
+.page-section h2 {
+  margin: 0;
+  font-size: clamp(38px, 5vw, 72px);
+  line-height: 1;
+}
+
+.content-split p,
+.page-section p {
+  color: var(--granite-500);
+}
+
+.page-card-grid {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  background: var(--rule);
+}
+
+.page-card-grid.two {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.page-card {
+  background: var(--paper);
+  padding: clamp(28px, 4vw, 48px);
+  min-height: 260px;
+}
+
+.page-card h3,
+.faq-item h3,
+.pricing-card h3 {
+  margin: 0 0 18px;
+  font-family: var(--serif);
+  font-size: clamp(28px, 3vw, 42px);
+  font-weight: 400;
+  line-height: 1.05;
+}
+
+.page-card ul,
+.faq-item ul,
+.pricing-card ul {
+  display: grid;
+  gap: 10px;
+  margin: 18px 0 0;
+  padding: 0;
+  list-style: none;
+  color: var(--granite-500);
+}
+
+.page-card li,
+.faq-item li,
+.pricing-card li {
+  padding-left: 18px;
+  position: relative;
+}
+
+.page-card li::before,
+.faq-item li::before,
+.pricing-card li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0.72em;
+  width: 6px;
+  height: 6px;
+  background: var(--clay);
+}
+
+.faq-grid,
+.pricing-grid {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.faq-item,
+.pricing-card {
+  border-top: 1px solid var(--rule);
+  padding: clamp(28px, 4vw, 48px) 0;
+}
+
+.soft-band {
+  background: var(--paper);
+}
+
+.accent-studio {
+  --page-accent: var(--studio-500);
+  --page-accent-soft: var(--studio-100);
+}
+
+.accent-consult {
+  --page-accent: var(--petrol);
+  --page-accent-soft: var(--sea-mist);
+}
+
+.accent-rituel {
+  --page-accent: var(--clay);
+  --page-accent-soft: var(--rituel);
+}
+
+.accent-atelier {
+  --page-accent: var(--granite);
+  --page-accent-soft: var(--stone);
+}
+
+.accent-location {
+  --page-accent: var(--petrol-deep);
+  --page-accent-soft: var(--bone);
+}
+
+.page-hero[class*="accent-"] em,
+.page-section[class*="accent-"] em {
+  color: var(--page-accent);
+}
+
+.service-mark {
+  width: clamp(140px, 18vw, 240px);
+  aspect-ratio: 1;
+  display: grid;
+  place-items: center;
+  border: 1px solid color-mix(in srgb, var(--page-accent) 34%, transparent);
+  background: var(--page-accent-soft);
+  color: var(--page-accent);
+  font-family: var(--serif);
+  font-size: clamp(36px, 5vw, 72px);
+  line-height: 0.9;
+}
+
+.service-mark span {
+  font-family: var(--mono);
+  font-size: 9px;
+  letter-spacing: 0.24em;
+  text-transform: uppercase;
+}
+
+.page-card[class*="accent-"] {
+  border-top: 6px solid var(--page-accent);
+}
+
+.page-card[class*="accent-"] .mini,
+.pricing-card[class*="accent-"] .mini {
+  color: var(--page-accent);
+}
+
+.deep .page-card,
+.deep .page-intro-grid > * {
+  background: var(--petrol-deep);
+}
+
+.deep .page-card {
+  border: 1px solid rgba(241, 235, 225, 0.18);
+}
+
+.deep .page-card p,
+.deep .page-card li,
+.deep .page-section p {
+  color: rgba(241, 235, 225, 0.72);
+}
+
 @media (max-width: 1180px) {
   .main-nav {
     display: none;
   }
 
   .hero-grid,
+  .page-hero,
+  .page-intro-grid,
+  .content-split,
   .three-col,
   .planning-cards-head,
   .section-head.two,
@@ -2154,6 +2362,13 @@ figcaption {
   .offer-grid,
   .offer-grid article,
   .editorial-feature {
+    grid-template-columns: 1fr;
+  }
+
+  .page-card-grid,
+  .page-card-grid.two,
+  .faq-grid,
+  .pricing-grid {
     grid-template-columns: 1fr;
   }
 }

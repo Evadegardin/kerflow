@@ -1,0 +1,669 @@
+﻿Sitemap Idéale KerFlow
+
+
+
+
+Arborescence du site
+
+
+Accueil  
+├── Le lieu  
+├── Cours & planning  
+├── Prévention santé  [a]
+│   ├── La Bulle  
+│   └── Le Cocon  
+[b]
+├── Louer un espace  
+├── Ateliers & ressources  
+├── FAQ  
+└── Contact  
+
+
+
+
+Menu principal conseillé
+
+
+Le lieu | Cours & planning | Accompagnements santé & soins | Louer un espace | Ateliers | Contact
+
+
+CTA principal : Réserver
+
+
+La FAQ peut être dans le footer ou intégrée sous forme de blocs courts sur les pages importantes. Elle n’a pas forcément besoin d’être visible dans le menu principal.[c][d][e]
+
+
+
+
+
+
+Logique Générale Du Site
+
+
+Le site ne doit pas présenter Kerflow comme un simple studio de yoga ou un espace bien-être généraliste.
+
+
+Il doit assumer un positionnement plus différenciant : une maison locale de prévention-santé et de mieux-être à Clamart, pensée pour accompagner les personnes qui veulent reprendre soin d’elles sans pression, sans injonction et dans un cadre humain.
+
+
+Les 4 piliers Kerflow doivent apparaître clairement dans les contenus :
+
+
+- Mieux bouger : yoga, Pilates, mobilité, renforcement doux, respiration
+- Mieux manger : NAPSOthérapie, prévention nutritionnelle, comportement alimentaire
+- Mieux dormir : relaxation, respiration, stress, hygiène du sommeil
+- Prendre soin de soi : massages, soins corporels, réflexologie, ateliers
+
+
+
+
+
+
+Structure Des Pages
+
+
+1. Accueil
+
+
+Objectif : comprendre Kerflow vite, donner envie, orienter vers la bonne action.
+
+
+
+
+Hero section
+
+
+- Photo forte du lieu ou ambiance Kerflow
+- Phrase claire : maison de prévention-santé et mieux-être à Clamart
+- Mise en avant d’une promesse simple : bouger, respirer, mieux comprendre son corps, prendre soin de soi
+- CTA : Réserver un cours
+- CTA secondaire : Découvrir le lieu[f][g]
+
+
+Présentation courte
+
+
+- Pourquoi Kerflow existe
+- Pour qui : personnes qui veulent bouger, se poser, reprendre soin d’elles sans pression
+- Ton rassurant : pas de performance, pas d’injonction, pas de jugement
+
+
+Les 4 piliers Kerflow
+
+
+- Mieux bouger
+- Mieux manger
+- Mieux dormir
+- Prendre soin de soi
+
+
+Les 3 espaces
+
+
+- Salle de pratique
+- La Bulle
+- Le Cocon
+
+
+Cours à venir / planning
+
+
+- Aperçu du planning
+- Mise en avant des petits groupes
+- CTA : Voir le planning
+
+
+Accompagnements santé & soins
+Mettre seulement 2 propositions :  1-Accompagnement (Consultation en prévention santé autour de l'alimentation, du sommeil, de l'activité physique, du bien-être mental ...)
+2- Soin du corps (massages, drainage lymphatique, acuponcture ...)
+
+- NAPSOthérapie[h][i][j]
+- Consultations
+- Massages
+- Soins corporels
+- Prévention sommeil / stress / alimentation
+
+
+L’esprit Kerflow
+
+
+- Petits groupes
+- Bienveillance
+- Prévention santé
+- Approche douce et sérieuse
+- Lieu chaleureux, propre, calme, à taille humaine
+
+
+Ateliers / ressources[k]
+
+
+- Prochains événements 
+- Articles ou conseils utiles
+
+
+Infos pratiques
+
+
+- Adresse
+- Accès
+- Contact
+
+
+
+
+
+
+2. Le Lieu
+
+
+Objectif : poser l’univers, la confiance, l’histoire, la différence.
+
+
+Hero section
+
+
+- Photo du lieu
+- Message : un espace pour bouger, respirer, comprendre et prendre soin de soi
+
+
+Pourquoi Kerflow
+
+
+- Le constat : fatigue, stress, douleurs, charge mentale, besoin de reprendre soin de soi
+- L’idée d’un lieu hybride : mouvement + santé + soin + lien humain
+- Positionnement : prévention-santé plutôt que performance ou promesse miracle
+
+
+Le nom Kerflow
+
+
+- Ker : maison, ancrage, care
+- Flow : mouvement, vie, fluidité
+- Fougère : résilience, humilité
+
+
+Les espaces
+
+
+- Salle de pratique[l]
+- La Bulle
+- Le Cocon
+
+
+Les fondatrices
+
+
+- Présentation humaine
+- Légitimité santé / accompagnement / projet
+- Rôle dans l’expérience Kerflow
+
+
+L’ambiance
+
+
+- Maison
+- Chaleur
+- Bretagne[m]
+- Nature
+- Calme
+- Propreté
+- Tisanerie / convivialité maîtrisée si prévu
+
+
+ CTA
+
+
+- Découvrir les cours
+- Prendre rendez-vous
+
+
+
+
+
+
+3. Cours & Planning
+
+
+Objectif : convertir vers la réservation de cours.
+
+
+Hero section
+
+
+- Cours en petits groupes à Clamart
+- Message : bouger en douceur, progresser, se renforcer sans pression
+- CTA : Réserver un cours
+
+
+Les activités
+
+
+- Yoga
+- Pilates
+- Mobilité
+- Renforcement doux
+- Respiration / relaxation
+
+
+Pour qui ?
+
+
+- Reprise en douceur
+- Stress / fatigue
+- Douleurs / mobilité
+- Seniors actifs
+- Femmes en transition physique ou émotionnelle
+- Personnes qui veulent reprendre confiance dans leur corps
+
+
+Bénéfices des petits groupes
+
+
+- Encadrement plus attentif
+- Progression adaptée
+- Sentiment de sécurité
+- Ambiance bienveillante
+- Moins de monde, plus de confort
+
+
+Planning
+
+
+- Vue claire par jour
+- Horaires
+- Mobile first, car la réservation sera souvent faite sur téléphone
+
+
+Tarifs
+
+
+- Cours à l’unité
+- Carnets
+- Abonnements si prévus
+- Conditions simples
+- Clarté maximale sur les prix
+
+
+Les professeurs
+
+
+- Photos
+- Spécialités
+- Approche pédagogique
+- Liens éventuels
+
+
+FAQ courte
+
+
+- Niveau requis
+- Matériel
+- Annulation
+- Première séance
+- Quel cours choisir ?
+
+
+CTA final
+
+
+- Réserver mon cours
+
+
+
+
+
+
+4. Accompagnements Santé & Soins
+
+
+Objectif : expliquer l’offre hors cours collectifs.
+
+
+Hero section
+
+
+- Prendre soin de soi autrement
+- CTA : Prendre rendez-vous
+
+
+Introduction
+
+
+- Deux espaces complémentaires : La Bulle et Le Cocon
+- Prévention santé, accompagnement, soins corporels
+- Approche douce, sérieuse, non culpabilisante
+
+
+La Bulle
+
+
+- Consultations
+- NAPSOthérapie
+- Sommeil
+- Alimentation
+- Stress
+- Comportement santé
+- Prévention et accompagnement personnalisé
+- Intervenants[n]
+
+
+Le Cocon
+
+
+- Massages
+- Réflexologie
+- Soins corporels
+- Relaxation
+- Récupération
+- Thérapeutes / praticiens
+
+
+Intervenants
+
+
+- Fiches avec spécialité
+- Photo
+- Approche
+- Lien Instagram / site / contact
+
+
+Comment réserver
+
+
+- Lien direct ou formulaire
+- Infos pratiques
+- Explication simple du parcours de réservation
+
+
+CTA final
+
+
+- Choisir un accompagnement
+- Prendre rendez-vous
+
+
+
+
+
+
+5. Louer Un Espace
+
+
+Objectif : parler aux pros, pas aux clientes finales.
+
+
+Hero section
+
+
+- Louer un espace au sein de Kerflow
+- CTA : Faire une demande
+
+
+Pour qui ?
+
+
+- Professeurs de yoga / Pilates
+- Thérapeutes
+- Masseurs
+- Intervenants prévention santé
+- Ateliers / conférences
+- Professionnels alignés avec l’univers Kerflow
+
+
+Les espaces disponibles
+
+
+- Salle de pratique
+- La Bulle
+- Le Cocon
+
+
+Pour chaque espace
+
+
+- Usage possible
+- Capacité
+- Matériel disponible
+- Photos
+- Tarifs
+- Disponibilités
+- Conditions de location
+
+
+Pourquoi rejoindre Kerflow
+
+
+- Lieu qualitatif
+- Clientèle locale
+- Univers cohérent
+- Cadre chaleureux
+- Positionnement prévention-santé clair
+- Ambiance professionnelle mais humaine
+
+
+Demande de location
+
+
+- Formulaire
+- Calendrier si nécessaire[o]
+- Contact direct
+
+
+
+
+ 6. Ateliers & Ressources
+
+
+Objectif : SEO + vie du lieu + fidélisation.
+
+
+Hero section
+
+
+- Les prochains rendez-vous Kerflow
+
+
+
+
+Événements à venir
+
+
+- Ateliers
+- Conférences
+- Sessions spéciales
+- Week-ends / soirées
+- Thématiques : sommeil, stress, alimentation, mobilité, ménopause, douleurs, post-partum
+
+
+Articles / conseils
+
+
+- Sommeil
+- Mouvement
+- Alimentation
+- Stress
+- Ménopause
+- Douleurs
+- Prévention santé
+- Reprise d’activité physique
+- Bien vieillir
+
+
+Newsletter
+
+
+- Inscription
+- Actualités du lieu
+- Conseils prévention-santé
+- Prochains événements
+
+
+Archives
+
+
+- Articles passés
+- Événements passés
+
+
+
+
+
+
+7. FAQ
+
+
+Objectif : rassurer et aider le SEO.
+
+
+Première visite
+
+
+- Comment se déroule un premier cours ?
+- Faut-il être souple / sportive ?
+- Quel matériel apporter ?
+- Est-ce adapté si je reprends après une longue pause ?
+- Est-ce adapté si j’ai des douleurs ?
+
+
+Réservation
+
+
+- Comment réserver ?
+- Annulation
+- Retard
+- Liste d’attente
+- Réservation via HelloResa
+
+
+
+
+Tarifs
+
+
+- Cours à l’unité
+- Carnets
+- Validité
+- Remboursement
+- Moyens de paiement
+
+
+Cours
+
+
+- Quel cours choisir ?
+- Yoga ou Pilates ?
+- Cours adaptés aux douleurs ?
+- Cours adaptés aux seniors ?
+- Cours pour reprendre en douceur ?
+
+
+Soins & accompagnements
+
+
+- Comment choisir un praticien ?
+- Quelle différence entre La Bulle et Le Cocon ?
+- Comment se déroule une consultation ?
+- Comment réserver un massage ou un soin ?
+
+
+Location pro
+
+
+- Comment louer un espace ?
+- Tarifs
+- Matériel
+- Disponibilités
+- Conditions
+
+
+
+
+
+
+8. Contact
+
+
+Objectif : accès simple, rassurant, local.
+
+
+Hero section
+
+
+- Venir chez Kerflow
+
+
+Coordonnées
+
+
+- Adresse
+- Téléphone
+- Email
+
+
+Accès
+
+
+- Gare
+- Parking
+- Transports
+- Plan Google Maps
+- Repères utiles autour du lieu
+
+
+Horaires
+
+
+- Accueil
+- Cours
+- Rendez-vous
+
+
+Formulaire
+
+
+- Question générale
+- Suggestion
+- Demande pro
+- Demande liée à une première visite
+
+
+Réseaux sociaux
+
+
+- Instagram
+- Facebook éventuel
+
+
+
+
+
+
+[a]Mettre toujours "prévention santé"
+[b]Nombre total de réactions : 1
+Eva Degardin a réagi avec 👍 à 2026-05-21 06:30 AM
+[c]On aimerait que la FAQ ne soit pas dans le menu principal. Pourquoi pas en bas de chaque page avec les infos de contact (adresse, reseaux sociaux etc...) ?
+Nombre total de réactions : 1
+Eva Degardin a réagi avec 👍 à 2026-05-21 06:30 AM
+[d]En fait c'est super d'avoir les question principale relatives à chaque page !!!
+[e]Rajouter dans le footer, "s'inscrire à la newsletter" ? Ou à un autre endroit propice
+Nombre total de réactions : 1
+Eva Degardin a réagi avec 👍 à 2026-05-21 06:30 AM
+[f]Peut-etre aussi réserver un soin ou un accompagnement ou au moins prendre contact avec le thérapeute
+[g]2 CTA c'est très bien finalement.
+Nombre total de réactions : 1
+Eva Degardin a réagi avec 👍 à 2026-05-21 06:30 AM
+[h]A mettre au même niveau que les consultations
+[i]Ce que Gaelle veut dire ici, c'est que la napsothérapie fait partie des consultations. Et les massages font partie des soins corporels.
+Nombre total de réactions : 1
+Eva Degardin a réagi avec 👍 à 2026-05-21 06:30 AM
+[j]Mettre seulement 2 propositions :  1-Accompagnement (Consultation en prévention santé autour de l'alimentation, du sommeil, de l'activité physique, du bien-être mental ...)
+2- Soin du corps (massages, drainage lymphatique, acuponcture ...)
+[k]On aimerait que cette partie soit mieux mise en valeur. Possible de la remonter dans la homepage ?
+Nombre total de réactions : 1
+Eva Degardin a réagi avec 👍 à 2026-05-21 06:31 AM
+[l]On recherche un nom peu imagé comme la Bulle et le Cocon . Exemple : la Canopée, la Clairière, la Grève, l'Estran ... A imaginer
+[m]Il faut que la Bretagne reste implicite et jamais nommée. On préfère quelque chose d'universel qui parle à tous
+Nombre total de réactions : 1
+Eva Degardin a réagi avec 👍 à 2026-05-21 06:31 AM
+[n]On ne comprend pas pourquoi tout est sur le même plan.
+[o]oui !

@@ -1,0 +1,104 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import SiteHeader from "../components/SiteHeader.astro";
+import SiteFooter from "../components/SiteFooter.astro";
+---
+
+<BaseLayout
+  title="Cours et planning - KerFlow Studio"
+  description="Cours de yoga, Pilates, mobilite, renforcement doux et respiration en petits groupes a Clamart."
+>
+  <SiteHeader />
+  <main>
+    <section class="page-hero section-pad accent-studio">
+      <div>
+        <p class="eyebrow">Cours & planning</p>
+        <h1>Bouger en douceur,<br />progresser <em>sans pression</em>.</h1>
+      </div>
+      <div>
+        <div class="service-mark" aria-hidden="true">Studio<br /><span>mouvement</span></div>
+        <p>Des cours en petits groupes pour retrouver de l'amplitude, du souffle et de la confiance dans le corps.</p>
+        <div class="actions">
+          <a class="btn btn-primary" href="/contact/">Reserver un cours <span aria-hidden="true">→</span></a>
+        </div>
+      </div>
+    </section>
+
+    <section class="page-section section-pad soft-band">
+      <div class="section-head two">
+        <div>
+          <p class="eyebrow">Activites</p>
+          <h2>Des pratiques pour <em>mieux bouger</em>.</h2>
+        </div>
+        <p>Chaque cours est pense pour une progression accessible, avec une attention particuliere portee aux personnes en reprise ou en recherche de securite.</p>
+      </div>
+      <div class="page-card-grid">
+        <article class="page-card accent-studio"><h3>Yoga</h3><p>Hatha, yin, vinyasa doux, respiration et relaxation.</p></article>
+        <article class="page-card accent-studio"><h3>Pilates</h3><p>Posture, centre, stabilite, renforcement profond et adaptation.</p></article>
+        <article class="page-card accent-studio"><h3>Mobilite</h3><p>Amplitude, articulations, equilibre et gestes du quotidien.</p></article>
+      </div>
+    </section>
+
+    <section class="section-pad">
+      <div class="content-split">
+        <div>
+          <p class="eyebrow">Pour qui ?</p>
+          <h2>Pour reprendre,<br />se renforcer,<br /><em>se rassurer</em>.</h2>
+        </div>
+        <div class="page-card-grid two">
+          <article class="page-card">
+            <h3>Profils</h3>
+            <ul>
+              <li>Reprise en douceur apres une pause</li>
+              <li>Stress, fatigue ou charge mentale</li>
+              <li>Douleurs, raideurs ou perte de mobilite</li>
+              <li>Seniors actifs</li>
+            </ul>
+          </article>
+          <article class="page-card">
+            <h3>Petits groupes</h3>
+            <ul>
+              <li>Encadrement plus attentif</li>
+              <li>Progression adaptee</li>
+              <li>Ambiance bienveillante</li>
+              <li>Moins de monde, plus de confort</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="planning" class="planning planning-cards section-pad">
+      <div class="planning-cards-head">
+        <div>
+          <p class="eyebrow">Planning</p>
+          <h2>Vue claire,<br /><em>mobile first</em>.</h2>
+        </div>
+        <div>
+          <p>Le planning final sera branche sur l'outil de reservation. Cette premiere version prepare les jours, horaires et formats attendus.</p>
+          <a class="btn-line light" href="/contact/">Demander une place →</a>
+        </div>
+      </div>
+      <div class="course-mini-grid">
+        <article><p>Mardi · 09h30</p><h4>Hatha doux</h4><a href="/contact/">Reserver →</a></article>
+        <article><p>Mercredi · 07h15</p><h4>Vinyasa matin</h4><a href="/contact/">Reserver →</a></article>
+        <article><p>Mercredi · 12h30</p><h4>Pilates postural</h4><a href="/contact/">Reserver →</a></article>
+        <article><p>Jeudi · 18h00</p><h4>Mobilite & renfo</h4><a href="/contact/">Reserver →</a></article>
+        <article><p>Vendredi · 19h00</p><h4>Yin profond</h4><a href="/contact/">Reserver →</a></article>
+        <article><p>Samedi · 10h00</p><h4>Hatha long</h4><a href="/contact/">Reserver →</a></article>
+      </div>
+    </section>
+
+    <section id="tarifs" class="page-section section-pad">
+      <div class="section-head narrow">
+        <p class="eyebrow">Tarifs</p>
+        <h2>Des prix simples,<br /><em>a completer</em>.</h2>
+      </div>
+      <div class="pricing-grid">
+        <article class="pricing-card accent-studio"><p class="mini">Unite</p><h3>Cours a l'unite</h3><p>Prix final a renseigner avant mise en ligne.</p></article>
+        <article class="pricing-card accent-studio"><p class="mini">Carnet</p><h3>Carnets & abonnements</h3><p>Validite, conditions et annulation a clarifier dans la FAQ.</p></article>
+      </div>
+    </section>
+  </main>
+  <SiteFooter />
+</BaseLayout>

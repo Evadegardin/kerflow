@@ -1,0 +1,33 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import SiteHeader from "../components/SiteHeader.astro";
+import SiteFooter from "../components/SiteFooter.astro";
+---
+
+<BaseLayout
+  title="FAQ - KerFlow"
+  description="Questions frequentes KerFlow : premiere visite, reservation, tarifs, cours, soins, accompagnements et location professionnelle."
+>
+  <SiteHeader />
+  <main>
+    <section class="page-hero section-pad accent-location">
+      <div>
+        <p class="eyebrow">FAQ</p>
+        <h1>Les questions qui <em>rassurent</em> avant de venir.</h1>
+      </div>
+      <p>La FAQ n'est pas dans le menu principal, mais elle reste accessible depuis le footer et les pages importantes.</p>
+    </section>
+
+    <section class="section-pad">
+      <div class="faq-grid">
+        <article id="premiere-visite" class="faq-item"><h3>Premiere visite</h3><ul><li>Comment se deroule un premier cours ?</li><li>Faut-il etre souple ou sportive ?</li><li>Quel materiel apporter ?</li><li>Est-ce adapte si je reprends apres une longue pause ?</li><li>Est-ce adapte si j'ai des douleurs ?</li></ul></article>
+        <article class="faq-item"><h3>Reservation</h3><ul><li>Comment reserver ?</li><li>Comment annuler ?</li><li>Que se passe-t-il en cas de retard ?</li><li>Comment fonctionne la liste d'attente ?</li><li>Reservation via HelloResa.</li></ul></article>
+        <article class="faq-item"><h3>Tarifs</h3><ul><li>Cours a l'unite</li><li>Carnets</li><li>Validite</li><li>Remboursement</li><li>Moyens de paiement</li></ul></article>
+        <article class="faq-item"><h3>Cours</h3><ul><li>Quel cours choisir ?</li><li>Yoga ou Pilates ?</li><li>Cours adaptes aux douleurs ?</li><li>Cours adaptes aux seniors ?</li><li>Cours pour reprendre en douceur ?</li></ul></article>
+        <article class="faq-item"><h3>Soins & accompagnements</h3><ul><li>Comment choisir un praticien ?</li><li>Quelle difference entre La Bulle et Le Cocon ?</li><li>Comment se deroule une consultation ?</li><li>Comment reserver un massage ou un soin ?</li></ul></article>
+        <article class="faq-item"><h3>Location pro</h3><ul><li>Comment louer un espace ?</li><li>Tarifs</li><li>Materiel</li><li>Disponibilites</li><li>Conditions</li></ul></article>
+      </div>
+    </section>
+  </main>
+  <SiteFooter />
+</BaseLayout>

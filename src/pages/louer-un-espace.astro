@@ -1,0 +1,68 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import SiteHeader from "../components/SiteHeader.astro";
+import SiteFooter from "../components/SiteFooter.astro";
+---
+
+<BaseLayout
+  title="Louer un espace - KerFlow Clamart"
+  description="Location d'espaces KerFlow pour professeurs, therapeutes, masseurs, ateliers, conferences et professionnels de prevention sante."
+>
+  <SiteHeader />
+  <main>
+    <section class="page-hero section-pad accent-location">
+      <div>
+        <p class="eyebrow">Louer un espace</p>
+        <h1>Rejoindre une maison <em>professionnelle</em> et humaine.</h1>
+      </div>
+      <div>
+        <div class="service-mark" aria-hidden="true">Pro<br /><span>location</span></div>
+        <p>KerFlow accueille des professionnels alignes avec l'univers prevention-sante : cours, consultations, soins, ateliers et conferences.</p>
+        <div class="actions">
+          <a class="btn btn-primary" href="/contact/">Faire une demande <span aria-hidden="true">→</span></a>
+        </div>
+      </div>
+    </section>
+
+    <section class="page-section section-pad soft-band">
+      <div class="section-head two">
+        <div>
+          <p class="eyebrow">Pour qui ?</p>
+          <h2>Des pros alignes<br />avec <em>la maison</em>.</h2>
+        </div>
+        <p>Cette page parle aux intervenants professionnels, pas aux clientes finales. Le ton reste clair, qualitatif et concret.</p>
+      </div>
+      <div class="page-card-grid">
+        <article class="page-card accent-studio"><h3>Professeurs</h3><p>Yoga, Pilates, mobilite, respiration, renforcement doux.</p></article>
+        <article class="page-card accent-consult"><h3>Therapeutes</h3><p>Prevention sante, accompagnement, nutrition, sommeil, stress.</p></article>
+        <article class="page-card accent-rituel"><h3>Praticiens</h3><p>Massages, soins corporels, reflexologie, recuperation.</p></article>
+      </div>
+    </section>
+
+    <section class="page-section section-pad">
+      <div class="section-head narrow">
+        <p class="eyebrow">Espaces disponibles</p>
+        <h2>Choisir le bon <em>cadre</em>.</h2>
+      </div>
+      <div class="page-card-grid">
+        <article class="page-card accent-studio"><p class="mini">Salle de pratique</p><h3>Cours & ateliers</h3><ul><li>Petits groupes</li><li>Materiel de pratique</li><li>Formats regulier ou ponctuel</li></ul></article>
+        <article class="page-card accent-consult"><p class="mini">La Bulle</p><h3>Consultations</h3><ul><li>Rendez-vous individuels</li><li>Cadre calme</li><li>Usage prevention sante</li></ul></article>
+        <article class="page-card accent-rituel"><p class="mini">Le Cocon</p><h3>Soins corporels</h3><ul><li>Table de soin</li><li>Ambiance feutree</li><li>Massages et pratiques corporelles</li></ul></article>
+      </div>
+    </section>
+
+    <section class="page-section section-pad deep">
+      <div class="content-split">
+        <div>
+          <p class="eyebrow">Demande de location</p>
+          <h2>Informations a <em>qualifier</em>.</h2>
+        </div>
+        <div class="page-card-grid two">
+          <article class="page-card"><h3>A preciser</h3><ul><li>Tarifs</li><li>Disponibilites</li><li>Conditions de location</li><li>Calendrier eventuel</li></ul></article>
+          <article class="page-card"><h3>Demande</h3><p>Un formulaire dedie permettra de connaitre le metier, le format, la frequence et les besoins materiels.</p><a class="btn-line light" href="/contact/">Contacter KerFlow</a></article>
+        </div>
+      </div>
+    </section>
+  </main>
+  <SiteFooter />
+</BaseLayout>
