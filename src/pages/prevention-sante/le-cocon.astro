@@ -9,48 +9,155 @@ import SiteFooter from "../../components/SiteFooter.astro";
   description="Le Cocon, espace KerFlow Rituel pour les massages, soins corporels, reflexologie, relaxation et recuperation a Clamart."
 >
   <SiteHeader />
-  <main>
-    <section class="page-hero section-pad accent-rituel">
-      <div>
-        <p class="eyebrow">KerFlow Rituel</p>
-        <h1>Le Cocon,<br />pour les <em>soins du corps</em>.</h1>
-      </div>
-      <div>
-        <div class="service-mark" aria-hidden="true">Rituel<br /><span>soin</span></div>
-        <p>Un espace calme et enveloppant pour les massages, la reflexologie, le drainage lymphatique, l'acupuncture et les soins corporels.</p>
-        <div class="actions">
-          <a class="btn btn-primary" href="/contact/">Choisir un soin <span aria-hidden="true">→</span></a>
+  <main class="cours-page cocon-page">
+    <section class="cours-hero cocon-hero">
+      <div class="cours-wrap">
+        <div class="cours-hero-grid">
+          <div>
+            <p class="cours-kicker">KerFlow Rituel - Le Cocon</p>
+            <h1>
+              Le Cocon,<br />
+              <em>grand soin.</em><br />
+              Relacher<br />
+              en douceur.
+            </h1>
+            <div class="cours-actions">
+              <a href="/contact/" class="btn btn-primary">Choisir un soin <span aria-hidden="true">→</span></a>
+              <a href="#intervenants" class="btn-line">Voir les intervenants</a>
+            </div>
+          </div>
+          <aside class="cours-hero-aside">
+            <img class="cours-hero-logo" src="/assets/logos/kerflow-rituel.png" alt="KerFlow Rituel" loading="eager" decoding="async" />
+            <p>
+              Massages, drainage lymphatique, reflexologie, acupuncture et relaxation :
+              un espace individuel pour <em>deposer les tensions</em> et retrouver du calme.
+            </p>
+            <div class="cours-tags">
+              <span>Massages</span><span>Drainage</span><span>Reflexologie</span><span>Acupuncture</span><span>Relaxation</span>
+            </div>
+          </aside>
         </div>
       </div>
     </section>
 
-    <section class="page-section section-pad soft-band">
-      <div class="section-head two">
+    <section class="cocon-section cocon-paperless" id="espace">
+      <div class="cocon-wrap cocon-space-grid">
         <div>
-          <p class="eyebrow">Soin</p>
-          <h2>Ralentir,<br />récupérer,<br /><em>relâcher</em>.</h2>
+          <span class="cocon-lock">KerFlow <small>Rituel</small></span>
+          <h2>Le Cocon,<br />le cabinet<br /><em>qui enveloppe.</em></h2>
+          <p class="cocon-copy">
+            Un espace calme, intimiste, pense pour les rendez-vous individuels qui demandent
+            de la confidentialite, une ambiance feutree et le temps de relacher.
+          </p>
+          <div class="cocon-placeholder cocon-foam">
+            <span>[ photo - Le Cocon, table de soin, lumiere douce, ambiance calme ]</span>
+          </div>
         </div>
-        <p>Le Cocon regroupe les pratiques corporelles et les soins qui aident a deposer les tensions, recuperer et retrouver un rapport plus apaise au corps.</p>
-      </div>
-      <div class="page-card-grid">
-        <article class="page-card accent-rituel"><h3>Massages</h3><p>Relaxation, detente musculaire et temps de pause.</p></article>
-        <article class="page-card accent-rituel"><h3>Drainage</h3><p>Accompagnement du corps, legerete et recuperation.</p></article>
-        <article class="page-card accent-rituel"><h3>Réflexologie</h3><p>Soins corporels pratiques par des praticiens qualifies.</p></article>
+        <aside>
+          <p class="cocon-label">Ce qu'on y reçoit</p>
+          <div class="cocon-list">
+            <article>
+              <span>01</span>
+              <div>
+                <h3>Massages &amp; soins corporels</h3>
+                <p>Massage detente, recuperation, relachement musculaire et temps de pause.</p>
+              </div>
+            </article>
+            <article>
+              <span>02</span>
+              <div>
+                <h3>Drainage &amp; legerete</h3>
+                <p>Un accompagnement du corps pour retrouver de la fluidite et recuperer.</p>
+              </div>
+            </article>
+            <article>
+              <span>03</span>
+              <div>
+                <h3>Reflexologie &amp; relaxation</h3>
+                <p>Des approches precises pour le sommeil, le stress, la digestion et le retour au calme.</p>
+              </div>
+            </article>
+          </div>
+          <div class="cocon-tags">
+            <span>Sur rendez-vous</span>
+            <span>Individuel</span>
+            <span>Calme</span>
+          </div>
+        </aside>
       </div>
     </section>
 
-    <section class="section-pad">
-      <div class="content-split">
-        <div>
-          <p class="eyebrow">KerFlow Rituel</p>
-          <h2>Un espace<br /><em>dédié au soin</em>.</h2>
+    <section class="cocon-section" id="intervenants">
+      <div class="cocon-wrap">
+        <div class="cocon-head">
+          <span>02 - Les intervenants</span>
+          <h2>Les praticien·nes<br /><em>du Cocon.</em></h2>
+          <p>
+            Des approches corporelles complementaires, reunies pour leur serieux,
+            leur douceur et leur qualite d'accueil.
+          </p>
         </div>
-        <div class="body-copy">
-          <p>Le Cocon est pense pour les rendez-vous individuels qui demandent du calme, de la confidentialite et une ambiance feutree.</p>
-          <p>Chaque soin doit permettre de choisir un praticien, comprendre son approche et acceder facilement a la prise de rendez-vous.</p>
-          <div class="actions">
-            <a class="btn-line" href="/prevention-sante/la-bulle/">Voir La Bulle →</a>
-            <a class="btn-line" href="/contact/">Contacter KerFlow</a>
+
+        <div class="cocon-team">
+          <article>
+            <div class="cocon-person-media cocon-foam"><span>[ portrait - praticienne ]</span></div>
+            <div>
+              <h3>Ines Caron</h3>
+              <p class="cocon-role">Massages · drainage lymphatique</p>
+              <p>Massages detente et drainage, dans le respect du rythme de chacun.</p>
+              <div><a href="/contact/">Prendre rendez-vous</a><a href="#">Instagram</a></div>
+            </div>
+          </article>
+          <article>
+            <div class="cocon-person-media cocon-storm"><span>[ portrait - praticien ]</span></div>
+            <div>
+              <h3>Thomas Riou</h3>
+              <p class="cocon-role">Reflexologie · acupuncture</p>
+              <p>Par les points et les zones : sommeil, digestion, stress et recuperation.</p>
+              <div><a href="/contact/">Prendre rendez-vous</a><a href="#">Site</a></div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="cocon-section cocon-paper">
+      <div class="cocon-wrap">
+        <div class="cocon-head">
+          <span>03 - Comment reserver</span>
+          <h2>Un parcours simple,<br />en <em>trois temps.</em></h2>
+        </div>
+        <div class="cocon-steps">
+          <article>
+            <span>i</span>
+            <h3>On choisit ensemble</h3>
+            <p>Un doute sur le soin ou l'intervenant·e ? Ecrivez-nous : on vous oriente.</p>
+          </article>
+          <article>
+            <span>ii</span>
+            <h3>On prend rendez-vous</h3>
+            <p>Directement avec le praticien ou la praticienne, par le formulaire de contact.</p>
+          </article>
+          <article>
+            <span>iii</span>
+            <h3>On vous accueille</h3>
+            <p>Un the chaud, le calme du lieu, et le temps qu'il faut. Sans engagement.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="cocon-cta">
+      <div class="cocon-wrap">
+        <h2>Choisir un<br /><em>accompagnement.</em></h2>
+        <div>
+          <p>
+            On en parle avant de commencer, pour trouver le bon soin, le bon rythme,
+            la bonne personne. Sans engagement.
+          </p>
+          <div class="cours-actions">
+            <a href="/contact/" class="btn btn-light">Prendre rendez-vous</a>
+            <a href="#intervenants" class="btn-line on-dark">Voir les intervenants</a>
           </div>
         </div>
       </div>
@@ -58,3 +165,310 @@ import SiteFooter from "../../components/SiteFooter.astro";
   </main>
   <SiteFooter />
 </BaseLayout>
+
+<style>
+  .cocon-page {
+    --cours-accent: var(--clay);
+    --cours-soft: var(--rituel);
+    --cocon-accent: var(--clay);
+    --cocon-soft: var(--rituel);
+    --cocon-ink-soft: #545d57;
+  }
+
+  .cocon-page em {
+    color: var(--cocon-accent);
+  }
+
+  .cocon-page .btn-primary {
+    background: var(--cocon-accent);
+  }
+
+  .cocon-page .btn-primary:hover,
+  .cocon-page .btn-primary:focus-visible {
+    background: #8e4b31;
+  }
+
+  .cocon-hero {
+    background: var(--cocon-soft);
+  }
+
+  .cocon-wrap {
+    width: min(100%, 1440px);
+    margin-inline: auto;
+    padding-inline: clamp(20px, 6vw, 88px);
+  }
+
+  .cocon-section {
+    padding-block: clamp(72px, 8vw, 112px);
+    border-top: 1px solid var(--rule);
+  }
+
+  .cocon-paper {
+    background: var(--paper);
+  }
+
+  .cocon-paperless {
+    background: var(--linen);
+  }
+
+  .cocon-space-grid {
+    display: grid;
+    grid-template-columns: minmax(0, 1.55fr) minmax(280px, 1fr);
+    gap: clamp(32px, 5vw, 72px);
+    align-items: start;
+  }
+
+  .cocon-lock {
+    display: inline-flex;
+    align-items: baseline;
+    gap: 10px;
+    margin-bottom: 22px;
+    color: var(--cocon-accent);
+    font-family: var(--serif);
+    font-size: 30px;
+    line-height: 1;
+  }
+
+  .cocon-lock small,
+  .cocon-label,
+  .cocon-head span,
+  .cocon-role,
+  .cocon-team article a {
+    color: var(--cocon-accent);
+    font-family: var(--mono);
+    font-size: 11px;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+  }
+
+  .cocon-lock small {
+    font-size: 10px;
+    letter-spacing: 0.26em;
+  }
+
+  .cocon-space-grid h2,
+  .cocon-head h2,
+  .cocon-cta h2 {
+    margin: 0;
+    color: var(--petrol-deep);
+    font-family: var(--serif);
+    font-weight: 400;
+    font-variation-settings: "opsz" 144;
+    letter-spacing: -0.026em;
+  }
+
+  .cocon-space-grid h2,
+  .cocon-head h2 {
+    margin-top: 12px;
+    font-size: clamp(38px, 5vw, 72px);
+    line-height: 1;
+  }
+
+  .cocon-copy,
+  .cocon-head p {
+    max-width: 560px;
+    color: var(--cocon-ink-soft);
+    font-size: 16.5px;
+    line-height: 1.7;
+  }
+
+  .cocon-placeholder,
+  .cocon-person-media {
+    display: grid;
+    place-items: center;
+    color: rgba(14, 42, 44, 0.7);
+    font-family: var(--mono);
+    font-size: 10px;
+    letter-spacing: 0.14em;
+    line-height: 1.5;
+    text-align: center;
+    text-transform: uppercase;
+  }
+
+  .cocon-placeholder {
+    max-width: 480px;
+    aspect-ratio: 4 / 3;
+    margin-top: 30px;
+    border: 12px solid var(--paper);
+    padding: 22px;
+  }
+
+  .cocon-foam {
+    background: linear-gradient(135deg, #ecd7c8, #faf0e7);
+  }
+
+  .cocon-storm {
+    background: linear-gradient(135deg, #d99a78, #6b3d29);
+  }
+
+  .cocon-list {
+    display: grid;
+    margin-top: 18px;
+    border-top: 1px solid rgba(160, 90, 58, 0.25);
+  }
+
+  .cocon-list article {
+    display: grid;
+    grid-template-columns: 64px 1fr;
+    gap: 24px;
+    align-items: baseline;
+    padding: 26px 0;
+    border-bottom: 1px solid rgba(160, 90, 58, 0.25);
+  }
+
+  .cocon-list article > span,
+  .cocon-steps article > span {
+    color: var(--cocon-accent);
+    font-family: var(--serif);
+    font-size: 30px;
+    font-style: italic;
+    line-height: 1;
+  }
+
+  .cocon-list h3,
+  .cocon-team h3,
+  .cocon-steps h3 {
+    margin: 0;
+    color: var(--petrol-deep);
+    font-family: var(--serif);
+    font-size: clamp(22px, 2.2vw, 30px);
+    font-weight: 400;
+    line-height: 1.06;
+  }
+
+  .cocon-list p,
+  .cocon-team article p,
+  .cocon-steps p {
+    margin: 0;
+    color: var(--granite);
+    font-size: 14px;
+    line-height: 1.6;
+  }
+
+  .cocon-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 24px;
+  }
+
+  .cocon-tags span {
+    border: 1px solid var(--cocon-accent);
+    padding: 7px 12px;
+    color: var(--cocon-accent);
+    font-family: var(--mono);
+    font-size: 10.5px;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+  }
+
+  .cocon-head {
+    max-width: 820px;
+    margin-bottom: clamp(32px, 4vw, 52px);
+  }
+
+  .cocon-team {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: clamp(18px, 2vw, 28px);
+    max-width: 760px;
+  }
+
+  .cocon-team article {
+    border: 1px solid var(--rule);
+    background: var(--paper);
+  }
+
+  .cocon-person-media {
+    aspect-ratio: 3 / 4;
+    padding: 20px;
+  }
+
+  .cocon-team article > div:last-child {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    padding: 22px;
+  }
+
+  .cocon-team article > div:last-child > div {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    margin-top: 8px;
+    padding-top: 12px;
+    border-top: 1px solid var(--rule-soft);
+  }
+
+  .cocon-team article a:hover,
+  .cocon-team article a:focus-visible {
+    color: var(--clay);
+  }
+
+  .cocon-steps {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    border-top: 1px solid var(--rule);
+  }
+
+  .cocon-steps article {
+    display: flex;
+    min-height: 210px;
+    flex-direction: column;
+    gap: 12px;
+    padding: clamp(26px, 3vw, 36px);
+    border-right: 1px solid var(--rule);
+    border-bottom: 1px solid var(--rule);
+  }
+
+  .cocon-steps article:last-child {
+    border-right: 0;
+  }
+
+  .cocon-cta {
+    padding-block: clamp(72px, 8vw, 104px);
+    background: var(--petrol-deep);
+    color: var(--linen);
+  }
+
+  .cocon-cta .cocon-wrap {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: clamp(32px, 5vw, 72px);
+    align-items: center;
+  }
+
+  .cocon-cta h2 {
+    color: var(--linen);
+    font-size: clamp(42px, 6vw, 86px);
+    line-height: 0.96;
+  }
+
+  .cocon-cta em {
+    color: var(--clay-light);
+  }
+
+  .cocon-cta p {
+    max-width: 520px;
+    margin: 0;
+    color: rgba(241, 235, 225, 0.78);
+    font-size: 17px;
+    line-height: 1.7;
+  }
+
+  @media (max-width: 900px) {
+    .cocon-space-grid,
+    .cocon-cta .cocon-wrap {
+      grid-template-columns: 1fr;
+    }
+
+    .cocon-team,
+    .cocon-steps {
+      grid-template-columns: 1fr;
+    }
+
+    .cocon-steps article {
+      border-right: 0;
+    }
+  }
+</style>

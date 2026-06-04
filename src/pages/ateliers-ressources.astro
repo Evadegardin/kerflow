@@ -5,65 +5,786 @@ import SiteFooter from "../components/SiteFooter.astro";
 ---
 
 <BaseLayout
-  title="Ateliers et ressources - KerFlow"
-  description="Ateliers, evenements, conferences et ressources KerFlow autour du sommeil, stress, alimentation, mobilite et prevention sante."
+  title="Ateliers & ressources - KerFlow Clamart"
+  description="Ateliers, conférences, soirées, week-ends thématiques et journal KerFlow autour du sommeil, du stress, de l'alimentation, de la mobilité et de la prévention santé."
 >
   <SiteHeader />
-  <main>
-    <section class="page-hero section-pad accent-atelier">
-      <div>
-        <p class="eyebrow">Ateliers & ressources</p>
-        <h1>Approfondir,<br />experimenter,<br /><em>repartir avec des outils</em>.</h1>
-      </div>
-      <div>
-        <div class="service-mark" aria-hidden="true">Ateliers<br /><span>ressources</span></div>
-        <p>La page rassemble les rendez-vous du lieu et des contenus utiles pour prolonger la prevention sante au quotidien.</p>
-      </div>
-    </section>
-
-    <section class="page-section section-pad soft-band">
-      <div class="section-head split">
-        <div>
-          <p class="eyebrow">Evenements a venir</p>
-          <h2>Des formats courts,<br /><em>concrets</em>.</h2>
+  <main class="workshops-page page svc-ateliers">
+    <section class="workshops-hero" data-screen-label="Ateliers - Hero">
+      <div class="workshops-wrap">
+        <div class="crumb">
+          <a href="/">Accueil</a>
+          <span class="sep">/</span>
+          <span class="here">Ateliers & ressources</span>
         </div>
-        <a class="btn-line" href="/contact/">Proposer un atelier</a>
-      </div>
-      <div class="workshop-grid">
-        <article class="workshop-card"><div class="photo photo-petrol"><span>[ photo - sommeil ]</span></div><div><p class="mini clay">Sommeil</p><h3>Sommeil & charge mentale</h3><p>Comprendre les rythmes et construire une routine realiste.</p><footer><span>3h</span><a href="/contact/">Reserver →</a></footer></div></article>
-        <article class="workshop-card"><div class="photo photo-foam"><span>[ photo - souffle ]</span></div><div><p class="mini clay">Stress</p><h3>Respiration & relachement</h3><p>Tester des outils simples pour revenir au calme.</p><footer><span>2h</span><a href="/contact/">Reserver →</a></footer></div></article>
-        <article class="workshop-card"><div class="photo photo-clay"><span>[ photo - nutrition ]</span></div><div><p class="mini clay">Alimentation</p><h3>Nutrition douce</h3><p>Mieux manger sans regime ni culpabilite.</p><footer><span>1h30</span><a href="/contact/">Reserver →</a></footer></div></article>
-        <article class="workshop-card"><div class="photo photo-stone"><span>[ photo - mobilite ]</span></div><div><p class="mini clay">Mobilite</p><h3>Reprise apres 50 ans</h3><p>Retrouver amplitude, stabilite et confiance.</p><footer><span>2h</span><a href="/contact/">Reserver →</a></footer></div></article>
-      </div>
-    </section>
-
-    <section class="page-section section-pad">
-      <div class="section-head two">
-        <div>
-          <p class="eyebrow">Articles & conseils</p>
-          <h2>Une base pour le <em>SEO</em> et la vie du lieu.</h2>
-        </div>
-        <p>Les contenus pourront devenir de vraies pages articles plus tard. Pour l'instant, les thematiques sont posees.</p>
-      </div>
-      <div class="page-card-grid">
-        <article class="page-card accent-consult"><h3>Sommeil</h3><p>Rythmes, recuperation, routines, relaxation.</p></article>
-        <article class="page-card accent-studio"><h3>Mouvement</h3><p>Reprise d'activite, mobilite, douleurs, bien vieillir.</p></article>
-        <article class="page-card accent-rituel"><h3>Soin de soi</h3><p>Stress, menopause, post-partum, fatigue et charge mentale.</p></article>
-      </div>
-    </section>
-
-    <section id="newsletter" class="final-cta section-pad">
-      <div>
-        <h2>Recevoir les prochains <em>ateliers</em>.</h2>
-        <form class="final-newsletter">
-          <p>Newsletter KerFlow : actualites du lieu, conseils prevention-sante et prochains evenements.</p>
-          <label><span class="sr-only">Votre adresse e-mail</span><input type="email" placeholder="votre adresse e-mail" /></label>
-          <div class="actions final-newsletter-actions">
-            <button class="btn btn-accent" type="submit">S'inscrire <span aria-hidden="true">→</span></button>
+        <div class="page-hero-grid">
+          <div>
+            <p class="kicker">La vie de la maison</p>
+            <h1 class="serif">
+              Les prochains<br />
+              <i class="h-accent">rendez-vous</i><br />
+              KerFlow.
+            </h1>
+            <div class="hero-cta">
+              <a href="#agenda" class="btn btn-primary">
+                Voir l'agenda
+                <svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12h16M14 6l6 6-6 6"></path></svg>
+              </a>
+              <a href="#newsletter" class="btn btn-line">Recevoir le journal</a>
+            </div>
           </div>
-        </form>
+          <aside class="page-hero-aside">
+            <p class="lede">
+              Ateliers, conférences, soirées et week-ends thématiques - et un <i class="h">journal</i>
+              de conseils en prévention-santé pour prolonger la maison chez soi.
+            </p>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-pad rule-top band-paper" id="agenda" data-screen-label="Événements">
+      <div class="workshops-wrap">
+        <div class="sec-head">
+          <span class="sec-num">01 - Événements à venir</span>
+          <h2 class="title">Ce qui se passe<br /><i class="h c-petrol">à la maison.</i></h2>
+          <p class="sec-intro">
+            Petits groupes, places limitées. La réservation se fait en ligne - ouverte aux abonné·es comme aux visiteur·ses.
+          </p>
+        </div>
+
+        <div class="events">
+          <a href="/contact/" class="event">
+            <div class="ev-date"><span class="d serif">14</span><span class="m">Juin</span></div>
+            <div class="ev-body">
+              <h3 class="serif">Mieux dormir : atelier sommeil & respiration</h3>
+              <p>Soirée · 19h00 - 21h00 · comprendre son sommeil, repartir avec des outils concrets</p>
+            </div>
+            <span class="ev-tag">Sommeil</span>
+          </a>
+          <a href="/contact/" class="event">
+            <div class="ev-date"><span class="d serif">21</span><span class="m">Juin</span></div>
+            <div class="ev-body">
+              <h3 class="serif">Mobilité & douleurs : matinée articulations</h3>
+              <p>Samedi · 10h00 - 12h30 · dénouer le dos, les épaules, les hanches en douceur</p>
+            </div>
+            <span class="ev-tag">Mobilité</span>
+          </a>
+          <a href="/contact/" class="event">
+            <div class="ev-date"><span class="d serif">28</span><span class="m">Juin</span></div>
+            <div class="ev-body">
+              <h3 class="serif">Ménopause : mouvement & mieux-être</h3>
+              <p>Samedi · 14h00 - 17h00 · cycle, énergie, sommeil - un temps pour comprendre et bouger</p>
+            </div>
+            <span class="ev-tag">Ménopause</span>
+          </a>
+          <a href="/contact/" class="event">
+            <div class="ev-date"><span class="d serif">05</span><span class="m">Juil.</span></div>
+            <div class="ev-body">
+              <h3 class="serif">Conférence : manger sans s'interdire</h3>
+              <p>Soirée · 19h00 - 20h30 · NAPSOthérapie, comportement alimentaire, sans régime ni culpabilité</p>
+            </div>
+            <span class="ev-tag">Alimentation</span>
+          </a>
+          <a href="/contact/" class="event">
+            <div class="ev-date"><span class="d serif">12</span><span class="m">Juil.</span></div>
+            <div class="ev-body">
+              <h3 class="serif">Week-end post-partum : retrouver son corps</h3>
+              <p>Samedi & dimanche · reprise douce, périnée, mobilité, repos - accompagné·e</p>
+            </div>
+            <span class="ev-tag">Post-partum</span>
+          </a>
+        </div>
+
+        <div class="topics">
+          <span class="fill"><b>Thématiques</b></span>
+          <span>Sommeil</span>
+          <span>Stress</span>
+          <span>Alimentation</span>
+          <span>Mobilité</span>
+          <span>Ménopause</span>
+          <span>Douleurs</span>
+          <span>Post-partum</span>
+          <span>Bien vieillir</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-pad rule-top" data-screen-label="Journal">
+      <div class="workshops-wrap">
+        <div class="journal-head">
+          <div class="sec-head compact">
+            <span class="sec-num">02 - Le journal KerFlow</span>
+            <h2 class="title">Des conseils, <i class="h c-petrol">au calme.</i></h2>
+          </div>
+          <p>
+            Des articles courts et sérieux, écrits par la maison et ses intervenant·es - pour prendre soin de soi entre deux visites.
+          </p>
+        </div>
+
+        <div class="articles">
+          <a href="#archives" class="art">
+            <div class="ph t-storm"><span class="cap">[ photo · lumière du soir, chambre ]</span></div>
+            <div class="a-body">
+              <span class="a-tag">Sommeil</span>
+              <h3 class="serif">Cinq gestes du soir pour mieux dormir</h3>
+              <p>Ralentir avant le coucher, sans application ni gadget.</p>
+              <span class="a-foot">Lecture · 4 min</span>
+            </div>
+          </a>
+          <a href="#archives" class="art">
+            <div class="ph t-fern"><span class="cap">[ photo · marche, mouvement doux ]</span></div>
+            <div class="a-body">
+              <span class="a-tag">Mouvement</span>
+              <h3 class="serif">Reprendre le sport après une longue pause</h3>
+              <p>Par où commencer, et comment tenir dans le temps.</p>
+              <span class="a-foot">Lecture · 6 min</span>
+            </div>
+          </a>
+          <a href="#archives" class="art">
+            <div class="ph t-sand"><span class="cap">[ photo · table, légumes de saison ]</span></div>
+            <div class="a-body">
+              <span class="a-tag">Alimentation</span>
+              <h3 class="serif">Écouter sa faim, vraiment</h3>
+              <p>Le rapport à l'assiette, sans régime ni culpabilité.</p>
+              <span class="a-foot">Lecture · 5 min</span>
+            </div>
+          </a>
+        </div>
+
+        <div class="archive-link">
+          <a href="#archives" class="btn btn-line">
+            Tous les articles & archives
+            <svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12h16M14 6l6 6-6 6"></path></svg>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-pad rule-top band-paper" id="archives" data-screen-label="Archives">
+      <div class="workshops-wrap">
+        <div class="sec-head">
+          <span class="sec-num">03 - Archives</span>
+          <h2 class="title">Articles & événements<br /><i class="h c-petrol">passés.</i></h2>
+        </div>
+        <div class="list-rows">
+          <a href="/contact/" class="list-row"><span class="lr-date">Mai 2026</span><span class="lr-title serif">Stress : la cohérence cardiaque en 3 minutes</span><span class="lr-tag">Stress · Article</span></a>
+          <a href="/contact/" class="list-row"><span class="lr-date">Mai 2026</span><span class="lr-title serif">Atelier douleurs de dos · matinée mobilité</span><span class="lr-tag">Mobilité · Événement</span></a>
+          <a href="/contact/" class="list-row"><span class="lr-date">Avr. 2026</span><span class="lr-title serif">Bien vieillir : bouger toute sa vie</span><span class="lr-tag">Prévention · Article</span></a>
+          <a href="/contact/" class="list-row"><span class="lr-date">Avr. 2026</span><span class="lr-title serif">Soirée respiration & lâcher-prise</span><span class="lr-tag">Stress · Événement</span></a>
+          <a href="/contact/" class="list-row"><span class="lr-date">Mars 2026</span><span class="lr-title serif">Reprise d'activité après 50 ans</span><span class="lr-tag">Mouvement · Article</span></a>
+        </div>
+      </div>
+    </section>
+
+    <section class="newsletter-section" id="newsletter" data-screen-label="Newsletter">
+      <div class="workshops-wrap section-pad">
+        <div class="news-grid">
+          <div>
+            <span class="sec-num">04 - Le journal, dans votre boîte</span>
+            <h2 class="title">Recevez les <i class="h">rendez-vous</i> & les conseils.</h2>
+            <p class="lede">
+              Une fois par mois - l'agenda des ateliers, un conseil prévention-santé, les nouvelles de la maison. Jamais plus, jamais de spam.
+            </p>
+          </div>
+          <div>
+            <form class="news-form">
+              <label class="sr-only" for="newsletter-email">Adresse e-mail</label>
+              <input id="newsletter-email" type="email" placeholder="Votre adresse e-mail" />
+              <button type="submit">S'inscrire</button>
+            </form>
+            <p class="mono">Désinscription en un clic · vos données ne sont jamais partagées</p>
+          </div>
+        </div>
       </div>
     </section>
   </main>
   <SiteFooter />
 </BaseLayout>
+
+<style>
+  .workshops-page {
+    --ateliers: #d6d8d3;
+    --ateliers-ink: #545d57;
+    --ink-soft: #2a322c;
+    background: var(--linen);
+  }
+
+  .workshops-wrap {
+    width: 100%;
+    max-width: 1320px;
+    margin-inline: auto;
+    padding-inline: clamp(20px, 5.2vw, 92px);
+  }
+
+  .section-pad {
+    padding-block: clamp(72px, 10vw, 128px);
+  }
+
+  .rule-top {
+    border-top: 1px solid var(--rule);
+  }
+
+  .band-paper {
+    background: var(--paper);
+  }
+
+  .workshops-hero {
+    padding-block: clamp(40px, 6vw, 72px) clamp(40px, 5vw, 64px);
+    border-bottom: 1px solid var(--rule);
+    background: var(--ateliers);
+  }
+
+  .crumb {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    align-items: center;
+    margin-bottom: clamp(28px, 4vw, 52px);
+    color: var(--granite-500);
+    font-family: var(--mono);
+    font-size: 11px;
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+  }
+
+  .crumb a {
+    color: var(--granite-500);
+    text-decoration: none;
+  }
+
+  .crumb .sep {
+    opacity: 0.5;
+  }
+
+  .crumb .here {
+    color: var(--ateliers-ink);
+  }
+
+  .page-hero-grid {
+    display: grid;
+    grid-template-columns: minmax(0, 1.55fr) minmax(280px, 1fr);
+    gap: clamp(32px, 5vw, 72px);
+    align-items: end;
+  }
+
+  .workshops-hero h1,
+  .title {
+    margin: 0;
+    color: var(--petrol-deep);
+    font-family: var(--serif);
+    font-weight: 400;
+    font-variation-settings: "opsz" 144;
+    letter-spacing: -0.02em;
+  }
+
+  .workshops-hero h1 {
+    max-width: none;
+    font-size: clamp(40px, 5.8vw, 92px);
+    line-height: 1;
+  }
+
+  .title {
+    font-size: clamp(34px, 5.4vw, 72px);
+    line-height: 1.03;
+  }
+
+  .h,
+  .h-accent {
+    font-style: italic;
+    font-weight: 300;
+  }
+
+  .h-accent,
+  .c-petrol {
+    color: var(--ateliers-ink);
+  }
+
+  .kicker,
+  .sec-num {
+    color: var(--ateliers-ink);
+    font-family: var(--mono);
+    font-size: 11px;
+    letter-spacing: 0.24em;
+    text-transform: uppercase;
+  }
+
+  .kicker {
+    margin: 0 0 22px;
+  }
+
+  .hero-cta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    align-items: center;
+    margin-top: clamp(28px, 3.5vw, 44px);
+  }
+
+  .btn {
+    display: inline-flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid transparent;
+    padding: 13px 22px;
+    font-family: var(--mono);
+    font-size: 11px;
+    letter-spacing: 0.22em;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: gap 0.2s ease, background 0.2s ease, color 0.2s ease;
+  }
+
+  .btn-primary {
+    background: var(--petrol);
+    color: var(--linen);
+  }
+
+  .btn-primary:hover,
+  .btn-primary:focus-visible {
+    background: var(--petrol-deep);
+  }
+
+  .btn-line {
+    border: 0;
+    border-bottom: 1px solid currentColor;
+    background: transparent;
+    color: var(--petrol-deep);
+    padding-inline: 0;
+  }
+
+  .btn-line:hover,
+  .btn-line:focus-visible {
+    gap: 16px;
+  }
+
+  .ic {
+    width: 22px;
+    height: 22px;
+    flex: none;
+    fill: none;
+    stroke: currentColor;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke-width: 1.5;
+  }
+
+  .page-hero-aside {
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+  }
+
+  .lede {
+    max-width: 480px;
+    margin: 0;
+    color: var(--ink-soft);
+    font-family: var(--serif);
+    font-size: clamp(19px, 1.7vw, 23px);
+    font-weight: 300;
+    line-height: 1.5;
+  }
+
+  .sec-head {
+    display: flex;
+    max-width: 920px;
+    flex-direction: column;
+    gap: 18px;
+  }
+
+  .sec-head.compact {
+    gap: 14px;
+  }
+
+  .sec-intro {
+    max-width: 620px;
+    margin: 8px 0 0;
+    color: var(--ink-soft);
+    font-size: 16.5px;
+    line-height: 1.68;
+  }
+
+  .events {
+    display: grid;
+    margin-top: clamp(34px, 4vw, 54px);
+    border-top: 1px solid var(--rule);
+  }
+
+  .event {
+    display: grid;
+    grid-template-columns: 116px minmax(0, 1fr) auto;
+    gap: clamp(18px, 3vw, 42px);
+    align-items: center;
+    padding: clamp(22px, 3vw, 34px) 0;
+    border-bottom: 1px solid var(--rule);
+    color: inherit;
+    text-decoration: none;
+    transition: padding-left 0.2s ease, background 0.2s ease;
+  }
+
+  .event:hover,
+  .event:focus-visible {
+    padding-left: 8px;
+  }
+
+  .ev-date {
+    display: grid;
+    justify-items: start;
+    color: var(--ateliers-ink);
+  }
+
+  .ev-date .d {
+    color: var(--petrol-deep);
+    font-size: clamp(42px, 4.8vw, 68px);
+    line-height: 0.9;
+  }
+
+  .ev-date .m,
+  .ev-tag,
+  .a-tag,
+  .a-foot,
+  .lr-date,
+  .lr-tag,
+  .mono {
+    font-family: var(--mono);
+    font-size: 10px;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+  }
+
+  .ev-date .m {
+    margin-top: 8px;
+  }
+
+  .ev-body h3 {
+    margin: 0;
+    color: var(--petrol-deep);
+    font-size: clamp(23px, 2.4vw, 34px);
+    line-height: 1.08;
+  }
+
+  .ev-body p {
+    max-width: 720px;
+    margin: 10px 0 0;
+    color: var(--granite-500);
+    font-size: 14px;
+    line-height: 1.6;
+  }
+
+  .ev-tag {
+    color: var(--ateliers-ink);
+    white-space: nowrap;
+  }
+
+  .topics {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: clamp(28px, 3vw, 42px);
+  }
+
+  .topics span {
+    border: 1px solid var(--rule);
+    padding: 10px 15px;
+    color: var(--granite-500);
+    font-family: var(--mono);
+    font-size: 10px;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+  }
+
+  .topics .fill {
+    border-color: var(--ateliers);
+    background: var(--ateliers);
+    color: var(--ateliers-ink);
+  }
+
+  .journal-head {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+    align-items: flex-end;
+    justify-content: space-between;
+    margin-bottom: clamp(28px, 3vw, 40px);
+  }
+
+  .journal-head p {
+    max-width: 340px;
+    margin: 0;
+    color: var(--granite-500);
+    font-size: 15px;
+    line-height: 1.6;
+  }
+
+  .articles {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: clamp(16px, 2.2vw, 24px);
+  }
+
+  .art {
+    display: flex;
+    overflow: hidden;
+    flex-direction: column;
+    border: 1px solid var(--rule);
+    background: var(--paper);
+    color: inherit;
+    text-decoration: none;
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+  }
+
+  .art:hover,
+  .art:focus-visible {
+    transform: translateY(-4px);
+    box-shadow: 0 18px 40px -28px rgba(14, 42, 44, 0.5);
+  }
+
+  .ph {
+    position: relative;
+    overflow: hidden;
+    background:
+      radial-gradient(62% 54% at 32% 30%, var(--ph-a, #5e8281) 0%, var(--ph-b, #15393b) 78%),
+      linear-gradient(180deg, rgba(255, 255, 255, 0.05), rgba(0, 0, 0, 0.18));
+  }
+
+  .ph::before {
+    position: absolute;
+    inset: 0;
+    background:
+      repeating-linear-gradient(43deg, rgba(255, 255, 255, 0.07) 0 1.5px, transparent 1.5px 3px),
+      repeating-linear-gradient(137deg, rgba(0, 0, 0, 0.07) 0 1.5px, transparent 1.5px 3px);
+    content: "";
+    mix-blend-mode: overlay;
+    opacity: 0.16;
+  }
+
+  .ph::after {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(180deg, transparent 52%, rgba(14, 42, 44, 0.45) 100%);
+    content: "";
+  }
+
+  .art .ph {
+    width: 100%;
+    aspect-ratio: 3 / 2;
+  }
+
+  .cap {
+    position: absolute;
+    z-index: 2;
+    right: 14px;
+    bottom: 12px;
+    left: 14px;
+    color: rgba(241, 235, 225, 0.82);
+    font-family: var(--mono);
+    font-size: 9.5px;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+  }
+
+  .t-storm {
+    --ph-a: #5e8281;
+    --ph-b: #15393b;
+  }
+
+  .t-fern {
+    --ph-a: #7d9468;
+    --ph-b: #2a3d22;
+  }
+
+  .t-sand {
+    --ph-a: #e0c3a8;
+    --ph-b: #a9784f;
+  }
+
+  .a-body {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    gap: 10px;
+    padding: 22px 22px 24px;
+  }
+
+  .a-tag {
+    color: var(--ateliers-ink);
+  }
+
+  .art h3 {
+    margin: 0;
+    color: var(--petrol-deep);
+    font-size: clamp(20px, 1.8vw, 24px);
+    line-height: 1.12;
+  }
+
+  .art p {
+    margin: 0;
+    color: var(--granite-500);
+    font-size: 13.5px;
+    line-height: 1.55;
+  }
+
+  .a-foot {
+    margin-top: auto;
+    padding-top: 14px;
+    border-top: 1px solid var(--rule-soft);
+    color: var(--granite-500);
+  }
+
+  .archive-link {
+    margin-top: 32px;
+  }
+
+  .list-rows {
+    margin-top: clamp(28px, 3vw, 44px);
+    border-top: 1px solid var(--rule);
+  }
+
+  .list-row {
+    display: grid;
+    grid-template-columns: 120px minmax(0, 1fr) auto;
+    gap: 24px;
+    align-items: baseline;
+    padding: 22px 0;
+    border-bottom: 1px solid var(--rule);
+    color: inherit;
+    text-decoration: none;
+    transition: padding-left 0.2s ease;
+  }
+
+  .list-row:hover,
+  .list-row:focus-visible {
+    padding-left: 8px;
+  }
+
+  .lr-date {
+    color: var(--granite-500);
+  }
+
+  .lr-title {
+    color: var(--petrol-deep);
+    font-size: clamp(19px, 1.8vw, 24px);
+    line-height: 1.15;
+  }
+
+  .lr-tag {
+    color: var(--ateliers-ink);
+    white-space: nowrap;
+  }
+
+  .newsletter-section {
+    border-top: 1px solid var(--rule);
+    background: var(--ateliers);
+  }
+
+  .news-grid {
+    display: grid;
+    grid-template-columns: minmax(0, 1.2fr) minmax(280px, 1fr);
+    gap: clamp(36px, 5vw, 80px);
+    align-items: center;
+  }
+
+  .news-grid .title {
+    margin-top: 16px;
+  }
+
+  .news-grid .title i {
+    color: var(--ateliers-ink);
+  }
+
+  .news-grid .lede {
+    margin-top: 22px;
+  }
+
+  .news-form {
+    display: flex;
+    max-width: 520px;
+    margin-top: 34px;
+    border-bottom: 1.5px solid var(--ateliers-ink);
+  }
+
+  .news-form input {
+    flex: 1;
+    min-width: 0;
+    border: 0;
+    background: transparent;
+    color: var(--petrol-deep);
+    font-family: var(--sans);
+    font-size: 16px;
+    outline: 0;
+    padding: 14px 0;
+  }
+
+  .news-form input::placeholder {
+    color: var(--granite-500);
+  }
+
+  .news-form button {
+    border: 0;
+    background: transparent;
+    color: var(--petrol-deep);
+    cursor: pointer;
+    font-family: var(--mono);
+    font-size: 11px;
+    letter-spacing: 0.22em;
+    padding: 14px 0 14px 16px;
+    text-transform: uppercase;
+  }
+
+  .mono {
+    margin: 18px 0 0;
+    color: var(--granite-500);
+  }
+
+  @media (max-width: 900px) {
+    .page-hero-grid,
+    .news-grid {
+      grid-template-columns: 1fr;
+    }
+
+    .event {
+      grid-template-columns: 84px minmax(0, 1fr);
+    }
+
+    .ev-tag {
+      grid-column: 2;
+    }
+
+    .articles {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+
+  @media (max-width: 640px) {
+    .event,
+    .list-row {
+      grid-template-columns: 1fr;
+      gap: 8px;
+    }
+
+    .ev-tag,
+    .lr-tag {
+      display: none;
+    }
+
+    .articles {
+      grid-template-columns: 1fr;
+    }
+
+    .news-form {
+      display: grid;
+      gap: 10px;
+      border-bottom: 0;
+    }
+
+    .news-form input {
+      border-bottom: 1.5px solid var(--ateliers-ink);
+    }
+
+    .news-form button {
+      justify-self: start;
+      padding-left: 0;
+    }
+  }
+</style>

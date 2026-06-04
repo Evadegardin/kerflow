@@ -6,63 +6,845 @@ import SiteFooter from "../components/SiteFooter.astro";
 
 <BaseLayout
   title="Louer un espace - KerFlow Clamart"
-  description="Location d'espaces KerFlow pour professeurs, therapeutes, masseurs, ateliers, conferences et professionnels de prevention sante."
+  description="Location d'espaces KerFlow pour professeur·es, thérapeutes, praticien·nes, ateliers, conférences et professionnel·les de prévention santé."
 >
   <SiteHeader />
-  <main>
-    <section class="page-hero section-pad accent-location">
-      <div>
-        <p class="eyebrow">Louer un espace</p>
-        <h1>Rejoindre une maison <em>professionnelle</em> et humaine.</h1>
-      </div>
-      <div>
-        <div class="service-mark" aria-hidden="true">Pro<br /><span>location</span></div>
-        <p>KerFlow accueille des professionnels alignes avec l'univers prevention-sante : cours, consultations, soins, ateliers et conferences.</p>
-        <div class="actions">
-          <a class="btn btn-primary" href="/contact/">Faire une demande <span aria-hidden="true">→</span></a>
+  <main class="rent-page page svc-ateliers">
+    <section class="page-hero tinted" data-screen-label="Louer · Hero">
+      <div class="wrap">
+        <div class="crumb">
+          <a href="/">Accueil</a>
+          <span class="sep">/</span>
+          <span class="here">Louer un espace</span>
+        </div>
+        <div class="page-hero-grid">
+          <div>
+            <p class="kicker">Pour les professionnel·les</p>
+            <h1 class="serif">
+              Louer un espace<br />
+              au sein de la<br />
+              <i class="h-accent">maison KerFlow.</i>
+            </h1>
+            <div class="hero-cta">
+              <a href="#demande" class="btn btn-primary">
+                Faire une demande
+                <svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12h16M14 6l6 6-6 6"></path></svg>
+              </a>
+              <a href="#espaces" class="btn btn-line">Voir les espaces</a>
+            </div>
+          </div>
+          <aside class="page-hero-aside">
+            <p class="lede">
+              Trois espaces rénovés - une grande salle, un cabinet, un box de soin - à louer à
+              l'heure, à la demi-journée ou à la journée, dans un <i class="h">écosystème bien-être déjà vivant</i>.
+            </p>
+            <div class="hero-tags">
+              <span>Salle 40 m²</span>
+              <span>Cabinet 11 m²</span>
+              <span>Box 7 m²</span>
+              <span>Tisanerie</span>
+              <span>Clientèle locale</span>
+            </div>
+          </aside>
         </div>
       </div>
     </section>
 
-    <section class="page-section section-pad soft-band">
-      <div class="section-head two">
-        <div>
-          <p class="eyebrow">Pour qui ?</p>
-          <h2>Des pros alignes<br />avec <em>la maison</em>.</h2>
+    <section class="section-pad band-linen" data-screen-label="Pour qui">
+      <div class="wrap">
+        <div class="sec-head">
+          <span class="sec-num">01 - Pour qui ?</span>
+          <h2 class="title">Des professionnel·les<br /><i class="h c-petrol">aligné·es</i> avec le lieu.</h2>
+          <p class="sec-intro">
+            Une clientèle déjà sensible aux démarches de bien-être et de prévention santé, un cadre qualitatif, un univers cohérent. Si c'est le vôtre, on devrait s'entendre.
+          </p>
         </div>
-        <p>Cette page parle aux intervenants professionnels, pas aux clientes finales. Le ton reste clair, qualitatif et concret.</p>
-      </div>
-      <div class="page-card-grid">
-        <article class="page-card accent-studio"><h3>Professeurs</h3><p>Yoga, Pilates, mobilite, respiration, renforcement doux.</p></article>
-        <article class="page-card accent-consult"><h3>Therapeutes</h3><p>Prevention sante, accompagnement, nutrition, sommeil, stress.</p></article>
-        <article class="page-card accent-rituel"><h3>Praticiens</h3><p>Massages, soins corporels, reflexologie, recuperation.</p></article>
+        <div class="grid-bordered cols-3">
+          <div class="gb-cell"><span class="gb-num">↘</span><h3 class="serif">Professeur·es</h3><p>Yoga, Pilates, mobilité, pratiques douces - cours réguliers ou cycles.</p></div>
+          <div class="gb-cell"><span class="gb-num">↘</span><h3 class="serif">Thérapeutes & masseur·ses</h3><p>Massage, réflexologie, acupuncture, soins énergétiques, soins du corps.</p></div>
+          <div class="gb-cell"><span class="gb-num">↘</span><h3 class="serif">Prévention santé</h3><p>Nutrition, sommeil, accompagnement, coaching - consultations individuelles.</p></div>
+          <div class="gb-cell"><span class="gb-num">↘</span><h3 class="serif">Ateliers & conférences</h3><p>Cercles, formations, workshops, stages week-end ouverts au public.</p></div>
+          <div class="gb-cell"><span class="gb-num">↘</span><h3 class="serif">Intervenant·es réguliers</h3><p>On privilégie les partenariats durables, inscrits dans la vie du lieu.</p></div>
+          <div class="gb-cell highlight"><span class="gb-num">→</span><h3 class="serif">Un projet particulier ?</h3><p>Parlez-nous-en. On étudie chaque demande au cas par cas.</p></div>
+        </div>
       </div>
     </section>
 
-    <section class="page-section section-pad">
-      <div class="section-head narrow">
-        <p class="eyebrow">Espaces disponibles</p>
-        <h2>Choisir le bon <em>cadre</em>.</h2>
-      </div>
-      <div class="page-card-grid">
-        <article class="page-card accent-studio"><p class="mini">Salle de pratique</p><h3>Cours & ateliers</h3><ul><li>Petits groupes</li><li>Materiel de pratique</li><li>Formats regulier ou ponctuel</li></ul></article>
-        <article class="page-card accent-consult"><p class="mini">La Bulle</p><h3>Consultations</h3><ul><li>Rendez-vous individuels</li><li>Cadre calme</li><li>Usage prevention sante</li></ul></article>
-        <article class="page-card accent-rituel"><p class="mini">Le Cocon</p><h3>Soins corporels</h3><ul><li>Table de soin</li><li>Ambiance feutree</li><li>Massages et pratiques corporelles</li></ul></article>
+    <section class="section-pad rule-top band-paper" id="espaces" data-screen-label="Espaces à louer">
+      <div class="wrap">
+        <div class="sec-head">
+          <span class="sec-num">02 - Les espaces disponibles</span>
+          <h2 class="title">Trois espaces,<br />trois <i class="h c-petrol">usages.</i></h2>
+          <p class="sec-intro">
+            Tous entièrement rénovés - double vitrage, peintures et sols neufs. Tisanerie, vestiaires et toilettes accessibles PMR partagés.
+          </p>
+        </div>
+
+        <div class="rent" style="--accent-ink: var(--studio-500); --frame: var(--studio-100);" data-screen-label="Louer · La Salle">
+          <div class="rent-media framed">
+            <div class="ph t-petrol"><span class="cap">[ photo · La Salle de pratique, 40 m², miroir toute hauteur, lumière naturelle ]</span></div>
+          </div>
+          <div class="rent-body">
+            <span class="r-tag">01 · La Salle de pratique</span>
+            <h3 class="serif">Salle polyvalente · 40 m²</h3>
+            <p class="r-desc">
+              Lumineuse et chaleureuse, prête à accueillir jusqu'à 10-12 participants pour une pratique corporelle. Idéale pour les cours collectifs, ateliers, formations, cercles, conférences - mais aussi stages week-end et workshops.
+            </p>
+            <ul class="r-equip">
+              <li>Tapis, bolsters, briques & sangles</li>
+              <li>Couvertures & élastiques Pilates</li>
+              <li>Balles & gros ballons</li>
+              <li>6 tables & 20 chaises pliantes</li>
+              <li>Miroir toute hauteur</li>
+              <li>Enceinte Bluetooth</li>
+            </ul>
+            <div class="r-tarifs">
+              <div class="r-tarif"><span class="rt-amt">15<sup>€</sup></span><span class="rt-unit">de l'heure</span></div>
+              <div class="r-tarif"><span class="rt-amt">50<sup>€</sup></span><span class="rt-unit">demi-journée · 5h</span></div>
+              <div class="r-tarif"><span class="rt-amt">100<sup>€</sup></span><span class="rt-unit">journée · 10h</span></div>
+            </div>
+            <p class="r-cond">Capacité 12 · à l'heure, demi-journée ou journée · tarifs indicatifs</p>
+          </div>
+        </div>
+
+        <div class="rent flip" style="--accent-ink: var(--consult-ink); --frame: var(--consult);" data-screen-label="Louer · La Bulle">
+          <div class="rent-media framed">
+            <div class="ph t-foam"><span class="cap">[ photo · La Bulle, 11 m², grande fenêtre sur cour arborée, fauteuil ]</span></div>
+          </div>
+          <div class="rent-body">
+            <span class="r-tag">02 · La Bulle - bureau de consultation</span>
+            <h3 class="serif">Cabinet lumineux · 11 m²</h3>
+            <p class="r-desc">
+              Au rez-de-chaussée, une grande fenêtre ouvrant sur une cour calme et arborée. Un climat de confiance et de sérénité dès l'entrée - idéal pour l'accompagnement thérapeutique, la prévention santé ou le coaching.
+            </p>
+            <ul class="r-equip">
+              <li>Rez-de-chaussée · accès PMR</li>
+              <li>Grande fenêtre sur cour</li>
+              <li>Double vitrage · sol neuf</li>
+              <li>Tisanerie partagée</li>
+              <li>Toilettes accessibles PMR</li>
+              <li>Ambiance naturelle & chaleureuse</li>
+            </ul>
+            <div class="r-tarifs">
+              <div class="r-tarif"><span class="rt-amt">12<sup>€</sup></span><span class="rt-unit">de l'heure</span></div>
+              <div class="r-tarif"><span class="rt-amt">45<sup>€</sup></span><span class="rt-unit">demi-journée · 5h</span></div>
+              <div class="r-tarif"><span class="rt-amt">90<sup>€</sup></span><span class="rt-unit">journée · 10h</span></div>
+            </div>
+            <p class="r-cond">Consultation & accompagnement · à l'heure, demi-journée ou journée</p>
+          </div>
+        </div>
+
+        <div class="rent" style="--accent-ink: var(--rituel-ink); --frame: var(--rituel);" data-screen-label="Louer · Le Cocon">
+          <div class="rent-media framed">
+            <div class="ph t-clay"><span class="cap">[ photo · Le Cocon, 7 m², box de soin au sous-sol, table de massage ]</span></div>
+          </div>
+          <div class="rent-body">
+            <span class="r-tag">03 · Le Cocon - box de soin</span>
+            <h3 class="serif">Box intimiste · 7 m²</h3>
+            <p class="r-desc">
+              Au sous-sol, à proximité des vestiaires. Sans fenêtre, il offre une intimité totale et une atmosphère enveloppante, propice au lâcher-prise - pour le massage, l'acupuncture ou les soins énergétiques.
+            </p>
+            <ul class="r-equip">
+              <li>Table de massage portative</li>
+              <li>Petit lavabo · radiateur</li>
+              <li>Enceinte Bluetooth</li>
+              <li>VMC · renouvellement d'air</li>
+              <li>Intimité & confidentialité</li>
+              <li>Non PMR · transfert possible à l'étage</li>
+            </ul>
+            <div class="r-tarifs">
+              <div class="r-tarif"><span class="rt-amt">10<sup>€</sup></span><span class="rt-unit">de l'heure</span></div>
+              <div class="r-tarif"><span class="rt-amt">40<sup>€</sup></span><span class="rt-unit">demi-journée · 5h</span></div>
+              <div class="r-tarif"><span class="rt-amt">70<sup>€</sup></span><span class="rt-unit">journée · 10h</span></div>
+            </div>
+            <p class="r-cond">Soin individuel · à l'heure, demi-journée ou journée · tarifs indicatifs</p>
+          </div>
+        </div>
       </div>
     </section>
 
-    <section class="page-section section-pad deep">
-      <div class="content-split">
-        <div>
-          <p class="eyebrow">Demande de location</p>
-          <h2>Informations a <em>qualifier</em>.</h2>
+    <section class="section-pad rule-top band-rituel-soft" data-screen-label="Pourquoi rejoindre">
+      <div class="wrap">
+        <div class="sec-head">
+          <span class="sec-num">03 - Pourquoi rejoindre KerFlow</span>
+          <h2 class="title">Un lieu où votre<br />activité <i class="h c-petrol">se prolonge.</i></h2>
         </div>
-        <div class="page-card-grid two">
-          <article class="page-card"><h3>A preciser</h3><ul><li>Tarifs</li><li>Disponibilites</li><li>Conditions de location</li><li>Calendrier eventuel</li></ul></article>
-          <article class="page-card"><h3>Demande</h3><p>Un formulaire dedie permettra de connaitre le metier, le format, la frequence et les besoins materiels.</p><a class="btn-line light" href="/contact/">Contacter KerFlow</a></article>
+        <ul class="check-list">
+          <li><span class="mk">↘</span><span class="tx"><b>Un lieu qualitatif</b> - entièrement rénové, matériaux soignés, ambiance apaisée.</span></li>
+          <li><span class="mk">↘</span><span class="tx"><b>Une clientèle locale</b> déjà engagée dans une démarche de bien-être.</span></li>
+          <li><span class="mk">↘</span><span class="tx"><b>Un univers cohérent</b> - prévention-santé clair, positionnement assumé.</span></li>
+          <li><span class="mk">↘</span><span class="tx"><b>Un cadre chaleureux</b> - tisanerie conviviale, vestiaires, accueil soigné.</span></li>
+          <li><span class="mk">↘</span><span class="tx"><b>Une optimisation du planning</b> - créneaux fixes, cycles réguliers, stages rentables.</span></li>
+          <li><span class="mk">↘</span><span class="tx"><b>Une ambiance professionnelle</b> mais humaine, à taille d'une maison.</span></li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="section-pad rule-top band-tinted" id="demande" data-screen-label="Demande de location">
+      <div class="wrap">
+        <div class="contact-grid">
+          <div>
+            <span class="sec-num">04 - Demande de location</span>
+            <h2 class="title request-title">Parlez-nous de<br /><i class="h">votre projet.</i></h2>
+            <p class="request-copy">
+              Dites-nous qui vous êtes, l'espace qui vous intéresse et le rythme souhaité. On revient vers vous sous 48 h pour fixer une visite et vérifier les disponibilités.
+            </p>
+            <div class="coord-list">
+              <div class="coord-row"><span class="lab">Contact direct</span><span class="val"><a href="mailto:bonjour@kerflow.fr">bonjour@kerflow.fr</a></span></div>
+              <div class="coord-row"><span class="lab">Téléphone</span><span class="val"><a href="tel:+33146381234">01 46 38 12 34</a></span></div>
+              <div class="coord-row"><span class="lab">Visite</span><span class="val">Sur rendez-vous, du mardi au samedi</span></div>
+            </div>
+          </div>
+          <form class="form-card" onsubmit="return false;" aria-label="Demande de location">
+            <div class="form-grid">
+              <div class="field"><label for="ln">Prénom & nom</label><input id="ln" type="text" placeholder="Votre nom" /></div>
+              <div class="field"><label for="ac">Activité</label><input id="ac" type="text" placeholder="Ex. réflexologue, prof de yoga..." /></div>
+              <div class="field"><label for="em">E-mail</label><input id="em" type="email" placeholder="vous@exemple.fr" /></div>
+              <div class="field"><label for="phone">Téléphone</label><input id="phone" type="tel" placeholder="06 00 00 00 00" /></div>
+              <div class="field full">
+                <label>Espace souhaité</label>
+                <div class="radio-row">
+                  <label class="radio-chip"><input type="radio" name="space" checked /><span>La Salle · 40 m²</span></label>
+                  <label class="radio-chip"><input type="radio" name="space" /><span>La Bulle · 11 m²</span></label>
+                  <label class="radio-chip"><input type="radio" name="space" /><span>Le Cocon · 7 m²</span></label>
+                </div>
+              </div>
+              <div class="field full">
+                <label>Rythme</label>
+                <div class="radio-row">
+                  <label class="radio-chip"><input type="radio" name="freq" checked /><span>Heure</span></label>
+                  <label class="radio-chip"><input type="radio" name="freq" /><span>Demi-journée</span></label>
+                  <label class="radio-chip"><input type="radio" name="freq" /><span>Journée</span></label>
+                  <label class="radio-chip"><input type="radio" name="freq" /><span>Cycle régulier</span></label>
+                </div>
+              </div>
+              <div class="field full"><label for="msg">Votre projet</label><textarea id="msg" placeholder="Décrivez votre activité, vos créneaux idéaux, vos questions..."></textarea></div>
+            </div>
+            <div class="form-foot">
+              <p class="fine">En envoyant ce formulaire, vous acceptez d'être recontacté·e au sujet de votre demande. Aucune donnée n'est partagée.</p>
+              <button type="submit" class="btn btn-primary">
+                Envoyer ma demande
+                <svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12h16M14 6l6 6-6 6"></path></svg>
+              </button>
+            </div>
+          </form>
         </div>
       </div>
     </section>
   </main>
   <SiteFooter />
 </BaseLayout>
+
+<style>
+  .rent-page {
+    --consult: var(--sea-mist);
+    --consult-ink: #2f6a6c;
+    --rituel-ink: var(--clay);
+    --ateliers: var(--stone);
+    --ateliers-ink: var(--granite-500);
+    --accent: var(--ateliers-ink);
+    --accent-ink: var(--ateliers-ink);
+    --accent-soft: var(--ateliers);
+    background: var(--linen);
+    color: var(--petrol-deep);
+  }
+
+  .wrap {
+    max-width: 1320px;
+    margin: 0 auto;
+    padding-inline: clamp(20px, 5.2vw, 92px);
+  }
+
+  .serif {
+    font-family: var(--serif);
+    font-weight: 400;
+    font-variation-settings: "opsz" 144;
+  }
+
+  .h,
+  .h-accent {
+    font-style: italic;
+  }
+
+  .c-petrol,
+  .h-accent {
+    color: var(--petrol);
+  }
+
+  .section-pad {
+    padding-block: clamp(72px, 10vw, 128px);
+  }
+
+  .rule-top {
+    border-top: 1px solid var(--rule);
+  }
+
+  .band-paper {
+    background: var(--paper);
+  }
+
+  .band-linen {
+    background: var(--linen);
+  }
+
+  .band-rituel-soft {
+    background: var(--rituel);
+  }
+
+  .band-tinted {
+    background: var(--ateliers);
+  }
+
+  .page-hero {
+    display: flex;
+    grid-template-columns: none;
+    gap: 0;
+    min-height: calc(100vh - 86px);
+    min-height: calc(100svh - 86px);
+    align-items: center;
+    padding-block: clamp(40px, 6vw, 72px) clamp(40px, 5vw, 64px);
+  }
+
+  .page-hero > .wrap {
+    width: 100%;
+  }
+
+  .page-hero.tinted {
+    border-bottom: 1px solid var(--rule);
+    background: var(--ateliers);
+  }
+
+  .crumb {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    align-items: center;
+    margin-bottom: clamp(28px, 4vw, 52px);
+    color: var(--granite-500);
+    font-family: var(--mono);
+    font-size: 11px;
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+  }
+
+  .crumb a {
+    color: var(--granite-500);
+    text-decoration: none;
+  }
+
+  .crumb a:hover,
+  .crumb a:focus-visible {
+    color: var(--clay);
+  }
+
+  .crumb .sep {
+    opacity: 0.5;
+  }
+
+  .crumb .here {
+    color: var(--ateliers-ink);
+  }
+
+  .page-hero-grid {
+    display: grid;
+    grid-template-columns: minmax(0, 1.55fr) minmax(280px, 1fr);
+    gap: clamp(32px, 5vw, 72px);
+    align-items: end;
+  }
+
+  .page-hero h1,
+  h2.title {
+    margin: 0;
+    color: var(--petrol-deep);
+    font-family: var(--serif);
+    font-weight: 400;
+    font-variation-settings: "opsz" 144;
+    letter-spacing: -0.02em;
+  }
+
+  .page-hero h1 {
+    max-width: none;
+    font-size: clamp(40px, 5.8vw, 92px);
+    line-height: 1;
+  }
+
+  h2.title {
+    font-size: clamp(34px, 5.4vw, 72px);
+    line-height: 1.03;
+  }
+
+  .kicker,
+  .sec-num,
+  .gb-num,
+  .r-tag,
+  .rt-unit,
+  .r-cond {
+    font-family: var(--mono);
+    text-transform: uppercase;
+  }
+
+  .kicker,
+  .sec-num {
+    color: var(--ateliers-ink);
+    font-size: 11px;
+    letter-spacing: 0.24em;
+  }
+
+  .kicker {
+    margin: 0 0 22px;
+  }
+
+  .hero-cta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    align-items: center;
+    margin-top: clamp(28px, 3.5vw, 44px);
+  }
+
+  .btn {
+    display: inline-flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid transparent;
+    padding: 13px 22px;
+    font-family: var(--mono);
+    font-size: 11px;
+    letter-spacing: 0.22em;
+    text-decoration: none;
+    text-transform: uppercase;
+  }
+
+  .btn-primary {
+    background: var(--petrol);
+    color: var(--linen);
+  }
+
+  .btn-line {
+    border: 0;
+    border-bottom: 1px solid currentColor;
+    background: transparent;
+    color: var(--petrol-deep);
+    padding-inline: 0;
+  }
+
+  .btn-line::after {
+    content: none;
+  }
+
+  .ic {
+    width: 22px;
+    height: 22px;
+    flex: none;
+    fill: none;
+    stroke: currentColor;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke-width: 1.5;
+  }
+
+  .page-hero-aside {
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+  }
+
+  .lede {
+    max-width: 420px;
+    margin: 0;
+    color: var(--ink-soft, var(--granite));
+    font-family: var(--serif);
+    font-size: clamp(19px, 1.7vw, 23px);
+    font-weight: 300;
+    line-height: 1.5;
+  }
+
+  .hero-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+
+  .hero-tags span {
+    border: 1px solid var(--rule);
+    padding: 6px 11px;
+    color: var(--granite-500);
+    font-family: var(--mono);
+    font-size: 10px;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+  }
+
+  .sec-head {
+    display: flex;
+    max-width: 920px;
+    flex-direction: column;
+    gap: 18px;
+  }
+
+  .sec-intro {
+    max-width: 620px;
+    margin: 8px 0 0;
+    color: var(--ink-soft, var(--granite));
+    font-size: 16.5px;
+    line-height: 1.68;
+  }
+
+  .grid-bordered {
+    display: grid;
+    margin-top: clamp(32px, 4vw, 52px);
+    border-top: 1px solid var(--rule);
+    border-left: 1px solid var(--rule);
+  }
+
+  .grid-bordered.cols-3 {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .gb-cell {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    min-height: 190px;
+    padding: 30px clamp(20px, 2vw, 32px);
+    border-right: 1px solid var(--rule);
+    border-bottom: 1px solid var(--rule);
+  }
+
+  .gb-cell.highlight {
+    border-color: var(--ateliers);
+    background: var(--ateliers);
+  }
+
+  .gb-num {
+    color: var(--ateliers-ink);
+    font-size: 11px;
+    letter-spacing: 0.2em;
+  }
+
+  .gb-cell h3 {
+    margin: 0;
+    color: var(--petrol-deep);
+    font-size: clamp(22px, 2vw, 28px);
+    line-height: 1.05;
+  }
+
+  .gb-cell p {
+    margin: 0;
+    color: var(--granite-500);
+    font-size: 14px;
+    line-height: 1.6;
+  }
+
+  .ph {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    background: var(--ph-a, #3b6c6e);
+    background-image:
+      radial-gradient(62% 54% at 32% 30%, var(--ph-a, #3b6c6e) 0%, var(--ph-b, #0e2a2c) 78%),
+      linear-gradient(180deg, rgba(255, 255, 255, 0.05), rgba(0, 0, 0, 0.18));
+  }
+
+  .ph::before,
+  .ph::after {
+    position: absolute;
+    inset: 0;
+    content: "";
+    pointer-events: none;
+  }
+
+  .ph::before {
+    background:
+      repeating-linear-gradient(43deg, rgba(255, 255, 255, 0.07) 0 1.5px, transparent 1.5px 3px),
+      repeating-linear-gradient(137deg, rgba(0, 0, 0, 0.07) 0 1.5px, transparent 1.5px 3px);
+    mix-blend-mode: overlay;
+    opacity: 0.16;
+  }
+
+  .ph::after {
+    background: linear-gradient(180deg, transparent 52%, rgba(14, 42, 44, 0.45));
+  }
+
+  .ph .cap {
+    position: absolute;
+    right: 14px;
+    bottom: 12px;
+    left: 14px;
+    z-index: 2;
+    color: rgba(241, 235, 225, 0.82);
+    font-family: var(--mono);
+    font-size: 9.5px;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+  }
+
+  .t-petrol {
+    --ph-a: #3b6c6e;
+    --ph-b: #0e2a2c;
+  }
+
+  .t-foam {
+    --ph-a: #9bbab8;
+    --ph-b: #3f6e6f;
+  }
+
+  .t-clay {
+    --ph-a: #c47a55;
+    --ph-b: #6b3d29;
+  }
+
+  .framed {
+    padding: 12px;
+    background: var(--frame, var(--rituel));
+  }
+
+  .rent {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+    gap: clamp(28px, 4vw, 56px);
+    align-items: start;
+    padding-top: clamp(40px, 5vw, 64px);
+  }
+
+  .rent + .rent {
+    margin-top: clamp(40px, 5vw, 64px);
+    border-top: 1px solid var(--rule);
+  }
+
+  .rent.flip .rent-media {
+    order: 2;
+  }
+
+  .rent-media .ph {
+    aspect-ratio: 4 / 3;
+  }
+
+  .rent-body .r-tag {
+    color: var(--accent-ink);
+    font-size: 11px;
+    letter-spacing: 0.22em;
+  }
+
+  .rent-body h3 {
+    margin: 12px 0 0;
+    color: var(--petrol-deep);
+    font-size: clamp(28px, 3vw, 42px);
+    line-height: 1.03;
+  }
+
+  .rent-body p.r-desc {
+    max-width: 520px;
+    margin: 16px 0 0;
+    color: var(--granite-500);
+    font-size: 15.5px;
+    line-height: 1.66;
+  }
+
+  .r-equip {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 8px 22px;
+    margin: 22px 0 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  .r-equip li {
+    display: flex;
+    gap: 10px;
+    align-items: baseline;
+    padding: 5px 0;
+    border-bottom: 1px solid var(--rule-soft);
+    color: var(--ink-soft, var(--granite));
+    font-size: 13.5px;
+    line-height: 1.45;
+  }
+
+  .r-equip li::before {
+    color: var(--accent-ink);
+    content: "-";
+  }
+
+  .r-tarifs {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    margin-top: 26px;
+    border: 1px solid var(--rule);
+  }
+
+  .r-tarif {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    padding: 18px 18px 16px;
+    border-right: 1px solid var(--rule);
+  }
+
+  .r-tarif:last-child {
+    border-right: 0;
+  }
+
+  .rt-amt {
+    color: var(--petrol-deep);
+    font-family: var(--serif);
+    font-size: 28px;
+    font-weight: 400;
+    font-variation-settings: "opsz" 144;
+    line-height: 1;
+  }
+
+  .rt-amt sup {
+    font-size: 0.45em;
+  }
+
+  .rt-unit {
+    color: var(--granite-500);
+    font-size: 9.5px;
+    letter-spacing: 0.16em;
+  }
+
+  .r-cond {
+    margin: 14px 0 0;
+    color: var(--granite-500);
+    font-size: 10px;
+    letter-spacing: 0.14em;
+  }
+
+  .check-list {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 0 clamp(36px, 5vw, 72px);
+    margin: clamp(28px, 3vw, 40px) 0 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  .check-list li {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 16px;
+    align-items: baseline;
+    padding: 18px 0;
+    border-bottom: 1px solid var(--rule-soft);
+  }
+
+  .check-list .mk {
+    color: var(--ateliers-ink);
+    font-family: var(--serif);
+    font-size: 18px;
+    font-style: italic;
+    font-variation-settings: "opsz" 144;
+  }
+
+  .check-list .tx {
+    color: var(--ink-soft, var(--granite));
+    font-size: 15.5px;
+    line-height: 1.55;
+  }
+
+  .check-list b {
+    color: var(--petrol-deep);
+    font-weight: 600;
+  }
+
+  .request-title {
+    margin-top: 16px;
+  }
+
+  .request-title i {
+    color: var(--ateliers-ink);
+  }
+
+  .request-copy {
+    max-width: 400px;
+    margin: 22px 0 0;
+    color: var(--ink-soft, var(--granite));
+    font-size: 16px;
+    line-height: 1.7;
+  }
+
+  .contact-grid {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(360px, 1.2fr);
+    gap: clamp(36px, 5vw, 72px);
+    align-items: start;
+  }
+
+  .form-card {
+    padding: clamp(28px, 3vw, 46px);
+    border: 1px solid var(--rule);
+    background: var(--paper);
+  }
+
+  .field input:focus,
+  .field textarea:focus,
+  .field select:focus {
+    border-color: var(--ateliers-ink);
+  }
+
+  .radio-chip input:checked + span {
+    border-color: var(--ateliers-ink);
+    background: var(--ateliers);
+    color: var(--ateliers-ink);
+  }
+
+  .coord-row .lab {
+    color: var(--ateliers-ink);
+  }
+
+  .coord-row .val a {
+    text-decoration: none;
+  }
+
+  .form-foot .btn-primary {
+    background: var(--ateliers-ink);
+  }
+
+  @media (max-width: 980px) {
+    .grid-bordered.cols-3 {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+  }
+
+  @media (max-width: 860px) {
+    .page-hero-grid,
+    .rent,
+    .contact-grid {
+      grid-template-columns: 1fr;
+    }
+
+    .rent.flip .rent-media {
+      order: 0;
+    }
+  }
+
+  @media (max-width: 720px) {
+    .check-list {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  @media (max-width: 560px) {
+    .grid-bordered.cols-3,
+    .r-equip {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .r-tarifs {
+      grid-template-columns: 1fr;
+    }
+
+    .r-tarif {
+      border-right: 0;
+      border-bottom: 1px solid var(--rule);
+    }
+
+    .r-tarif:last-child {
+      border-bottom: 0;
+    }
+  }
+</style>

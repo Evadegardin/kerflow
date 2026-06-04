@@ -9,48 +9,156 @@ import SiteFooter from "../../components/SiteFooter.astro";
   description="La Bulle, espace KerFlow Consult pour les consultations en prevention sante, sommeil, alimentation, stress et comportements de sante a Clamart."
 >
   <SiteHeader />
-  <main>
-    <section class="page-hero section-pad accent-consult">
-      <div>
-        <p class="eyebrow">KerFlow Consult</p>
-        <h1>La Bulle,<br />pour la <em>prévention santé</em>.</h1>
-      </div>
-      <div>
-        <div class="service-mark" aria-hidden="true">Consult<br /><span>sante</span></div>
-        <p>Un espace de consultation pour avancer sur le sommeil, l'alimentation, le stress, l'activite physique et les comportements de sante.</p>
-        <div class="actions">
-          <a class="btn btn-primary" href="/contact/">Prendre rendez-vous <span aria-hidden="true">→</span></a>
+  <main class="cours-page bulle-page">
+    <section class="cours-hero bulle-hero">
+      <div class="cours-wrap">
+        <div class="cours-hero-grid">
+          <div>
+            <p class="cours-kicker">KerFlow Consult - La Bulle</p>
+            <h1>
+              La Bulle,<br />
+              <em>grand soin.</em><br />
+              Comprendre<br />
+              sans pression.
+            </h1>
+            <div class="cours-actions">
+              <a href="/contact/" class="btn btn-primary">Prendre rendez-vous <span aria-hidden="true">→</span></a>
+              <a href="#intervenants" class="btn-line">Voir les intervenants</a>
+            </div>
+          </div>
+          <aside class="cours-hero-aside">
+            <img class="cours-hero-logo" src="/assets/logos/kerflow-consult.png" alt="KerFlow Consult" loading="eager" decoding="async" />
+            <p>
+              Consultations en prevention sante, NAPSOthérapie, sommeil, stress et alimentation :
+              un espace individuel pour <em>poser une question</em> et repartir avec des pistes concretes.
+            </p>
+            <div class="cours-tags">
+              <span>Sommeil</span><span>Stress</span><span>Alimentation</span><span>NAPSOthérapie</span><span>Mode de vie</span>
+            </div>
+          </aside>
         </div>
       </div>
     </section>
 
-    <section class="page-section section-pad soft-band">
-      <div class="section-head two">
+    <section class="bulle-section bulle-paperless" id="espace">
+      <div class="bulle-wrap bulle-space-grid">
         <div>
-          <p class="eyebrow">Accompagnement</p>
-          <h2>Comprendre,<br />ajuster,<br /><em>tenir dans la durée</em>.</h2>
+          <span class="bulle-lock">KerFlow <small>Consult</small></span>
+          <h2>La Bulle,<br />le cabinet<br /><em>qui écoute.</em></h2>
+          <p class="bulle-copy">
+            Un bureau lumineux au rez-de-chaussee, sa fenetre ouverte sur la cour arboree.
+            On vient y poser une question de sante, comprendre, et repartir avec des pistes
+            concretes, sans jugement, sans injonction.
+          </p>
+          <div class="bulle-placeholder bulle-foam">
+            <span>[ photo - La Bulle, 11 m², fauteuil, grande fenetre sur cour ]</span>
+          </div>
         </div>
-        <p>La Bulle regroupe les consultations individuelles et les accompagnements en prevention sante, dans une approche douce, serieuse et non culpabilisante.</p>
-      </div>
-      <div class="page-card-grid">
-        <article class="page-card accent-consult"><h3>Sommeil</h3><p>Rythmes, recuperation, fatigue et routines realistes.</p></article>
-        <article class="page-card accent-consult"><h3>Alimentation</h3><p>Reperes concrets, sans regime ni injonction.</p></article>
-        <article class="page-card accent-consult"><h3>Stress</h3><p>Charge mentale, respiration, regulation et equilibre quotidien.</p></article>
+        <aside>
+          <p class="bulle-label">Ce qu'on y trouve</p>
+          <div class="bulle-list">
+            <article>
+              <span>01</span>
+              <div>
+                <h3>Consultations &amp; NAPSOthérapie</h3>
+                <p>Un bilan global qui croise alimentation, sommeil, activite physique et stress, pour un plan d'action realiste.</p>
+              </div>
+            </article>
+            <article>
+              <span>02</span>
+              <div>
+                <h3>Sommeil &amp; gestion du stress</h3>
+                <p>Comprendre ce qui empeche de dormir ou de se poser : respiration, hygiene du sommeil, charge mentale.</p>
+              </div>
+            </article>
+            <article>
+              <span>03</span>
+              <div>
+                <h3>Alimentation &amp; comportement</h3>
+                <p>Sans regime ni culpabilite. Ecouter sa faim, ajuster, apaiser son rapport a l'assiette, durablement.</p>
+              </div>
+            </article>
+          </div>
+          <div class="bulle-tags">
+            <span>Sur rendez-vous</span>
+            <span>Individuel</span>
+            <span>Acces PMR</span>
+          </div>
+        </aside>
       </div>
     </section>
 
-    <section class="section-pad">
-      <div class="content-split">
-        <div>
-          <p class="eyebrow">KerFlow Consult</p>
-          <h2>Une consultation<br /><em>personnalisée</em>.</h2>
+    <section class="bulle-section" id="intervenants">
+      <div class="bulle-wrap">
+        <div class="bulle-head">
+          <span>02 - Les intervenants</span>
+          <h2>Les praticien·nes<br /><em>de La Bulle.</em></h2>
+          <p>
+            Chacun·e accompagne avec serieux et douceur, dans une approche globale
+            du mode de vie et de la prevention sante.
+          </p>
         </div>
-        <div class="body-copy">
-          <p>Les rendez-vous peuvent intégrer la NAPSOthérapie, l'activite physique adaptee, les habitudes de vie et le bien-etre mental.</p>
-          <p>L'objectif est d'aider chaque personne a identifier les leviers utiles, puis a les installer progressivement dans son quotidien.</p>
-          <div class="actions">
-            <a class="btn-line" href="/prevention-sante/le-cocon/">Voir Le Cocon →</a>
-            <a class="btn-line" href="/contact/">Contacter KerFlow</a>
+
+        <div class="bulle-team">
+          <article>
+            <div class="bulle-person-media bulle-foam"><span>[ portrait - praticienne ]</span></div>
+            <div>
+              <h3>Hélène Brunel</h3>
+              <p class="bulle-role">NAPSOthérapie · prévention santé</p>
+              <p>Approche globale du mode de vie : alimentation, activité, sommeil, stress.</p>
+              <div><a href="/contact/">Prendre rendez-vous</a><a href="#">Instagram</a></div>
+            </div>
+          </article>
+          <article>
+            <div class="bulle-person-media bulle-storm"><span>[ portrait - praticien ]</span></div>
+            <div>
+              <h3>Marc Lefèvre</h3>
+              <p class="bulle-role">Sommeil · gestion du stress</p>
+              <p>Cohérence cardiaque, hygiène du sommeil, charge mentale. Des outils concrets.</p>
+              <div><a href="/contact/">Prendre rendez-vous</a><a href="#">Site</a></div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="bulle-section bulle-paper">
+      <div class="bulle-wrap">
+        <div class="bulle-head">
+          <span>03 - Comment reserver</span>
+          <h2>Un parcours simple,<br />en <em>trois temps.</em></h2>
+        </div>
+        <div class="bulle-steps">
+          <article>
+            <span>i</span>
+            <h3>On choisit ensemble</h3>
+            <p>Un doute sur l'espace ou l'intervenant·e ? Ecrivez-nous : on vous oriente.</p>
+          </article>
+          <article>
+            <span>ii</span>
+            <h3>On prend rendez-vous</h3>
+            <p>Directement avec le praticien ou la praticienne, par le formulaire de contact.</p>
+          </article>
+          <article>
+            <span>iii</span>
+            <h3>On vous accueille</h3>
+            <p>Un the chaud, le calme du lieu, et le temps qu'il faut. Sans engagement.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="bulle-cta">
+      <div class="bulle-wrap">
+        <h2>Choisir un<br /><em>accompagnement.</em></h2>
+        <div>
+          <p>
+            On en parle avant de commencer, pour trouver le bon espace, le bon rythme,
+            la bonne personne. Sans engagement.
+          </p>
+          <div class="cours-actions">
+            <a href="/contact/" class="btn btn-light">Prendre rendez-vous</a>
+            <a href="#intervenants" class="btn-line on-dark">Voir les intervenants</a>
           </div>
         </div>
       </div>
@@ -58,3 +166,310 @@ import SiteFooter from "../../components/SiteFooter.astro";
   </main>
   <SiteFooter />
 </BaseLayout>
+
+<style>
+  .bulle-page {
+    --cours-accent: #2f6a6c;
+    --cours-soft: var(--sea-mist);
+    --bulle-accent: #2f6a6c;
+    --bulle-soft: var(--sea-mist);
+    --bulle-ink-soft: #545d57;
+  }
+
+  .bulle-page em {
+    color: var(--bulle-accent);
+  }
+
+  .bulle-page .btn-primary {
+    background: var(--bulle-accent);
+  }
+
+  .bulle-page .btn-primary:hover,
+  .bulle-page .btn-primary:focus-visible {
+    background: var(--petrol-deep);
+  }
+
+  .bulle-hero {
+    background: var(--bulle-soft);
+  }
+
+  .bulle-wrap {
+    width: min(100%, 1440px);
+    margin-inline: auto;
+    padding-inline: clamp(20px, 6vw, 88px);
+  }
+
+  .bulle-section {
+    padding-block: clamp(72px, 8vw, 112px);
+    border-top: 1px solid var(--rule);
+  }
+
+  .bulle-paper {
+    background: var(--paper);
+  }
+
+  .bulle-paperless {
+    background: var(--linen);
+  }
+
+  .bulle-space-grid {
+    display: grid;
+    grid-template-columns: minmax(0, 1.55fr) minmax(280px, 1fr);
+    gap: clamp(32px, 5vw, 72px);
+    align-items: start;
+  }
+
+  .bulle-lock {
+    display: inline-flex;
+    align-items: baseline;
+    gap: 10px;
+    margin-bottom: 22px;
+    color: var(--bulle-accent);
+    font-family: var(--serif);
+    font-size: 30px;
+    line-height: 1;
+  }
+
+  .bulle-lock small,
+  .bulle-label,
+  .bulle-head span,
+  .bulle-role,
+  .bulle-team article a {
+    color: var(--bulle-accent);
+    font-family: var(--mono);
+    font-size: 11px;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+  }
+
+  .bulle-lock small {
+    font-size: 10px;
+    letter-spacing: 0.26em;
+  }
+
+  .bulle-space-grid h2,
+  .bulle-head h2,
+  .bulle-cta h2 {
+    margin: 0;
+    color: var(--petrol-deep);
+    font-family: var(--serif);
+    font-weight: 400;
+    font-variation-settings: "opsz" 144;
+    letter-spacing: -0.026em;
+  }
+
+  .bulle-space-grid h2,
+  .bulle-head h2 {
+    margin-top: 12px;
+    font-size: clamp(38px, 5vw, 72px);
+    line-height: 1;
+  }
+
+  .bulle-copy,
+  .bulle-head p {
+    max-width: 560px;
+    color: var(--bulle-ink-soft);
+    font-size: 16.5px;
+    line-height: 1.7;
+  }
+
+  .bulle-placeholder,
+  .bulle-person-media {
+    display: grid;
+    place-items: center;
+    color: rgba(14, 42, 44, 0.7);
+    font-family: var(--mono);
+    font-size: 10px;
+    letter-spacing: 0.14em;
+    line-height: 1.5;
+    text-align: center;
+    text-transform: uppercase;
+  }
+
+  .bulle-placeholder {
+    max-width: 480px;
+    aspect-ratio: 4 / 3;
+    margin-top: 30px;
+    border: 12px solid var(--paper);
+    padding: 22px;
+  }
+
+  .bulle-foam {
+    background: linear-gradient(135deg, #dce9e5, #eef4ee);
+  }
+
+  .bulle-storm {
+    background: linear-gradient(135deg, #c9dad7, #7e837b);
+  }
+
+  .bulle-list {
+    display: grid;
+    margin-top: 18px;
+    border-top: 1px solid rgba(47, 106, 108, 0.25);
+  }
+
+  .bulle-list article {
+    display: grid;
+    grid-template-columns: 64px 1fr;
+    gap: 24px;
+    align-items: baseline;
+    padding: 26px 0;
+    border-bottom: 1px solid rgba(47, 106, 108, 0.25);
+  }
+
+  .bulle-list article > span,
+  .bulle-steps article > span {
+    color: var(--bulle-accent);
+    font-family: var(--serif);
+    font-size: 30px;
+    font-style: italic;
+    line-height: 1;
+  }
+
+  .bulle-list h3,
+  .bulle-team h3,
+  .bulle-steps h3 {
+    margin: 0;
+    color: var(--petrol-deep);
+    font-family: var(--serif);
+    font-size: clamp(22px, 2.2vw, 30px);
+    font-weight: 400;
+    line-height: 1.06;
+  }
+
+  .bulle-list p,
+  .bulle-team article p,
+  .bulle-steps p {
+    margin: 0;
+    color: var(--granite);
+    font-size: 14px;
+    line-height: 1.6;
+  }
+
+  .bulle-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 24px;
+  }
+
+  .bulle-tags span {
+    border: 1px solid var(--bulle-accent);
+    padding: 7px 12px;
+    color: var(--bulle-accent);
+    font-family: var(--mono);
+    font-size: 10.5px;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+  }
+
+  .bulle-head {
+    max-width: 820px;
+    margin-bottom: clamp(32px, 4vw, 52px);
+  }
+
+  .bulle-team {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: clamp(18px, 2vw, 28px);
+    max-width: 760px;
+  }
+
+  .bulle-team article {
+    border: 1px solid var(--rule);
+    background: var(--paper);
+  }
+
+  .bulle-person-media {
+    aspect-ratio: 3 / 4;
+    padding: 20px;
+  }
+
+  .bulle-team article > div:last-child {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    padding: 22px;
+  }
+
+  .bulle-team article > div:last-child > div {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    margin-top: 8px;
+    padding-top: 12px;
+    border-top: 1px solid var(--rule-soft);
+  }
+
+  .bulle-team article a:hover,
+  .bulle-team article a:focus-visible {
+    color: var(--clay);
+  }
+
+  .bulle-steps {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    border-top: 1px solid var(--rule);
+  }
+
+  .bulle-steps article {
+    display: flex;
+    min-height: 210px;
+    flex-direction: column;
+    gap: 12px;
+    padding: clamp(26px, 3vw, 36px);
+    border-right: 1px solid var(--rule);
+    border-bottom: 1px solid var(--rule);
+  }
+
+  .bulle-steps article:last-child {
+    border-right: 0;
+  }
+
+  .bulle-cta {
+    padding-block: clamp(72px, 8vw, 104px);
+    background: var(--petrol-deep);
+    color: var(--linen);
+  }
+
+  .bulle-cta .bulle-wrap {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: clamp(32px, 5vw, 72px);
+    align-items: center;
+  }
+
+  .bulle-cta h2 {
+    color: var(--linen);
+    font-size: clamp(42px, 6vw, 86px);
+    line-height: 0.96;
+  }
+
+  .bulle-cta em {
+    color: var(--sea-mist);
+  }
+
+  .bulle-cta p {
+    max-width: 520px;
+    margin: 0;
+    color: rgba(241, 235, 225, 0.78);
+    font-size: 17px;
+    line-height: 1.7;
+  }
+
+  @media (max-width: 900px) {
+    .bulle-space-grid,
+    .bulle-cta .bulle-wrap {
+      grid-template-columns: 1fr;
+    }
+
+    .bulle-team,
+    .bulle-steps {
+      grid-template-columns: 1fr;
+    }
+
+    .bulle-steps article {
+      border-right: 0;
+    }
+  }
+</style>
