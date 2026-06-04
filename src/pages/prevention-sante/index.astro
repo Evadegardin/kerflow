@@ -11,11 +11,6 @@ import SiteFooter from "../../components/SiteFooter.astro";
   <SiteHeader />
   <main class="prevention-page">
     <section class="pv-hero pv-wrap">
-      <div class="pv-crumb">
-        <a href="/">Accueil</a>
-        <span>/</span>
-        <span>Prévention santé</span>
-      </div>
       <div class="pv-hero-grid">
         <div>
           <p class="pv-kicker">Hors des cours collectifs</p>
@@ -319,29 +314,14 @@ import SiteFooter from "../../components/SiteFooter.astro";
   }
 
   .pv-hero {
+    display: grid;
+    min-height: calc(100vh - 86px);
+    min-height: calc(100svh - 86px);
+    align-content: center;
     padding-top: clamp(40px, 6vw, 72px);
     padding-bottom: clamp(44px, 6vw, 76px);
   }
 
-  .pv-crumb {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
-    align-items: center;
-    margin-bottom: clamp(28px, 4vw, 52px);
-    color: var(--granite);
-    font-family: var(--mono);
-    font-size: 11px;
-    letter-spacing: 0.22em;
-    text-transform: uppercase;
-  }
-
-  .pv-crumb a:hover,
-  .pv-crumb a:focus-visible {
-    color: var(--clay);
-  }
-
-  .pv-crumb span:last-child,
   .pv-kicker,
   .pv-label,
   .pv-choice span,
@@ -354,7 +334,6 @@ import SiteFooter from "../../components/SiteFooter.astro";
     text-transform: uppercase;
   }
 
-  .pv-crumb span:last-child,
   .pv-kicker,
   .pv-label,
   .pv-choice span,

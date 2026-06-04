@@ -9,21 +9,16 @@ import SiteFooter from "../components/SiteFooter.astro";
   description="Location d'espaces KerFlow pour professeur·es, thérapeutes, praticien·nes, ateliers, conférences et professionnel·les de prévention santé."
 >
   <SiteHeader />
-  <main class="rent-page page svc-ateliers">
+  <main class="rent-page page">
     <section class="page-hero tinted" data-screen-label="Louer · Hero">
       <div class="wrap">
-        <div class="crumb">
-          <a href="/">Accueil</a>
-          <span class="sep">/</span>
-          <span class="here">Louer un espace</span>
-        </div>
         <div class="page-hero-grid">
           <div>
             <p class="kicker">Pour les professionnel·les</p>
             <h1 class="serif">
               Louer un espace<br />
               au sein de la<br />
-              <i class="h-accent">maison KerFlow.</i>
+              <i class="h-accent">maison <span class="brand-word-accent">KerFlow</span>.</i>
             </h1>
             <div class="hero-cta">
               <a href="#demande" class="btn btn-primary">
@@ -80,7 +75,7 @@ import SiteFooter from "../components/SiteFooter.astro";
           </p>
         </div>
 
-        <div class="rent" style="--accent-ink: var(--studio-500); --frame: var(--studio-100);" data-screen-label="Louer · La Salle">
+        <div class="rent space-studio" data-screen-label="Louer · La Salle">
           <div class="rent-media framed">
             <div class="ph t-petrol"><span class="cap">[ photo · La Salle de pratique, 40 m², miroir toute hauteur, lumière naturelle ]</span></div>
           </div>
@@ -104,10 +99,16 @@ import SiteFooter from "../components/SiteFooter.astro";
               <div class="r-tarif"><span class="rt-amt">100<sup>€</sup></span><span class="rt-unit">journée · 10h</span></div>
             </div>
             <p class="r-cond">Capacité 12 · à l'heure, demi-journée ou journée · tarifs indicatifs</p>
+            <div class="space-action">
+              <a href="#demande" class="btn space-btn">
+                Demander cet espace
+                <svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12h16M14 6l6 6-6 6"></path></svg>
+              </a>
+            </div>
           </div>
         </div>
 
-        <div class="rent flip" style="--accent-ink: var(--consult-ink); --frame: var(--consult);" data-screen-label="Louer · La Bulle">
+        <div class="rent flip space-consult" data-screen-label="Louer · La Bulle">
           <div class="rent-media framed">
             <div class="ph t-foam"><span class="cap">[ photo · La Bulle, 11 m², grande fenêtre sur cour arborée, fauteuil ]</span></div>
           </div>
@@ -131,10 +132,16 @@ import SiteFooter from "../components/SiteFooter.astro";
               <div class="r-tarif"><span class="rt-amt">90<sup>€</sup></span><span class="rt-unit">journée · 10h</span></div>
             </div>
             <p class="r-cond">Consultation & accompagnement · à l'heure, demi-journée ou journée</p>
+            <div class="space-action">
+              <a href="#demande" class="btn space-btn">
+                Demander cet espace
+                <svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12h16M14 6l6 6-6 6"></path></svg>
+              </a>
+            </div>
           </div>
         </div>
 
-        <div class="rent" style="--accent-ink: var(--rituel-ink); --frame: var(--rituel);" data-screen-label="Louer · Le Cocon">
+        <div class="rent space-rituel" data-screen-label="Louer · Le Cocon">
           <div class="rent-media framed">
             <div class="ph t-clay"><span class="cap">[ photo · Le Cocon, 7 m², box de soin au sous-sol, table de massage ]</span></div>
           </div>
@@ -158,12 +165,18 @@ import SiteFooter from "../components/SiteFooter.astro";
               <div class="r-tarif"><span class="rt-amt">70<sup>€</sup></span><span class="rt-unit">journée · 10h</span></div>
             </div>
             <p class="r-cond">Soin individuel · à l'heure, demi-journée ou journée · tarifs indicatifs</p>
+            <div class="space-action">
+              <a href="#demande" class="btn space-btn">
+                Demander cet espace
+                <svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12h16M14 6l6 6-6 6"></path></svg>
+              </a>
+            </div>
           </div>
         </div>
       </div>
     </section>
 
-    <section class="section-pad rule-top band-rituel-soft" data-screen-label="Pourquoi rejoindre">
+    <section class="section-pad rule-top band-base-soft" data-screen-label="Pourquoi rejoindre">
       <div class="wrap">
         <div class="sec-head">
           <span class="sec-num">03 - Pourquoi rejoindre KerFlow</span>
@@ -180,7 +193,7 @@ import SiteFooter from "../components/SiteFooter.astro";
       </div>
     </section>
 
-    <section class="section-pad rule-top band-tinted" id="demande" data-screen-label="Demande de location">
+    <section class="section-pad rule-top band-request" id="demande" data-screen-label="Demande de location">
       <div class="wrap">
         <div class="contact-grid">
           <div>
@@ -237,14 +250,12 @@ import SiteFooter from "../components/SiteFooter.astro";
 
 <style>
   .rent-page {
-    --consult: var(--sea-mist);
-    --consult-ink: #2f6a6c;
-    --rituel-ink: var(--clay);
-    --ateliers: var(--stone);
-    --ateliers-ink: var(--granite-500);
-    --accent: var(--ateliers-ink);
-    --accent-ink: var(--ateliers-ink);
-    --accent-soft: var(--ateliers);
+    --base-soft: var(--stone);
+    --base-quiet: var(--bone);
+    --accent: var(--clay);
+    --accent-ink: var(--clay);
+    --accent-soft: var(--base-soft);
+    --frame: var(--base-soft);
     background: var(--linen);
     color: var(--petrol-deep);
   }
@@ -268,6 +279,10 @@ import SiteFooter from "../components/SiteFooter.astro";
 
   .c-petrol,
   .h-accent {
+    color: var(--clay);
+  }
+
+  .brand-word-accent {
     color: var(--petrol);
   }
 
@@ -287,12 +302,12 @@ import SiteFooter from "../components/SiteFooter.astro";
     background: var(--linen);
   }
 
-  .band-rituel-soft {
-    background: var(--rituel);
+  .band-base-soft {
+    background: var(--bone);
   }
 
-  .band-tinted {
-    background: var(--ateliers);
+  .band-request {
+    background: var(--linen);
   }
 
   .page-hero {
@@ -311,38 +326,7 @@ import SiteFooter from "../components/SiteFooter.astro";
 
   .page-hero.tinted {
     border-bottom: 1px solid var(--rule);
-    background: var(--ateliers);
-  }
-
-  .crumb {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
-    align-items: center;
-    margin-bottom: clamp(28px, 4vw, 52px);
-    color: var(--granite-500);
-    font-family: var(--mono);
-    font-size: 11px;
-    letter-spacing: 0.22em;
-    text-transform: uppercase;
-  }
-
-  .crumb a {
-    color: var(--granite-500);
-    text-decoration: none;
-  }
-
-  .crumb a:hover,
-  .crumb a:focus-visible {
-    color: var(--clay);
-  }
-
-  .crumb .sep {
-    opacity: 0.5;
-  }
-
-  .crumb .here {
-    color: var(--ateliers-ink);
+    background: var(--bone);
   }
 
   .page-hero-grid {
@@ -385,7 +369,7 @@ import SiteFooter from "../components/SiteFooter.astro";
 
   .kicker,
   .sec-num {
-    color: var(--ateliers-ink);
+    color: var(--accent-ink);
     font-size: 11px;
     letter-spacing: 0.24em;
   }
@@ -403,6 +387,8 @@ import SiteFooter from "../components/SiteFooter.astro";
   }
 
   .btn {
+    position: relative;
+    overflow: hidden;
     display: inline-flex;
     gap: 10px;
     align-items: center;
@@ -414,11 +400,19 @@ import SiteFooter from "../components/SiteFooter.astro";
     letter-spacing: 0.22em;
     text-decoration: none;
     text-transform: uppercase;
+    transition: background 260ms ease, color 260ms ease, transform 360ms var(--ease-out, cubic-bezier(0.22, 1, 0.36, 1)), box-shadow 360ms var(--ease-out, cubic-bezier(0.22, 1, 0.36, 1));
   }
 
   .btn-primary {
     background: var(--petrol);
     color: var(--linen);
+  }
+
+  .btn-primary:hover,
+  .btn-primary:focus-visible {
+    background: var(--clay);
+    transform: translateY(-2px);
+    box-shadow: 0 14px 26px rgba(14, 42, 44, 0.16);
   }
 
   .btn-line {
@@ -513,12 +507,12 @@ import SiteFooter from "../components/SiteFooter.astro";
   }
 
   .gb-cell.highlight {
-    border-color: var(--ateliers);
-    background: var(--ateliers);
+    border-color: var(--accent-soft);
+    background: var(--accent-soft);
   }
 
   .gb-num {
-    color: var(--ateliers-ink);
+    color: var(--accent-ink);
     font-size: 11px;
     letter-spacing: 0.2em;
   }
@@ -597,7 +591,7 @@ import SiteFooter from "../components/SiteFooter.astro";
 
   .framed {
     padding: 12px;
-    background: var(--frame, var(--rituel));
+    background: var(--frame, var(--stone));
   }
 
   .rent {
@@ -606,6 +600,21 @@ import SiteFooter from "../components/SiteFooter.astro";
     gap: clamp(28px, 4vw, 56px);
     align-items: start;
     padding-top: clamp(40px, 5vw, 64px);
+  }
+
+  .rent.space-studio {
+    --accent-ink: var(--studio-500);
+    --frame: var(--studio-100);
+  }
+
+  .rent.space-consult {
+    --accent-ink: #2f6a6c;
+    --frame: var(--sea-mist);
+  }
+
+  .rent.space-rituel {
+    --accent-ink: var(--clay);
+    --frame: var(--rituel);
   }
 
   .rent + .rent {
@@ -712,6 +721,30 @@ import SiteFooter from "../components/SiteFooter.astro";
     letter-spacing: 0.14em;
   }
 
+  .space-action {
+    display: flex;
+    margin-top: 24px;
+    padding-top: 22px;
+    border-top: 1px solid var(--rule-soft);
+  }
+
+  .space-btn {
+    width: fit-content;
+    min-height: 46px;
+    padding: 13px 20px;
+    border-color: var(--petrol);
+    background: var(--petrol);
+    color: var(--linen);
+  }
+
+  .space-btn:hover,
+  .space-btn:focus-visible {
+    background: var(--clay);
+    border-color: var(--clay);
+    transform: translateY(-2px);
+    box-shadow: 0 14px 26px rgba(14, 42, 44, 0.14);
+  }
+
   .check-list {
     display: grid;
     grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -731,7 +764,7 @@ import SiteFooter from "../components/SiteFooter.astro";
   }
 
   .check-list .mk {
-    color: var(--ateliers-ink);
+    color: var(--accent-ink);
     font-family: var(--serif);
     font-size: 18px;
     font-style: italic;
@@ -754,7 +787,7 @@ import SiteFooter from "../components/SiteFooter.astro";
   }
 
   .request-title i {
-    color: var(--ateliers-ink);
+    color: var(--accent-ink);
   }
 
   .request-copy {
@@ -781,17 +814,28 @@ import SiteFooter from "../components/SiteFooter.astro";
   .field input:focus,
   .field textarea:focus,
   .field select:focus {
-    border-color: var(--ateliers-ink);
+    border-color: var(--accent-ink);
+  }
+
+  .radio-chip span {
+    background: var(--paper);
+  }
+
+  .radio-chip:hover span,
+  .radio-chip input:focus-visible + span {
+    border-color: var(--petrol);
+    background: var(--bone);
+    color: var(--petrol);
   }
 
   .radio-chip input:checked + span {
-    border-color: var(--ateliers-ink);
-    background: var(--ateliers);
-    color: var(--ateliers-ink);
+    border-color: var(--clay);
+    background: var(--bone);
+    color: var(--clay);
   }
 
   .coord-row .lab {
-    color: var(--ateliers-ink);
+    color: var(--accent-ink);
   }
 
   .coord-row .val a {
@@ -799,7 +843,7 @@ import SiteFooter from "../components/SiteFooter.astro";
   }
 
   .form-foot .btn-primary {
-    background: var(--ateliers-ink);
+    background: var(--accent-ink);
   }
 
   @media (max-width: 980px) {

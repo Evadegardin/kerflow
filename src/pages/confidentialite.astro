@@ -1,0 +1,133 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import SiteHeader from "../components/SiteHeader.astro";
+import SiteFooter from "../components/SiteFooter.astro";
+---
+
+<BaseLayout
+  title="Confidentialite · KerFlow · Clamart"
+  description="Politique de confidentialite KerFlow : donnees personnelles, formulaires, newsletter, cookies et droits des utilisateurs."
+>
+  <SiteHeader />
+  <main>
+    <section class="page-hero legal-hero section-pad accent-care">
+      <div>
+        <p class="eyebrow">Donnees personnelles</p>
+        <h1>
+          Politique de<br />
+          confidentialite.
+        </h1>
+      </div>
+      <aside class="legal-hero-aside">
+        <p>
+          KerFlow collecte uniquement les informations utiles pour repondre aux
+          demandes, organiser les rendez-vous et partager les actualites choisies.
+        </p>
+      </aside>
+    </section>
+
+    <section class="section-pad legal-section">
+      <div class="legal-layout">
+        <nav class="faq-toc" aria-label="Sommaire de la politique de confidentialite">
+          <a href="#donnees">Donnees collectees</a>
+          <a href="#usage">Utilisation</a>
+          <a href="#conservation">Conservation</a>
+          <a href="#partage">Partage</a>
+          <a href="#droits">Vos droits</a>
+          <a href="#cookies">Cookies</a>
+        </nav>
+
+        <div class="legal-content">
+          <section id="donnees" class="legal-block">
+            <p class="legal-index">01</p>
+            <h2>Donnees collectees</h2>
+            <p>
+              Les donnees personnelles susceptibles d'etre collectees sont celles
+              que vous transmettez volontairement via les formulaires, les demandes
+              de contact, les inscriptions aux cours, les rendez-vous ou la newsletter.
+            </p>
+            <p>
+              Elles peuvent inclure votre nom, prenom, adresse e-mail, numero de
+              telephone, message, preferences de contact et informations utiles a
+              la bonne preparation d'un rendez-vous ou d'une activite.
+            </p>
+          </section>
+
+          <section id="usage" class="legal-block">
+            <p class="legal-index">02</p>
+            <h2>Utilisation des donnees</h2>
+            <p>
+              Les donnees sont utilisees pour repondre a vos demandes, gerer les
+              reservations, organiser les activites, assurer le suivi des echanges
+              et envoyer la newsletter lorsque vous y avez consenti.
+            </p>
+            <p>
+              KerFlow ne vend pas vos donnees personnelles et ne les utilise pas
+              pour des communications sans lien avec votre demande ou votre accord.
+            </p>
+          </section>
+
+          <section id="conservation" class="legal-block">
+            <p class="legal-index">03</p>
+            <h2>Duree de conservation</h2>
+            <p>
+              Les donnees sont conservees pendant la duree necessaire au traitement
+              de votre demande, au suivi de la relation et au respect des obligations
+              legales applicables.
+            </p>
+            <p>
+              Les donnees liees a la newsletter sont conservees jusqu'a votre
+              desinscription ou votre demande de suppression.
+            </p>
+          </section>
+
+          <section id="partage" class="legal-block">
+            <p class="legal-index">04</p>
+            <h2>Partage et prestataires</h2>
+            <p>
+              Certaines donnees peuvent etre traitees par des prestataires
+              techniques strictement necessaires au fonctionnement du site, a la
+              prise de rendez-vous, a l'envoi d'e-mails ou a l'hebergement.
+            </p>
+            <p>
+              Ces prestataires interviennent uniquement dans le cadre des finalites
+              definies par KerFlow et selon les garanties attendues en matiere de
+              confidentialite et de securite.
+            </p>
+          </section>
+
+          <section id="droits" class="legal-block">
+            <p class="legal-index">05</p>
+            <h2>Vos droits</h2>
+            <p>
+              Conformement au RGPD, vous pouvez demander l'acces, la rectification,
+              l'effacement, la limitation ou l'opposition au traitement de vos
+              donnees personnelles.
+            </p>
+            <p>
+              Pour exercer vos droits, contactez KerFlow depuis la page contact en
+              precisant l'objet de votre demande.
+            </p>
+            <a class="btn-line" href="/contact/">Exercer mes droits</a>
+          </section>
+
+          <section id="cookies" class="legal-block">
+            <p class="legal-index">06</p>
+            <h2>Cookies</h2>
+            <p>
+              Le site peut utiliser des cookies ou traceurs strictement necessaires
+              a son fonctionnement, ainsi que des outils de mesure d'audience ou
+              d'integration de services si ceux-ci sont actives.
+            </p>
+            <p>
+              Lorsque des cookies non essentiels sont utilises, ils doivent etre
+              soumis a votre consentement prealable et peuvent etre refuses ou
+              retires.
+            </p>
+          </section>
+        </div>
+      </div>
+    </section>
+  </main>
+  <SiteFooter />
+</BaseLayout>

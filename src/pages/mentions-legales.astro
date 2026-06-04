@@ -1,0 +1,110 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import SiteHeader from "../components/SiteHeader.astro";
+import SiteFooter from "../components/SiteFooter.astro";
+---
+
+<BaseLayout
+  title="Mentions legales · KerFlow · Clamart"
+  description="Mentions legales du site KerFlow Studio, maison de prevention-sante et de mieux-etre a Clamart."
+>
+  <SiteHeader />
+  <main>
+    <section class="page-hero legal-hero section-pad accent-location">
+      <div>
+        <p class="eyebrow">Informations legales</p>
+        <h1>
+          Mentions<br />
+          legales.
+        </h1>
+      </div>
+      <aside class="legal-hero-aside">
+        <p>
+          Cette page rassemble les informations relatives a l'editeur du site,
+          a son hebergement et aux conditions generales d'utilisation.
+        </p>
+      </aside>
+    </section>
+
+    <section class="section-pad legal-section">
+      <div class="legal-layout">
+        <nav class="faq-toc" aria-label="Sommaire des mentions legales">
+          <a href="#editeur">Editeur</a>
+          <a href="#hebergement">Hebergement</a>
+          <a href="#propriete">Propriete intellectuelle</a>
+          <a href="#responsabilite">Responsabilite</a>
+          <a href="#contact">Contact</a>
+        </nav>
+
+        <div class="legal-content">
+          <section id="editeur" class="legal-block">
+            <p class="legal-index">01</p>
+            <h2>Editeur du site</h2>
+            <p>
+              Le site kerflow.fr est edite par KerFlow, maison de prevention-sante
+              et de mieux-etre situee au 12 rue de la Roche, 92140 Clamart.
+            </p>
+            <p>
+              Les informations administratives completes de l'entreprise
+              (raison sociale, forme juridique, capital social, numero SIRET,
+              numero RCS et representant legal) pourront etre completees des
+              leur confirmation officielle.
+            </p>
+          </section>
+
+          <section id="hebergement" class="legal-block">
+            <p class="legal-index">02</p>
+            <h2>Hebergement</h2>
+            <p>
+              Le site est heberge par le prestataire technique utilise pour sa
+              mise en ligne. Les coordonnees completes de l'hebergeur seront
+              ajoutees apres validation du mode de deploiement definitif.
+            </p>
+          </section>
+
+          <section id="propriete" class="legal-block">
+            <p class="legal-index">03</p>
+            <h2>Propriete intellectuelle</h2>
+            <p>
+              L'ensemble des contenus presents sur le site, notamment les textes,
+              visuels, logos, noms, elements graphiques et compositions, est
+              protege par le droit de la propriete intellectuelle.
+            </p>
+            <p>
+              Toute reproduction, representation, modification, diffusion ou
+              exploitation, totale ou partielle, sans autorisation prealable est
+              interdite, sauf usage strictement personnel et prive.
+            </p>
+          </section>
+
+          <section id="responsabilite" class="legal-block">
+            <p class="legal-index">04</p>
+            <h2>Responsabilite</h2>
+            <p>
+              KerFlow s'efforce de fournir des informations exactes et mises a
+              jour. Toutefois, les contenus du site sont communiques a titre
+              informatif et peuvent evoluer sans preavis.
+            </p>
+            <p>
+              Les activites, soins et consultations proposes ne remplacent pas un
+              diagnostic, un traitement ou un suivi medical. En cas de doute ou
+              de symptome, il est recommande de consulter un professionnel de
+              sante qualifie.
+            </p>
+          </section>
+
+          <section id="contact" class="legal-block">
+            <p class="legal-index">05</p>
+            <h2>Contact</h2>
+            <p>
+              Pour toute demande relative au site ou a ces mentions legales,
+              vous pouvez contacter KerFlow depuis la page contact.
+            </p>
+            <a class="btn-line" href="/contact/">Contacter KerFlow</a>
+          </section>
+        </div>
+      </div>
+    </section>
+  </main>
+  <SiteFooter />
+</BaseLayout>

@@ -87,7 +87,7 @@ import SiteFooter from "../../components/SiteFooter.astro";
       </div>
     </section>
 
-    <section class="cocon-section" id="intervenants">
+    <section class="cocon-section cocon-paper" id="intervenants">
       <div class="cocon-wrap">
         <div class="cocon-head">
           <span>02 - Les intervenants</span>
@@ -121,7 +121,7 @@ import SiteFooter from "../../components/SiteFooter.astro";
       </div>
     </section>
 
-    <section class="cocon-section cocon-paper">
+    <section class="cocon-section cocon-paperless">
       <div class="cocon-wrap">
         <div class="cocon-head">
           <span>03 - Comment reserver</span>
@@ -185,7 +185,9 @@ import SiteFooter from "../../components/SiteFooter.astro";
 
   .cocon-page .btn-primary:hover,
   .cocon-page .btn-primary:focus-visible {
-    background: #8e4b31;
+    background: var(--clay);
+    transform: translateY(-2px);
+    box-shadow: 0 14px 26px rgba(14, 42, 44, 0.16);
   }
 
   .cocon-hero {
@@ -371,7 +373,6 @@ import SiteFooter from "../../components/SiteFooter.astro";
     display: grid;
     grid-template-columns: repeat(2, minmax(0, 1fr));
     gap: clamp(18px, 2vw, 28px);
-    max-width: 760px;
   }
 
   .cocon-team article {
@@ -380,7 +381,7 @@ import SiteFooter from "../../components/SiteFooter.astro";
   }
 
   .cocon-person-media {
-    aspect-ratio: 3 / 4;
+    aspect-ratio: 16 / 9;
     padding: 20px;
   }
 
@@ -427,7 +428,7 @@ import SiteFooter from "../../components/SiteFooter.astro";
 
   .cocon-cta {
     padding-block: clamp(72px, 8vw, 104px);
-    background: var(--petrol-deep);
+    background: var(--cocon-accent);
     color: var(--linen);
   }
 
@@ -451,9 +452,29 @@ import SiteFooter from "../../components/SiteFooter.astro";
   .cocon-cta p {
     max-width: 520px;
     margin: 0;
-    color: rgba(241, 235, 225, 0.78);
+    color: rgba(241, 235, 225, 0.84);
     font-size: 17px;
     line-height: 1.7;
+  }
+
+  .cocon-cta .btn-light {
+    background: var(--linen);
+    color: var(--cocon-accent);
+  }
+
+  .cocon-cta .btn-light:hover,
+  .cocon-cta .btn-light:focus-visible {
+    background: var(--petrol-deep);
+    color: var(--linen);
+  }
+
+  .cocon-cta .btn-line.on-dark {
+    color: var(--linen);
+  }
+
+  .cocon-cta .btn-line.on-dark:hover,
+  .cocon-cta .btn-line.on-dark:focus-visible {
+    color: var(--clay-light);
   }
 
   @media (max-width: 900px) {
