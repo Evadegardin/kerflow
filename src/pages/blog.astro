@@ -2,6 +2,7 @@
 import BaseLayout from "../layouts/BaseLayout.astro";
 import SiteHeader from "../components/SiteHeader.astro";
 import SiteFooter from "../components/SiteFooter.astro";
+import { archivedBlogArticles, featuredBlogArticles } from "../data/blogArticles.js";
 ---
 
 <BaseLayout
@@ -42,60 +43,17 @@ import SiteFooter from "../components/SiteFooter.astro";
         </div>
 
         <div class="articles">
-          <a href="/contact/" class="art">
-            <div class="ph t-storm"><span class="cap">[ photo · lumière du soir, chambre ]</span></div>
-            <div class="a-body">
-              <span class="a-tag">Sommeil</span>
-              <h3 class="serif">Cinq gestes du soir pour mieux dormir</h3>
-              <p>Ralentir avant le coucher, sans application ni gadget.</p>
-              <span class="a-foot">Lecture · 4 min</span>
-            </div>
-          </a>
-          <a href="/contact/" class="art">
-            <div class="ph t-fern"><span class="cap">[ photo · marche, mouvement doux ]</span></div>
-            <div class="a-body">
-              <span class="a-tag">Mouvement</span>
-              <h3 class="serif">Reprendre le sport après une longue pause</h3>
-              <p>Par où commencer, et comment tenir dans le temps.</p>
-              <span class="a-foot">Lecture · 6 min</span>
-            </div>
-          </a>
-          <a href="/contact/" class="art">
-            <div class="ph t-sand"><span class="cap">[ photo · table, légumes de saison ]</span></div>
-            <div class="a-body">
-              <span class="a-tag">Alimentation</span>
-              <h3 class="serif">Écouter sa faim, vraiment</h3>
-              <p>Le rapport à l'assiette, sans régime ni culpabilité.</p>
-              <span class="a-foot">Lecture · 5 min</span>
-            </div>
-          </a>
-          <a href="/contact/" class="art">
-            <div class="ph t-clay"><span class="cap">[ photo · respiration, carnet ]</span></div>
-            <div class="a-body">
-              <span class="a-tag">Stress</span>
-              <h3 class="serif">La cohérence cardiaque en 3 minutes</h3>
-              <p>Un rituel respiratoire court pour redescendre sans s'isoler.</p>
-              <span class="a-foot">Lecture · 3 min</span>
-            </div>
-          </a>
-          <a href="/contact/" class="art">
-            <div class="ph t-foam"><span class="cap">[ photo · mouvement, tapis ]</span></div>
-            <div class="a-body">
-              <span class="a-tag">Prévention</span>
-              <h3 class="serif">Bien vieillir : bouger toute sa vie</h3>
-              <p>Pourquoi la régularité compte plus que l'intensité.</p>
-              <span class="a-foot">Lecture · 5 min</span>
-            </div>
-          </a>
-          <a href="/contact/" class="art">
-            <div class="ph t-mist"><span class="cap">[ photo · matin calme, studio ]</span></div>
-            <div class="a-body">
-              <span class="a-tag">Mouvement</span>
-              <h3 class="serif">Reprise d'activité après 50 ans</h3>
-              <p>Retrouver confiance dans le mouvement, étape par étape.</p>
-              <span class="a-foot">Lecture · 6 min</span>
-            </div>
-          </a>
+          {featuredBlogArticles.map((article) => (
+            <a href={`/blog/${article.slug}/`} class="art">
+              <div class={`ph ${article.imageClass}`}><span class="cap">{article.imageLabel}</span></div>
+              <div class="a-body">
+                <span class="a-tag">{article.tag}</span>
+                <h3 class="serif">{article.title}</h3>
+                <p>{article.excerpt}</p>
+                <span class="a-foot">Lecture · {article.readingTime}</span>
+              </div>
+            </a>
+          ))}
         </div>
       </div>
     </section>
@@ -107,9 +65,13 @@ import SiteFooter from "../components/SiteFooter.astro";
           <h2 class="title">Les derniers<br /><i class="h c-petrol">repères.</i></h2>
         </div>
         <div class="list-rows">
-          <a href="/contact/" class="list-row"><span class="lr-date">Mai 2026</span><span class="lr-title serif">Stress : la cohérence cardiaque en 3 minutes</span><span class="lr-tag">Stress · Article</span></a>
-          <a href="/contact/" class="list-row"><span class="lr-date">Avr. 2026</span><span class="lr-title serif">Bien vieillir : bouger toute sa vie</span><span class="lr-tag">Prévention · Article</span></a>
-          <a href="/contact/" class="list-row"><span class="lr-date">Mars 2026</span><span class="lr-title serif">Reprise d'activité après 50 ans</span><span class="lr-tag">Mouvement · Article</span></a>
+          {archivedBlogArticles.map((article) => (
+            <a href={`/blog/${article.slug}/`} class="list-row">
+              <span class="lr-date">{article.date}</span>
+              <span class="lr-title serif">{article.title}</span>
+              <span class="lr-tag">{article.tag} · Article</span>
+            </a>
+          ))}
         </div>
       </div>
     </section>

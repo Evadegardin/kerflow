@@ -56,6 +56,10 @@ import SiteHeader from "../components/SiteHeader.astro";
         --site-pad-x: clamp(20px, 6vw, 88px);
         --site-section-y: clamp(72px, 8vw, 112px);
         --site-header-y: 22px;
+        --site-header-height: 86px;
+        --site-hero-min-h: calc(100svh - var(--site-header-height));
+        --site-hero-min-h-fallback: calc(100vh - var(--site-header-height));
+        --site-hero-pad-block: clamp(40px, 6vw, 72px) clamp(40px, 5vw, 64px);
         --pad-x:  var(--site-pad-x);
         --gap:    clamp(16px, 2.2vw, 24px);
         --maxw:   var(--site-max);
@@ -562,7 +566,7 @@ import SiteHeader from "../components/SiteHeader.astro";
       /* =========================================================
          PAGE HERO (sous-pages)
          ========================================================= */
-      .page-hero{ display:grid; min-height:calc(100vh - 83px); min-height:calc(100svh - 83px); align-content:center; padding-top:clamp(40px,6vw,72px); padding-bottom:clamp(40px,5vw,64px); }
+      .page-hero{ display:grid; min-height:var(--site-hero-min-h-fallback); min-height:var(--site-hero-min-h); align-content:center; padding-block:var(--site-hero-pad-block); }
       .page-hero.tinted{ background:var(--accent-soft); border-bottom:1px solid var(--rule); }
       .page-hero-grid{ display:grid; grid-template-columns:1.55fr 1fr; gap:clamp(32px,5vw,72px); align-items:end; }
       .page-hero h1{

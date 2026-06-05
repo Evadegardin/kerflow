@@ -316,11 +316,10 @@ import SiteFooter from "../../components/SiteFooter.astro";
 
   .pv-hero {
     display: grid;
-    min-height: calc(100vh - 86px);
-    min-height: calc(100svh - 86px);
+    min-height: var(--site-hero-min-h-fallback);
+    min-height: var(--site-hero-min-h);
     align-content: center;
-    padding-top: clamp(40px, 6vw, 72px);
-    padding-bottom: clamp(44px, 6vw, 76px);
+    padding-block: var(--site-hero-pad-block);
   }
 
   .pv-kicker,
