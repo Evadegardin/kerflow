@@ -1,0 +1,387 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import SiteHeader from "../../components/SiteHeader.astro";
+import SiteFooter from "../../components/SiteFooter.astro";
+import { blogArticles } from "../../data/blogArticles.js";
+
+export function getStaticPaths() {
+  return blogArticles.map((article) => ({
+    params: { slug: article.slug },
+    props: { article }
+  }));
+}
+
+const { article } = Astro.props;
+const relatedArticles = blogArticles
+  .filter((item) => item.slug !== article.slug)
+  .slice(0, 3);
+---
+
+<BaseLayout
+  title={`${article.title} - Blog KerFlow`}
+  description={article.excerpt}
+>
+  <SiteHeader />
+  <main class="article-page wrapped-sections">
+    <article>
+      <header class="article-hero" data-screen-label="Article - Hero">
+        <div class="article-wrap">
+          <a href="/blog/" class="back-link">← Retour au blog</a>
+          <div class="article-hero-grid">
+            <div class="article-title-block">
+              <p class="kicker">{article.tag} · Lecture {article.readingTime}</p>
+              <h1 class="serif">{article.title}</h1>
+              <p class="lede">{article.intro}</p>
+            </div>
+            <div class={`ph article-photo ${article.imageClass}`} aria-hidden="true">
+              <span class="cap">{article.imageLabel}</span>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <section class="article-content-section" data-screen-label="Article - Contenu">
+        <div class="article-content">
+          <aside class="article-meta">
+            <span>{article.date}</span>
+            <span>{article.tag}</span>
+            <span>Lecture · {article.readingTime}</span>
+          </aside>
+          <div class="article-body">
+            {article.sections.map((section) => (
+              <section>
+                <h2 class="serif">{section.heading}</h2>
+                {section.paragraphs.map((paragraph) => <p>{paragraph}</p>)}
+              </section>
+            ))}
+          </div>
+        </div>
+      </section>
+    </article>
+
+    <section class="related-section rule-top band-paper" data-screen-label="Articles liés">
+      <div class="article-wrap">
+        <div class="related-head">
+          <span class="sec-num">À lire aussi</span>
+          <h2 class="serif">D'autres repères<br /><i>KerFlow.</i></h2>
+        </div>
+        <div class="related-grid">
+          {relatedArticles.map((item) => (
+            <a href={`/blog/${item.slug}/`} class="related-card">
+              <span>{item.tag}</span>
+              <h3 class="serif">{item.title}</h3>
+              <p>{item.excerpt}</p>
+              <small>Lecture · {item.readingTime}</small>
+            </a>
+          ))}
+        </div>
+      </div>
+    </section>
+  </main>
+  <SiteFooter />
+</BaseLayout>
+
+<style>
+  .article-page {
+    --blog-accent: var(--clay);
+    --ink-soft: #2a322c;
+    background: var(--linen);
+  }
+
+  .article-wrap,
+  .article-content {
+    width: 100%;
+    max-width: var(--site-max);
+    margin-inline: auto;
+    padding-inline: var(--site-pad-x);
+  }
+
+  .article-hero {
+    padding-block: clamp(42px, 6vw, 84px) clamp(56px, 8vw, 104px);
+    border-bottom: 1px solid var(--rule);
+    background: var(--paper);
+  }
+
+  .back-link {
+    display: inline-flex;
+    margin-bottom: clamp(32px, 5vw, 64px);
+    color: var(--blog-accent);
+    font-family: var(--mono);
+    font-size: 11px;
+    letter-spacing: 0.18em;
+    text-decoration: none;
+    text-transform: uppercase;
+  }
+
+  .article-hero-grid {
+    display: grid;
+    grid-template-columns: minmax(0, 1.18fr) minmax(300px, 0.82fr);
+    gap: clamp(32px, 5vw, 72px);
+    align-items: end;
+  }
+
+  .article-title-block {
+    max-width: 840px;
+  }
+
+  .article-title-block h1,
+  .related-head h2 {
+    margin: 0;
+    color: var(--petrol-deep);
+    font-family: var(--serif);
+    font-weight: 400;
+    font-variation-settings: "opsz" 144;
+    letter-spacing: -0.02em;
+  }
+
+  .article-title-block h1 {
+    font-size: clamp(42px, 6vw, 92px);
+    line-height: 1;
+  }
+
+  .kicker,
+  .sec-num,
+  .article-meta,
+  .related-card span,
+  .related-card small {
+    color: var(--blog-accent);
+    font-family: var(--mono);
+    font-size: 11px;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+  }
+
+  .kicker {
+    margin: 0 0 22px;
+  }
+
+  .lede {
+    max-width: 720px;
+    margin: clamp(24px, 3vw, 36px) 0 0;
+    color: var(--ink-soft);
+    font-family: var(--serif);
+    font-size: clamp(19px, 1.7vw, 24px);
+    font-weight: 300;
+    line-height: 1.55;
+  }
+
+  .ph {
+    position: relative;
+    overflow: hidden;
+    background:
+      radial-gradient(62% 54% at 32% 30%, var(--ph-a, #5e8281) 0%, var(--ph-b, #15393b) 78%),
+      linear-gradient(180deg, rgba(255, 255, 255, 0.05), rgba(0, 0, 0, 0.18));
+  }
+
+  .ph::before {
+    position: absolute;
+    inset: 0;
+    background:
+      repeating-linear-gradient(43deg, rgba(255, 255, 255, 0.07) 0 1.5px, transparent 1.5px 3px),
+      repeating-linear-gradient(137deg, rgba(0, 0, 0, 0.07) 0 1.5px 3px);
+    content: "";
+    mix-blend-mode: overlay;
+    opacity: 0.16;
+  }
+
+  .ph::after {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(180deg, transparent 52%, rgba(14, 42, 44, 0.45) 100%);
+    content: "";
+  }
+
+  .article-photo {
+    min-height: clamp(320px, 42vw, 560px);
+  }
+
+  .cap {
+    position: absolute;
+    z-index: 2;
+    right: 14px;
+    bottom: 12px;
+    left: 14px;
+    color: rgba(241, 235, 225, 0.82);
+    font-family: var(--mono);
+    font-size: 9.5px;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+  }
+
+  .t-storm {
+    --ph-a: #5e8281;
+    --ph-b: #15393b;
+  }
+
+  .t-fern {
+    --ph-a: #7d9468;
+    --ph-b: #2a3d22;
+  }
+
+  .t-sand {
+    --ph-a: #e0c3a8;
+    --ph-b: #a9784f;
+  }
+
+  .t-clay {
+    --ph-a: #d99a78;
+    --ph-b: #8d4f35;
+  }
+
+  .t-foam {
+    --ph-a: #c9dad7;
+    --ph-b: #3f6e6f;
+  }
+
+  .t-mist {
+    --ph-a: #d6d8d3;
+    --ph-b: #545d57;
+  }
+
+  .article-content-section {
+    padding-block: var(--site-section-y);
+  }
+
+  .article-content {
+    display: grid;
+    grid-template-columns: 220px minmax(0, 760px);
+    gap: clamp(28px, 6vw, 88px);
+    justify-content: center;
+  }
+
+  .article-meta {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    padding-top: 8px;
+    color: var(--granite-500);
+  }
+
+  .article-body {
+    display: flex;
+    flex-direction: column;
+    gap: clamp(34px, 4vw, 48px);
+  }
+
+  .article-body section {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .article-body h2 {
+    margin: 0;
+    color: var(--petrol-deep);
+    font-family: var(--serif);
+    font-size: clamp(28px, 3vw, 42px);
+    font-weight: 400;
+    line-height: 1.08;
+  }
+
+  .article-body p {
+    margin: 0;
+    color: var(--granite);
+    font-size: clamp(16px, 1.25vw, 18px);
+    line-height: 1.78;
+  }
+
+  .rule-top {
+    border-top: 1px solid var(--rule);
+  }
+
+  .band-paper {
+    background: var(--paper);
+  }
+
+  .related-section {
+    padding-block: var(--site-section-y);
+  }
+
+  .related-head {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    margin-bottom: clamp(28px, 3vw, 40px);
+  }
+
+  .related-head h2 {
+    font-size: clamp(34px, 5vw, 64px);
+    line-height: 1.03;
+  }
+
+  .related-head i {
+    color: var(--blog-accent);
+    font-style: italic;
+    font-weight: 300;
+  }
+
+  .related-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: clamp(16px, 2.2vw, 24px);
+  }
+
+  .related-card {
+    display: flex;
+    min-height: 240px;
+    flex-direction: column;
+    gap: 12px;
+    padding: 26px;
+    border: 1px solid var(--rule);
+    color: inherit;
+    text-decoration: none;
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+  }
+
+  .related-card:hover,
+  .related-card:focus-visible {
+    transform: translateY(-4px);
+    box-shadow: 0 18px 40px -28px rgba(14, 42, 44, 0.5);
+  }
+
+  .related-card h3 {
+    margin: 0;
+    color: var(--petrol-deep);
+    font-size: clamp(21px, 2vw, 28px);
+    font-weight: 400;
+    line-height: 1.1;
+  }
+
+  .related-card p {
+    margin: 0;
+    color: var(--granite-500);
+    font-size: 14px;
+    line-height: 1.6;
+  }
+
+  .related-card small {
+    margin-top: auto;
+    padding-top: 18px;
+    border-top: 1px solid var(--rule-soft);
+    color: var(--granite-500);
+  }
+
+  @media (max-width: 900px) {
+    .article-hero-grid,
+    .article-content,
+    .related-grid {
+      grid-template-columns: 1fr;
+    }
+
+    .article-meta {
+      flex-direction: row;
+      flex-wrap: wrap;
+      gap: 10px 18px;
+    }
+  }
+
+  @media (max-width: 640px) {
+    .article-photo {
+      min-height: 280px;
+    }
+
+    .related-card {
+      min-height: 0;
+    }
+  }
+</style>

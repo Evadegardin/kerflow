@@ -25,7 +25,7 @@ import SiteFooter from "../components/SiteFooter.astro";
           <em>écrivez-nous</em> - on répond vite.
         </p>
         <div class="actions">
-          <a class="btn-line" href="/contact/">Poser une question</a>
+          <a class="btn-line" href="#formulaire-contact">Poser une question</a>
         </div>
       </aside>
     </section>
@@ -166,11 +166,46 @@ import SiteFooter from "../components/SiteFooter.astro";
             </details>
           </div>
 
-          <div class="faq-final">
-            <p>Une question qui n'est pas ici ?</p>
-            <a class="btn" href="/contact/">Nous écrire <span aria-hidden="true">→</span></a>
+        </div>
+      </div>
+    </section>
+
+    <section id="formulaire-contact" class="contact-section contact-section-form section-pad" data-screen-label="Formulaire">
+      <div class="contact-grid contact-form-grid">
+        <div>
+          <span class="sec-num">03 · Nous écrire</span>
+          <h2 class="contact-title">Une question ?<br /><em>On répond vite.</em></h2>
+          <p class="contact-copy">
+            Première visite, cours, soin, ou demande professionnelle : dites-nous l'essentiel,
+            on revient vers vous sous 48 h ouvrées.
+          </p>
+          <div class="mood-words">
+            <span class="fill"><em>À l'écoute</em></span>
+            <span>Sans pression</span>
+            <span>Humain</span>
           </div>
         </div>
+
+        <form class="contact-form-card" onsubmit="return false;" aria-label="Formulaire de contact">
+          <div class="form-grid">
+            <div class="field"><label for="nom">Prénom & nom</label><input id="nom" type="text" placeholder="Votre nom" /></div>
+            <div class="field"><label for="mail">E-mail</label><input id="mail" type="email" placeholder="vous@exemple.fr" /></div>
+            <div class="field full"><label>Votre demande concerne</label>
+              <div class="radio-row">
+                <label class="radio-chip"><input type="radio" name="sujet" checked /><span>Question générale</span></label>
+                <label class="radio-chip"><input type="radio" name="sujet" /><span>Première visite</span></label>
+                <label class="radio-chip"><input type="radio" name="sujet" /><span>Prévention santé</span></label>
+                <label class="radio-chip"><input type="radio" name="sujet" /><span>Demande pro</span></label>
+                <label class="radio-chip"><input type="radio" name="sujet" /><span>Suggestion</span></label>
+              </div>
+            </div>
+            <div class="field full"><label for="message">Votre message</label><textarea id="message" placeholder="Dites-nous comment on peut vous aider..."></textarea></div>
+          </div>
+          <div class="form-foot">
+            <p class="fine">En envoyant ce formulaire, vous acceptez d'être recontacté·e. Vos données ne sont jamais partagées ni revendues.</p>
+            <button type="submit" class="btn contact-submit"><span>Envoyer</span><span aria-hidden="true">→</span></button>
+          </div>
+        </form>
       </div>
     </section>
   </main>
