@@ -761,8 +761,19 @@ input {
   border-bottom: 1px solid var(--rule-soft);
   background: rgba(241, 235, 225, 0.88);
   backdrop-filter: blur(14px) saturate(1.05);
-  animation: headerIn 760ms var(--ease-soft) both;
-  transition: background 260ms ease, border-color 260ms ease, box-shadow 260ms ease;
+  animation: headerIn 760ms var(--ease-soft) backwards;
+  transform: translateY(0);
+  will-change: transform;
+  transition: transform 420ms var(--ease-soft), background 260ms ease, border-color 260ms ease, box-shadow 260ms ease;
+}
+
+.site-header.is-hidden {
+  transform: translateY(calc(-100% - 2px));
+}
+
+.site-header.is-menu-open,
+.site-header:focus-within {
+  transform: translateY(0);
 }
 
 .brand {
