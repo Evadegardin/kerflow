@@ -20,5 +20,67 @@
         <a href="/faq/">FAQ</a>
         <a href="/contact/">Contact</a>
       </nav>
-      <a class="reserve-link" href="/cours-planning/">Réserver</a>
+      <div class="header-actions">
+        <a class="reserve-link" href="/cours-planning/">Réserver</a>
+        <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="mobile-nav" aria-label="Ouvrir le menu">
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+        </button>
+      </div>
+      <nav id="mobile-nav" class="mobile-nav" aria-label="Navigation mobile" hidden>
+        <a href="/le-lieu/">Le lieu</a>
+        <a href="/cours-planning/">Cours & planning</a>
+        <a href="/prevention-sante/">Prévention santé</a>
+        <a href="/prevention-sante/la-bulle/">La Bulle</a>
+        <a href="/prevention-sante/le-cocon/">Le Cocon</a>
+        <a href="/louer-un-espace/">Louer un espace</a>
+        <a href="/ateliers-ressources/">Ateliers & ressources</a>
+        <a href="/faq/">FAQ</a>
+        <a href="/contact/">Contact</a>
+      </nav>
     </header>
+
+<script is:inline>
+  (() => {
+    const headers = document.querySelectorAll(".site-header");
+
+    headers.forEach((header) => {
+      const button = header.querySelector(".menu-toggle");
+      const nav = header.querySelector(".mobile-nav");
+
+      if (!button || !nav) return;
+
+      const close = () => {
+        button.setAttribute("aria-expanded", "false");
+        button.setAttribute("aria-label", "Ouvrir le menu");
+        nav.hidden = true;
+        header.classList.remove("is-menu-open");
+      };
+
+      const open = () => {
+        button.setAttribute("aria-expanded", "true");
+        button.setAttribute("aria-label", "Fermer le menu");
+        nav.hidden = false;
+        header.classList.add("is-menu-open");
+      };
+
+      button.addEventListener("click", () => {
+        const expanded = button.getAttribute("aria-expanded") === "true";
+        expanded ? close() : open();
+      });
+
+      nav.addEventListener("click", (event) => {
+        if (event.target instanceof HTMLAnchorElement) close();
+      });
+
+      document.addEventListener("keydown", (event) => {
+        if (event.key === "Escape") close();
+      });
+
+      window.addEventListener("resize", () => {
+        if (window.matchMedia("(min-width: 1181px)").matches) close();
+      });
+    });
+  })();
+</script>
